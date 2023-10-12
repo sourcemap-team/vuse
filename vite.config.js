@@ -9,5 +9,5 @@ export default defineConfig({
       src: "/src",
     },
   },
-  base: "https://va7mont.github.io/vuse/"
+  base: "/"
 })

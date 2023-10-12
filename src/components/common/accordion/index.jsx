@@ -17,7 +17,7 @@ const Accordion = ({className, title, content}) => {
         {title}
 
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path className={`${m.plus} ${isActive ? 'opacity-100' : 'opacity-0'}`} fillRule="evenodd" clipRule="evenodd"
+          <path className={`${m.plus} ${isActive ? 'opacity-0' : 'opacity-100'}`} fillRule="evenodd" clipRule="evenodd"
                 d="M10 0C10.5523 0 11 0.407014 11 0.909091V19.0909C11 19.593 10.5523 20 10 20C9.44772 20 9 19.593 9 19.0909V0.909091C9 0.407014 9.44772 0 10 0Z"
                 fill="black"/>
           <path fillRule="evenodd" clipRule="evenodd"
