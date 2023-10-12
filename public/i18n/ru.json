@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "about": "О vuse",
+    "taste": "Вкусы",
+    "utility": "Программа утилизации",
+    "service": "Сервисные точки",
+    "contacts": "Контакты"
+  },
+  "age": "ПРОДУКТ СОДЕРЖИТ НИКОТИН И ВЫЗЫВАЕТ ПРИВЫКАНИЕ. ТОЛЬКО ДЛЯ ЛИЦ СТАРШЕ 21.",
+  "devices": {
+    "title": "Наши устройства",
+    "tastes": "вкусов",
+    "liquid": "Индикатор<br/>жидкости",
+    "recharge": "Можно<br/>подзаряжать",
+    "air": "AIRPROOF<br/>кнтролер",
+    "description": "Новые технологии для большего эффекта",
+    "controller": "AIRPROOF<br/>кнтролер",
+    "device-1":"PRo 5000",
+    "device-2":"PRo 3000",
+    "device-3":"go max 1500",
+    "device-4":"vega 700",
+    "device-5":"go 500"
+  },
+  "faq": {
+    "title": "Часто задаваемые<br/>вопросы"
+  },
+  "tastes": {
+    "title": "Выбери свое<br/>оригами вкусов",
+    "sweet": "Сладость",
+    "cold": "Холодок",
+    "taste-1": {
+      "title": "berry<br/>watermelon",
+      "text": "черника-ежевика"
+    },
+    "taste-2": {
+      "title": "berry<br/>watermelon",
+      "text": "черника-ежевика"
+    },
+    "taste-3": {
+      "title": "blueberry<br/>raspberry",
+      "text": "черника-ежевика"
+    },
+    "taste-4": {
+      "title": "berry<br/>blend",
+      "text": "черника-ежевика"
+    },
+    "taste-5": {
+      "title": "creamy<br/>tobacco",
+      "text": "черника-ежевика"
+    },
+    "taste-6": {
+      "title": "spearmint<br/>ice",
+      "text": "черника-ежевика"
+    },
+    "taste-7": {
+      "title": "passionfruit<br/>ice",
+      "text": "черника-ежевика"
+    },
+    "taste-8": {
+      "title": "mango<br/>ice",
+      "text": "черника-ежевика"
+    },
+    "taste-9": {
+      "title": "grape<br/>ice",
+      "text": "черника-ежевика"
+    },
+    "taste-10": {
+      "title": "apple<br/>sour",
+      "text": "черника-ежевика"
+    },
+    "taste-11": {
+      "title": "strawberry<br/>ice",
+      "text": "черника-ежевика"
+    },
+    "taste-12": {
+      "title": "strawberry<br/>kiwi",
+      "text": "черника-ежевика"
+    }
+  },
+  "social": {
+    "title": "мы в социальных сетях",
+    "text": "Будь вкурсе:"
+  }
+}

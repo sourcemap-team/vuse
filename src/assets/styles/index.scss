@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "fonts";
+
+.line-height-1 {
+  line-height: 1rem;
+}

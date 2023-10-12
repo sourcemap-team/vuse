@@ -1,0 +1,20 @@
+.device {
+  @apply relative;
+  &:hover {
+    .bottom {
+      @apply -translate-y-1/4;
+    }
+
+    .more {
+      @apply opacity-100
+    }
+  }
+
+  .bottom {
+    @apply transition-transform ease-in-out duration-500 translate-y-1/4;
+  }
+
+  .more {
+    @apply transition-opacity ease-in-out duration-500 opacity-0;
+  }
+}

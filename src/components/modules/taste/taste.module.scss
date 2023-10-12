@@ -1,0 +1,114 @@
+.taste-1 {
+  @apply bg-[#FF5133];
+}
+
+.taste-2 {
+  @apply bg-[#3967B0];
+}
+
+.taste-3 {
+  @apply bg-[#3967B0];
+}
+
+.taste-4 {
+  @apply bg-[#A3578B];
+}
+
+.taste-5 {
+  @apply bg-[#704118];
+}
+
+.taste-6 {
+  @apply bg-[#00B2BA];
+}
+
+.taste-7 {
+  @apply bg-[#63187D];
+}
+
+.taste-8 {
+  @apply bg-[#EAB643];
+}
+
+.taste-9 {
+  @apply bg-[#351A61];
+}
+
+.taste-10 {
+  @apply bg-[#4A8709];
+}
+
+.taste-11 {
+  @apply bg-[#B5251B];
+}
+
+.taste-12 {
+  @apply bg-[#B5251B];
+}
+
+.card {
+  @apply bg-opacity-0 transition-all ease-in-out duration-500 rounded-xl relative text-center overflow-hidden pb-5;
+
+  .background {
+    @apply transition-opacity ease-in-out duration-500 opacity-0;
+  }
+
+  .specs {
+    @apply absolute text-white transition-opacity ease-in-out duration-500 opacity-0 uppercase pt-5 px-3;
+
+    p {
+      @apply text-start pt-5;
+    }
+  }
+
+  .taste {
+    @apply transition-transform ease-in-out duration-500 p-5 bg-[radial-gradient(circle,#fff_0%,#ffffff00_60%,#ffffff00_90%)];
+  }
+
+  .title {
+    @apply whitespace-nowrap transition-all w-full ease-in-out duration-500 text-xl font-medium uppercase px-3;
+  }
+
+  .text {
+    @apply whitespace-nowrap transition-all w-full ease-in-out duration-500 uppercase px-3;
+  }
+
+  .puffs {
+    @apply columns-2 gap-3 px-3 transition-all ease-in-out duration-500 opacity-0;
+
+    div {
+      @apply pt-3;
+      p {
+        @apply bg-white rounded-full text-center;
+      }
+    }
+  }
+
+  &:hover {
+    @apply bg-opacity-100;
+
+    .background {
+      @apply opacity-100;
+    }
+
+    .specs {
+      @apply opacity-100
+    }
+
+    .taste {
+      @apply rotate-90 translate-x-1/2;
+    }
+
+    .title {
+      @apply text-white w-0;
+    }
+
+    .text {
+      @apply text-white w-0;
+    }
+
+    .puffs {
+      @apply opacity-100;
+    }
+  }
+}
