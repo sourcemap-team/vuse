@@ -1,3 +1,5 @@
+import midBanner1 from 'src/assets/images/icons/mid-banner-1.jpg'
+import midBanner2 from 'src/assets/images/mid-banner-2.jpg'
 
 const Banners = ({className}) => {
 

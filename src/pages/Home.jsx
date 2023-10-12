@@ -1,3 +1,8 @@
+import topBanner from 'src/assets/images/top-banner.jpg'
+import Devices from 'src/containers/Devices.jsx'
+import Banners from 'src/containers/Banners.jsx'
+import Tastes from 'src/containers/Tastes.jsx'
+import Social from 'src/containers/Socials.jsx'
 
 const Home = () => {
 
