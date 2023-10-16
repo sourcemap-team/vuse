@@ -1,7 +1,7 @@
 .menu {
   @apply sticky top-0 z-50;
   .nav {
-    @apply flex items-center justify-between bg-primary px-4 lg:px-16 py-5;
+    @apply flex items-center justify-between bg-primary px-4 lg:px-16 py-3;
 
     .logo {
       @apply flex;
@@ -11,7 +11,7 @@
       @apply hidden lg:flex gap-10;
 
       a {
-        @apply decoration-0 text-white uppercase;
+        @apply decoration-0 text-white text-sm uppercase;
 
         &.active {
           @apply text-gray-400 font-bold;
@@ -21,6 +21,10 @@
 
     .buttons {
       @apply hidden lg:flex gap-7;
+
+      select {
+        @apply text-sm;
+      }
     }
 
     select {
@@ -29,19 +33,15 @@
   }
 
   .nav2 {
-    @apply hidden lg:flex items-center justify-between px-4 lg:px-16 py-4 bg-white border-b border-b-primary;
+    @apply hidden lg:flex items-center justify-between px-4 lg:px-16 py-2 bg-white border-b border-b-primary;
     .devices {
       @apply flex justify-center gap-5;
 
       a {
-        @apply flex items-center decoration-0 text-primary uppercase gap-3;
+        @apply flex items-center decoration-0 text-primary text-sm uppercase gap-3;
 
         .new:after {
-          position: relative;
-          font-size: 0.5em;
-          content: "new";
-          top: -1em;
-          font-weight: bold;
+          @apply relative text-[0.5rem] content-["new"] font-bold -top-2;
         }
       }
     }

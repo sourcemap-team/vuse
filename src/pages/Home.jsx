@@ -3,6 +3,7 @@ import Devices from 'src/containers/Devices.jsx'
 import Banners from 'src/containers/Banners.jsx'
 import Tastes from 'src/containers/Tastes.jsx'
 import Social from 'src/containers/Socials.jsx'
+import Locations from '../containers/Locations.jsx'
 
 const Home = () => {
 
@@ -22,6 +23,10 @@ const Home = () => {
 
       <section className={'border-b py-10'}>
         <Tastes className={'container mx-auto'}/>
+      </section>
+
+      <section className={'border-b py-10'}>
+        <Locations className={'container mx-auto'}/>
       </section>
 
       <section className={'py-10'}>

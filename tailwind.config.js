@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        screens: {
+          '3xl': '1800px',
+        },
+      },
       transitionProperty: {
         'max-height': 'max-height',
       },
