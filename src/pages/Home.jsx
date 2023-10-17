@@ -5,6 +5,9 @@ import Tastes from 'src/containers/Tastes.jsx'
 import Social from 'src/containers/Socials.jsx'
 import Locations from '../containers/Locations.jsx'
 
+import banner1 from 'src/assets/images/mid-banner-1.jpg'
+import banner2 from 'src/assets/images/mid-banner-2.jpg'
+
 const Home = () => {
 
   return (
@@ -14,7 +17,7 @@ const Home = () => {
       </section>
 
       <section className={'pt-10'}>
-        <Banners className={'container mx-auto'}/>
+        <Banners className={'container mx-auto'} banner1={banner1} banner2={banner2}/>
       </section>
 
       <section className={'border-b py-10'}>

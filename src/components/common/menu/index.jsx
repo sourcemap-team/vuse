@@ -30,17 +30,17 @@ const Menu = () => {
     <nav className={m.menu}>
       <div className={m.nav}>
         <div className={m.logo}>
-          <NavLink className={isActive} to='/'>
+          <NavLink className={isActive} to='/vuse/'>
             <IconLogo color={'white'}/>
           </NavLink>
         </div>
 
         <div className={m.links}>
-          <NavLink className={isActive} to='/about'>{t('nav.about')}</NavLink>
-          <NavLink className={isActive} to='/taste'>{t('nav.taste')}</NavLink>
-          <NavLink className={isActive} to='/utility'>{t('nav.utility')}</NavLink>
-          <NavLink className={isActive} to='/service'>{t('nav.service')}</NavLink>
-          <NavLink className={isActive} to='/contacts'>{t('nav.contacts')}</NavLink>
+          <NavLink className={isActive} to='/vuse/about'>{t('nav.about')}</NavLink>
+          <NavLink className={isActive} to='/vuse/taste'>{t('nav.taste')}</NavLink>
+          <NavLink className={isActive} to='/vuse/utility'>{t('nav.utility')}</NavLink>
+          <NavLink className={isActive} to='/vuse/service'>{t('nav.service')}</NavLink>
+          <NavLink className={isActive} to='/vuse/contacts'>{t('nav.contacts')}</NavLink>
         </div>
 
         <div className={m.buttons}>
@@ -67,23 +67,23 @@ const Menu = () => {
         <div className={'w-[100px]'} />
 
         <div className={m.devices}>
-          <NavLink className={isActive} to='/device'>
+          <NavLink className={isActive} to='/vuse/device'>
             <img src={device500} alt="device"/>
             <span>GO 500</span>
           </NavLink>
-          <NavLink className={isActive} to='/device'>
+          <NavLink className={isActive} to='/vuse/device'>
             <img src={device700} alt="device"/>
             <span className={m.new}>VEGA 700</span>
           </NavLink>
-          <NavLink className={isActive} to='/device'>
+          <NavLink className={isActive} to='/vuse/device'>
             <img src={device1500} alt="device"/>
             <span>GO MAX 1500</span>
           </NavLink>
-          <NavLink className={isActive} to='/device'>
+          <NavLink className={isActive} to='/vuse/device'>
             <img src={device3000} alt="device"/>
             <span className={m.new}>PRO 3000</span>
           </NavLink>
-          <NavLink className={isActive} to='/device'>
+          <NavLink className={isActive} to='/vuse/device'>
             <img src={device5000} alt="device"/>
             <span className={m.new}>PRO 5000</span>
           </NavLink>
