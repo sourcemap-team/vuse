@@ -1,7 +1,7 @@
 import { IconDevice1500, IconLogoBig, IconTaste } from 'src/assets/icons/index.jsx'
 import devices1500 from 'src/assets/images/devices/1500/device-banner.png'
 
-const DeviceBanner = ({className}) => {
+const DeviceBanner = ({className, name, tastes}) => {
 
   return (
     <div className={className}>
@@ -10,7 +10,7 @@ const DeviceBanner = ({className}) => {
           <div>
             <IconLogoBig color={'#1E1E1E'}/>
             <h1 className={'text-7xl mt-5'}>
-              GO MAX 1500
+              {name}
             </h1>
             <p className={'mt-8'}>
               При лабораторных испытаниях подтверждено, что устройство может<br/>
@@ -34,14 +34,14 @@ const DeviceBanner = ({className}) => {
                     VUSE
                   </p>
                   <p className={'font-bold'}>
-                    GO MAX 1500
+                    {name}
                   </p>
                 </div>
               </div>
               <div className={'flex items-center gap-3'}>
                 <IconTaste color={'#1E1E1E'}/>
                 <p className={'font-bold'}>
-                  12 вкусов
+                  {tastes} {tastes > 4 ? 'вкусов' : 'вкуса'}
                 </p>
               </div>
             </div>

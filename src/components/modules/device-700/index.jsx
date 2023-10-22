@@ -49,7 +49,7 @@ const Device700 = () => {
               </p>
             </div>
             <div className={m.more}>
-              <NavLink to="/device">
+              <NavLink to="/device-700">
                 <button className={'bg-yellow-500 rounded-full px-5 py-2'}>
                   Подробнее
                 </button>

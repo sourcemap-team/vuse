@@ -1,11 +1,31 @@
 import logo from 'src/assets/images/icons/logo.svg'
+import { NavLink } from 'react-router-dom'
+import { IconInstagram, IconRobot, IconTelegram } from 'src/assets/icons/index.jsx'
 
 const Footer = () => {
   return (
     <div className={'bg-black flex text-white p-10 gap-56'}>
-      <div>
-        <img src={logo} alt="logo"/>
-        <p className={'text-gray-500 mt-5'}>© 2023</p>
+      <div className={'flex flex-col justify-between'}>
+        <div>
+          <img src={logo} alt="logo"/>
+          <p className={'text-gray-500'}>© 2023</p>
+        </div>
+        <div>
+          <div className={'flex gap-8 mt-5'}>
+            <NavLink to="/">
+              <IconRobot color={'white'}/>
+            </NavLink>
+            <NavLink to="/">
+              <IconTelegram color={'white'}/>
+            </NavLink>
+            <NavLink to="/">
+              <IconInstagram color={'white'}/>
+            </NavLink>
+          </div>
+          <div className={'mt-5'}>
+            <a href="https://vuse.com" className={'text-gray-500'} target={'_blank'}>vuse.com</a>
+          </div>
+        </div>
       </div>
       <div>
         <div className={'mt-3'}>
@@ -25,17 +45,7 @@ const Footer = () => {
         </div>
         <div className={'mt-3'}>
           <a href={'#'} className={''}>
-            Карта сайта
-          </a>
-        </div>
-        <div className={'mt-3'}>
-          <a href={'#'} className={''}>
             Где купить
-          </a>
-        </div>
-        <div className={'mt-3'}>
-          <a href={'#'} className={''}>
-            Cертификаты
           </a>
         </div>
       </div>
@@ -75,18 +85,28 @@ const Footer = () => {
           </a>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
-            VUSE PRO  5000
+          <a href={'/device-500'} className={''}>
+            Vuse Go 500
           </a>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
-            VUSE GO 1500
+          <a href={'/device-700'} className={''}>
+            Vuse Go 700
           </a>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
-            VUSE GO 600
+          <a href={'/device-1500'} className={''}>
+            Vuse Go Max 1500
+          </a>
+        </div>
+        <div className={'mt-3'}>
+          <a href={'/device-3000'} className={''}>
+            Vuse Pro 3000
+          </a>
+        </div>
+        <div className={'mt-3'}>
+          <a href={'/device-5000'} className={''}>
+            Vuse Pro 5000
           </a>
         </div>
       </div>

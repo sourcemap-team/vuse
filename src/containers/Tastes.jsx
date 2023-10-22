@@ -106,7 +106,7 @@ const Tastes = ({className, filterEnabled}) => {
             {puffs.map(puff =>
               <button
                 className={`${filter === puff ? 'bg-primary text-white' : 'bg-white'} transition-colors duration-200 ease-in-out rounded-full w-full text-xl py-3`}
-                onClick={() => handleFilter(puff)}>
+                onClick={() => handleFilter(puff)} key={puff}>
                 {puff}
               </button>,
             )}
@@ -122,11 +122,11 @@ const Tastes = ({className, filterEnabled}) => {
       <div className={'grid grid-cols-6 gap-0 pt-10'}>
         {filter ?
           tastes.map(taste => taste.puffs.includes(filter) &&
-            <Taste {...taste}/>,
+            <Taste {...taste} key={taste.taste}/>,
           )
           :
           tastes.map(taste =>
-            <Taste {...taste}/>,
+            <Taste {...taste} key={taste.taste}/>,
           )
         }
       </div>

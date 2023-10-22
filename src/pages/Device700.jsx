@@ -1,8 +1,13 @@
 import DeviceBanner from 'src/containers/DeviceBanner.jsx'
-import DeviceCards from 'src/containers/DeviceCards.jsx'
 import FAQ from 'src/containers/FAQ.jsx'
 
-const Device = () => {
+import DeviceCard from 'src/components/modules/deviceCard'
+import device5 from 'src/assets/images/devices/700/device-taste-5.png'
+import device6 from 'src/assets/images/devices/700/device-taste-6.png'
+import taste5 from 'src/assets/images/tastes/taste-5.png'
+import taste6 from 'src/assets/images/tastes/taste-6.png'
+
+const Device700 = () => {
 
   const colors = [
     '#BE80EB',
@@ -18,7 +23,7 @@ const Device = () => {
   return (
     <main>
       <section>
-        <DeviceBanner className={'container mx-auto'}/>
+        <DeviceBanner className={'container mx-auto'} name={'GO 700'} tastes={2}/>
       </section>
 
       <section>
@@ -48,7 +53,24 @@ const Device = () => {
       </section>
 
       <section className={'p-10 py-20 border-b'}>
-        <DeviceCards className={'container mx-auto'}/>
+        <div className={'container mx-auto'}>
+          <div className={'flex justify-between'}>
+            <h2
+              className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+              вкусы
+            </h2>
+            <p className={'text-xs'}>
+              В рамках спецификации современных стандартов, интерактивные<br/>
+              прототипы, которые представляют собой яркий пример<br/>
+              континентально-европейского типа политической культуры,
+            </p>
+          </div>
+
+          <div className={'grid grid-cols-4 gap-10 pt-10'}>
+            <DeviceCard image={device5} bg={taste5} specs={[3, 1]} taste={'taste-5'}/>
+            <DeviceCard image={device6} bg={taste6} specs={[3, 1]} taste={'taste-6'}/>
+          </div>
+        </div>
       </section>
 
       <section className={'px-10 py-60'}>
@@ -58,4 +80,4 @@ const Device = () => {
   )
 }
 
-export default Device
+export default Device700
