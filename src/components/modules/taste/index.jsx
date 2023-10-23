@@ -3,7 +3,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import m from './taste.module.scss'
 import {GetRatingCircles, GetPuffsInfo} from 'src/components/common/puffs'
 
-const Taste = ({image, specs, puffs, taste}) => {
+const Taste = ({image, taste}) => {
 
   const {t} = useTranslation()
 
@@ -11,9 +11,9 @@ const Taste = ({image, specs, puffs, taste}) => {
     <div className={`${m[taste]} ${m.card}`}>
       <div className={m.specs}>
         <p> {t(`tastes.sweet`)} </p>
-        {GetRatingCircles(specs[0])}
+        {GetRatingCircles(t(`tastes.${taste}.sweet`))}
         <p> {t(`tastes.cold`)} </p>
-        {GetRatingCircles(specs[1])}
+        {GetRatingCircles(t(`tastes.${taste}.cold`))}
       </div>
 
       <img src={image} className={m.taste} alt="taste"/>
@@ -21,11 +21,11 @@ const Taste = ({image, specs, puffs, taste}) => {
         <Trans i18nKey={`tastes.${taste}.title`} components={{br: <br/>}}/>
       </h3>
       <p className={m.text}>
-        {t(`tastes.${taste}.text`)}
+        <Trans i18nKey={`tastes.${taste}.text`} components={{br: <br/>}}/>
       </p>
 
       <div className={m.puffs}>
-        {GetPuffsInfo(puffs)}
+        {GetPuffsInfo(t(`tastes.${taste}.puffs`, { returnObjects: true }))}
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export const GetPuffsInfo = (arr) => {
   let puffs = []
   arr.map((num, i) => puffs.push(
     <div key={i}>
-      <p><a href={`/device-${num}`}>{num}</a></p>
+      <p><a href={`device-${num}`}>{num}</a></p>
     </div>,
   ))
 

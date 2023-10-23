@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Trans } from 'react-i18next'
+import { t } from 'i18next'
 
 import Taste from 'src/components/modules/taste/index.jsx'
 import taste1 from 'src/assets/images/tastes/taste-1.png'
@@ -18,63 +19,51 @@ import taste12 from 'src/assets/images/tastes/taste-12.png'
 const tastes = [
   {
     image: taste1,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000, 5000],
+    puffs: t(`tastes.taste-1.puffs`, {returnObjects: true}),
     taste: 'taste-1',
   }, {
     image: taste2,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000],
+    puffs: t(`tastes.taste-2.puffs`, {returnObjects: true}),
     taste: 'taste-2',
   }, {
     image: taste3,
-    specs: [3, 1],
-    puffs: [500, 1500],
+    puffs: t(`tastes.taste-3.puffs`, {returnObjects: true}),
     taste: 'taste-3',
   }, {
     image: taste4,
-    specs: [3, 1],
-    puffs: [500],
+    puffs: t(`tastes.taste-4.puffs`, {returnObjects: true}),
     taste: 'taste-4',
   }, {
     image: taste5,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000, 5000],
+    puffs: t(`tastes.taste-5.puffs`, {returnObjects: true}),
     taste: 'taste-5',
   }, {
     image: taste6,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000],
+    puffs: t(`tastes.taste-6.puffs`, {returnObjects: true}),
     taste: 'taste-6',
   }, {
     image: taste7,
-    specs: [3, 1],
-    puffs: [500, 1500],
+    puffs: t(`tastes.taste-7.puffs`, {returnObjects: true}),
     taste: 'taste-7',
   }, {
     image: taste8,
-    specs: [3, 1],
-    puffs: [500],
+    puffs: t(`tastes.taste-8.puffs`, {returnObjects: true}),
     taste: 'taste-8',
   }, {
     image: taste9,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000, 5000],
+    puffs: t(`tastes.taste-9.puffs`, {returnObjects: true}),
     taste: 'taste-9',
   }, {
     image: taste10,
-    specs: [3, 1],
-    puffs: [500, 1500, 3000],
+    puffs: t(`tastes.taste-10.puffs`, {returnObjects: true}),
     taste: 'taste-10',
   }, {
     image: taste11,
-    specs: [3, 1],
-    puffs: [500, 1500],
+    puffs: t(`tastes.taste-11.puffs`, {returnObjects: true}),
     taste: 'taste-11',
   }, {
     image: taste12,
-    specs: [3, 1],
-    puffs: [500],
+    puffs: t(`tastes.taste-12.puffs`, {returnObjects: true}),
     taste: 'taste-12',
   },
 ]
@@ -99,7 +88,7 @@ const Tastes = ({className, filterEnabled}) => {
         <div className={'flex items-center bg-gray-100 rounded-lg py-4 mt-10'}>
           <div className={'px-6'}>
             <p className={'uppercase text-xl'}>
-              выбери<br/>количество<br/>паффов
+              выбери<br/>количество<br/>затяжек
             </p>
           </div>
           <div className={'flex flex-grow justify-between gap-10 px-6'}>
@@ -113,7 +102,7 @@ const Tastes = ({className, filterEnabled}) => {
             <button
               className={`${!filter ? 'bg-primary text-white' : 'bg-white'} transition-colors duration-200 ease-in-out rounded-full w-full text-xl py-3`}
               onClick={() => handleFilter(null)}>
-              Все вкусы
+              Все устройства
             </button>
           </div>
         </div>

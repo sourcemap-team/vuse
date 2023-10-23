@@ -3,7 +3,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import m from './deviceCard.module.scss'
 import { GetRatingCircles } from 'src/components/common/puffs'
 
-const DeviceCard = ({image, bg, specs, taste}) => {
+const DeviceCard = ({image, bg, taste}) => {
 
   const {t} = useTranslation()
 
@@ -30,13 +30,13 @@ const DeviceCard = ({image, bg, specs, taste}) => {
             <p className={'text-sm text-center mb-2'}>
               {t(`tastes.sweet`)}
             </p>
-            {GetRatingCircles(specs[0], 'black')}
+            {GetRatingCircles(t(`tastes.${taste}.sweet`), 'black')}
           </div>
           <div>
             <p className={'text-sm text-center mb-2'}>
               {t(`tastes.cold`)}
             </p>
-            {GetRatingCircles(specs[1], 'black')}
+            {GetRatingCircles(t(`tastes.${taste}.cold`), 'black')}
           </div>
         </div>
       </div>

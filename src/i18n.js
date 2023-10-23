@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import i18nBackend from "i18next-http-backend";
 import { initReactI18next } from 'react-i18next';
 
+console.log(window.location)
+
 i18n
   .use(i18nBackend)
   .use(initReactI18next)
@@ -12,7 +14,7 @@ i18n
       escapeValue: false
     },
     backend: {
-      loadPath: `${window.location.href}i18n/{{lng}}.json`,
+      loadPath: `${window.location.origin}/vuse/i18n/{{lng}}.json`,
     }
   });
 

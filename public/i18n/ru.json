@@ -15,11 +15,11 @@
     "air": "AIRPROOF<br/>кнтролер",
     "description": "Новые технологии для большего эффекта",
     "controller": "AIRPROOF<br/>кнтролер",
-    "device-1":"PRo 5000",
-    "device-2":"PRo 3000",
-    "device-3":"go max 1500",
-    "device-4":"vega 700",
-    "device-5":"go 500"
+    "device-1": "5000",
+    "device-2": "3000",
+    "device-3": "go max 1500",
+    "device-4": "vega 700",
+    "device-5": "go 500"
   },
   "faq": {
     "title": "Часто задаваемые<br/>вопросы"
@@ -30,55 +30,130 @@
     "cold": "Холодок",
     "taste-1": {
       "title": "berry<br/>watermelon",
-      "text": "черника-ежевика"
+      "text": "Сладкий аромат красных<br/>ягод с освежающим<br/>арбузным вкусом",
+      "puffs": [
+        500,
+        1500
+      ],
+      "sweet": 3,
+      "cold": 2
     },
     "taste-2": {
-      "title": "berry<br/>watermelon",
-      "text": "черника-ежевика"
+      "title": "blueberry<br/>ice",
+      "text": "Черника с ледяной<br/>прохладой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 2,
+      "cold": 2
     },
     "taste-3": {
       "title": "blueberry<br/>raspberry",
-      "text": "черника-ежевика"
+      "text": "Голубика-малина",
+      "puffs": [
+        1500
+      ],
+      "sweet": 2,
+      "cold": 1
     },
     "taste-4": {
       "title": "berry<br/>blend",
-      "text": "черника-ежевика"
+      "text": "Клубника, малина,<br/>ежевика и черника",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 2,
+      "cold": 2
     },
     "taste-5": {
-      "title": "creamy<br/>tobacco",
-      "text": "черника-ежевика"
+      "title": "Creamy<br/>tobacco",
+      "text": "Кремовый табак",
+      "puffs": [
+        700
+      ],
+      "sweet": 1,
+      "cold": 2
     },
     "taste-6": {
-      "title": "spearmint<br/>ice",
-      "text": "черника-ежевика"
+      "title": "Spearmint<br/>ice",
+      "text": "Перечная мята<br/>с ледяной прохладой",
+      "puffs": [
+        700,
+        1500
+      ],
+      "sweet": 2,
+      "cold": 4
     },
     "taste-7": {
       "title": "passionfruit<br/>ice",
-      "text": "черника-ежевика"
+      "text": "Маракуйя с ледяной<br/>прохладой",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 2,
+      "cold": 2
     },
     "taste-8": {
-      "title": "mango<br/>ice",
-      "text": "черника-ежевика"
+      "title": "Mango<br/>ice",
+      "text": "Спелое манго с ледяной<br/>прохладой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 2
     },
     "taste-9": {
-      "title": "grape<br/>ice",
-      "text": "черника-ежевика"
+      "title": "Grape<br/>ice",
+      "text": "Виноград с ледяной<br/>прохладной",
+      "puffs": [
+        1500
+      ],
+      "sweet": 3,
+      "cold": 1
     },
     "taste-10": {
-      "title": "apple<br/>sour",
-      "text": "черника-ежевика"
+      "title": "Apple<br/>sour",
+      "text": "Зеленой яблоко<br/>с кислинкой",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 1,
+      "cold": 3
     },
     "taste-11": {
       "title": "strawberry<br/>ice",
-      "text": "черника-ежевика"
+      "text": "Сладкая и спелая<br/>клубника с ледяной<br/>прохладной ноткой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 1
     },
     "taste-12": {
       "title": "strawberry<br/>kiwi",
-      "text": "черника-ежевика"
+      "text": "Спелая клубника,<br/>сбалансированная<br/>кислинкой киви",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 3,
+      "cold": 1
     }
   },
   "social": {
     "title": "мы в социальных сетях",
-    "text": "Будь вкурсе:"
+    "text": "Будь в курсе:"
   }
 }

@@ -81,11 +81,11 @@ const Menu = () => {
           </NavLink>
           <NavLink className={isActive} to='/device-3000'>
             <img src={device3000} alt="device"/>
-            <span className={m.new}>PRO 3000</span>
+            <span className={m.new}>3000</span>
           </NavLink>
           <NavLink className={isActive} to='/device-5000'>
             <img src={device5000} alt="device"/>
-            <span className={m.new}>PRO 5000</span>
+            <span className={m.new}>5000</span>
           </NavLink>
         </div>
 

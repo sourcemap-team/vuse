@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         <div className={'mt-3'}>
           <a href={'#'} className={''}>
-            Политика в отношении обработкиM<br/>персональных
+            Политика в отношении обработки<br/>персональных
           </a>
         </div>
         <div className={'mt-3'}>
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         <div className={'mt-3'}>
           <a href={'#'} className={''}>
-            Политика Cookie
+            Политика cookies
           </a>
         </div>
         <div className={'mt-3'}>
@@ -101,12 +101,12 @@ const Footer = () => {
         </div>
         <div className={'mt-3'}>
           <a href={'/device-3000'} className={''}>
-            Vuse Pro 3000
+            Vuse 3000
           </a>
         </div>
         <div className={'mt-3'}>
           <a href={'/device-5000'} className={''}>
-            Vuse Pro 5000
+            Vuse 5000
           </a>
         </div>
       </div>
