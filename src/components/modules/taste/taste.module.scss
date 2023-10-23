@@ -70,7 +70,7 @@
   }
 
   .text {
-    @apply whitespace-nowrap transition-all w-full ease-in-out duration-500 uppercase px-3;
+    @apply whitespace-nowrap transition-all w-full text-xs ease-in-out duration-500 uppercase px-3;
   }
 
   .puffs {

@@ -86,7 +86,7 @@ const Locations = ({className}) => {
             </button>
           </div>
         </div>
-        <div className={'filter-grayscale h-[1000px] w-[1000px]'} id="map"/>
+        <div className={'filter-grayscale h-[700px] w-[700px]'} id="map"/>
       </div>
     </div>
   )
