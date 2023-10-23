@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <Suspense fallback="loading">
-      <BrowserRouter basename={'/'}>
+      <BrowserRouter basename={'/vuse/'}>
         <Menu/>
         <Routes>
           <Route path="/" element={<Home/>}/>
