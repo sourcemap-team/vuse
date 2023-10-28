@@ -40,11 +40,11 @@ const Locations = ({className}) => {
 
   return (
     <div className={className}>
-      <div className={'flex justify-between'}>
+      <div className={'flex flex-col lg:flex-row justify-between'}>
         <div className={'flex flex-col justify-between'}>
           <div>
             <IconLogoBig color={'#1E1E1E'}/>
-            <h1 className={'text-7xl uppercase mt-5'}>
+            <h1 className={'text-3xl lg:text-7xl uppercase mt-5'}>
               на карте
             </h1>
             <div className={'w-full bg-gray-100 rounded-full px-5 mt-10'}>
@@ -86,7 +86,7 @@ const Locations = ({className}) => {
             </button>
           </div>
         </div>
-        <div className={'filter-grayscale h-[700px] w-[700px]'} id="map"/>
+        <div className={'filter-grayscale h-[300px] w-full lg:h-[700px] lg:w-[700px] mt-5 lg:mt-0'} id="map"/>
       </div>
     </div>
   )

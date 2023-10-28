@@ -80,7 +80,7 @@ const Tastes = ({className, filterEnabled}) => {
 
   return (
     <div className={className}>
-      <h2 className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+      <h2 className={'text-xl lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
         <Trans i18nKey="tastes.title" components={{br: <br/>}}/>
       </h2>
 
@@ -108,7 +108,7 @@ const Tastes = ({className, filterEnabled}) => {
         </div>
       }
 
-      <div className={'grid grid-cols-6 gap-0 pt-10'}>
+      <div className={'grid grid-cols-2 lg:grid-cols-6 gap-0 lg:pt-10'}>
         {filter ?
           tastes.map(taste => taste.puffs.includes(filter) &&
             <Taste {...taste} key={taste.taste}/>,

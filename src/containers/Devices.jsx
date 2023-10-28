@@ -11,11 +11,11 @@ const Devices = ({className}) => {
 
   return (
     <div className={className}>
-      <h2 className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+      <h2 className={'text-xl lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
         {t('devices.title')}
       </h2>
 
-      <div className={'pt-10'}>
+      <div className={'lg:pt-10'}>
         <Device5000/>
       </div>
 

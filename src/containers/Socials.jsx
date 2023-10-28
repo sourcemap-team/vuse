@@ -14,8 +14,8 @@ const Tastes = ({className}) => {
 
   return (
     <div className={className}>
-      <div className={'flex justify-between items-center'}>
-        <h2 className={'text-6xl uppercase py-2'}>
+      <div className={'flex flex-col lg:flex-row justify-between items-center'}>
+        <h2 className={'lg:text-6xl uppercase py-2'}>
           {t('social.title')}
         </h2>
         <div className={'flex gap-5'}>
@@ -34,7 +34,7 @@ const Tastes = ({className}) => {
         </div>
       </div>
 
-      <div className={'flex gap-5 pt-10'}>
+      <div className={'flex flex-col lg:flex-row gap-5 pt-10'}>
         <div>
           <img src={social1} alt="image"/>
         </div>

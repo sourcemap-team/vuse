@@ -12,27 +12,27 @@ const Home = () => {
 
   return (
     <main>
-      <section>
+      <section className={'hidden lg:block'}>
         <img src={topBanner} className={'w-full'} alt="banner"/>
       </section>
 
-      <section className={'pt-10'}>
+      <section className={'pt-3 lg:pt-10 px-3 lg:px-0'}>
         <Banners className={'container mx-auto'} banner1={banner1} banner2={banner2}/>
       </section>
 
-      <section className={'border-b py-10'}>
+      <section className={'border-b py-3 lg:py-10 px-3 lg:px-0'}>
         <Devices className={'container mx-auto'}/>
       </section>
 
-      <section className={'border-b py-10'}>
+      <section className={'border-b py-3 lg:py-10 px-3 lg:px-0'}>
         <Tastes className={'container mx-auto'}/>
       </section>
 
-      <section className={'border-b py-10'}>
+      <section className={'border-b py-3 lg:py-10 px-3 lg:px-0'}>
         <Locations className={'container mx-auto'}/>
       </section>
 
-      <section className={'py-10'}>
+      <section className={'py-3 lg:py-10 px-3 lg:px-0'}>
         <Social className={'container mx-auto'}/>
       </section>
     </main>

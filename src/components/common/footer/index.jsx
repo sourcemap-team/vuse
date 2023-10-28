@@ -4,11 +4,11 @@ import { IconInstagram, IconRobot, IconTelegram } from 'src/assets/icons/index.j
 
 const Footer = () => {
   return (
-    <div className={'bg-black flex text-white p-10 gap-56'}>
+    <div className={'flex flex-col lg:flex-row bg-black text-white p-10 lg:gap-56'}>
       <div className={'flex flex-col justify-between'}>
         <div>
           <img src={logo} alt="logo"/>
-          <p className={'text-gray-500'}>© 2023</p>
+          <p className={'text-gray-500 mt-3'}>© 2023</p>
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>

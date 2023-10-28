@@ -54,7 +54,7 @@
   }
 
   .specs {
-    @apply absolute text-white transition-opacity ease-in-out duration-500 opacity-0 uppercase pt-5 px-3;
+    @apply absolute text-white transition-opacity ease-in-out duration-500 opacity-0 uppercase lg:pt-5 px-3;
 
     p {
       @apply text-start pt-5;
@@ -66,7 +66,7 @@
   }
 
   .title {
-    @apply whitespace-nowrap transition-all w-full ease-in-out duration-500 text-xl font-medium uppercase px-3;
+    @apply whitespace-nowrap transition-all w-full ease-in-out duration-500 lg:text-xl font-medium uppercase px-3;
   }
 
   .text {
