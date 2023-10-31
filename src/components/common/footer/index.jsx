@@ -1,6 +1,8 @@
 import logo from 'src/assets/images/icons/logo.svg'
 import { NavLink } from 'react-router-dom'
-import { IconInstagram, IconRobot, IconTelegram } from 'src/assets/icons/index.jsx'
+import robot from 'src/assets/images/icons/robot-white.svg'
+import telegram from 'src/assets/images/icons/telegram-white.svg'
+import instagram from 'src/assets/images/icons/instagram-white.svg'
 
 const Footer = () => {
   return (
@@ -12,15 +14,15 @@ const Footer = () => {
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>
-            <NavLink to="/">
-              <IconRobot color={'white'}/>
-            </NavLink>
-            <NavLink to="/">
-              <IconTelegram color={'white'}/>
-            </NavLink>
-            <NavLink to="/">
-              <IconInstagram color={'white'}/>
-            </NavLink>
+            <a href='https://t.me/vuse_uz_bot' target={'_blank'}>
+              <img src={robot} alt="social"/>
+            </a>
+            <a href='https://t.me/+n_xP7bHGuf9iZGM6' target={'_blank'}>
+              <img src={telegram} alt="social"/>
+            </a>
+            <a href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D' target={'_blank'}>
+              <img src={instagram} alt="social"/>
+            </a>
           </div>
           <div className={'mt-5'}>
             <a href="https://vuse.com" className={'text-gray-500'} target={'_blank'}>vuse.com</a>
@@ -29,85 +31,85 @@ const Footer = () => {
       </div>
       <div>
         <div className={'mt-3'}>
-          <a href={'#'} className={'text-2xl'}>
+          <p className={'text-2xl'}>
             Полезные ссылки
-          </a>
+          </p>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/service'}>
             Часто задаваемые вопросы
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/contacts'}>
             Контакты
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/service'}>
             Где купить
-          </a>
+          </NavLink>
         </div>
       </div>
 
       <div>
         <div className={'mt-3'}>
-          <a href={'#'} className={'text-2xl'}>
+          <p className={'text-2xl'}>
             Юридическая информация
-          </a>
+          </p>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/health'}>
             Политика в отношении обработки<br/>персональных
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/differences'}>
             Согласие на обработку<br/>персональных данных
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/'}>
             Политика cookies
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'#'} className={''}>
+          <NavLink to={'/'}>
             Пользовательское соглашение
-          </a>
+          </NavLink>
         </div>
       </div>
 
       <div>
         <div className={'mt-3'}>
-          <a href={'#'} className={'text-2xl'}>
+          <p className={'text-2xl'}>
             Наши устройства
-          </a>
+          </p>
         </div>
         <div className={'mt-3'}>
-          <a href={'/device-500'} className={''}>
+          <NavLink to={'/device-500'}>
             Vuse Go 500
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'/device-700'} className={''}>
+          <NavLink to={'/device-700'}>
             Vuse Go 700
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'/device-1500'} className={''}>
+          <NavLink to={'/device-1500'}>
             Vuse Go Max 1500
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'/device-3000'} className={''}>
+          <NavLink to={'/device-3000'}>
             Vuse 3000
-          </a>
+          </NavLink>
         </div>
         <div className={'mt-3'}>
-          <a href={'/device-5000'} className={''}>
+          <NavLink to={'/device-5000'}>
             Vuse 5000
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

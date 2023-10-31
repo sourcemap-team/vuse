@@ -21,12 +21,12 @@ const Device700 = () => {
   ]
 
   return (
-    <main>
+    <main className={'flex flex-col items-center'}>
       <section>
         <DeviceBanner className={'container mx-auto'} name={'GO 700'} tastes={2}/>
       </section>
 
-      <section>
+      <section className={'w-full'}>
         <div className={'flex items-center justify-center bg-primary h-screen'}>
           <div
             className={'text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#7E3CFF] via-[#AE64E4] to-[#FF8BA0]'}>
@@ -52,7 +52,7 @@ const Device700 = () => {
         </div>
       </section>
 
-      <section className={'p-10 py-20 border-b'}>
+      <section className={'w-full p-10 py-20 border-b'}>
         <div className={'container mx-auto'}>
           <div className={'flex justify-between'}>
             <h2

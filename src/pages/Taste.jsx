@@ -5,7 +5,7 @@ import FAQ from '../containers/FAQ.jsx'
 const Home = () => {
 
   return (
-    <main>
+    <main className={'flex flex-col items-center'}>
       <section className={'border-b py-10'}>
         <Tastes className={'container mx-auto'} filterEnabled/>
       </section>
@@ -14,7 +14,7 @@ const Home = () => {
         <FAQ className={'container mx-auto'}/>
       </section>
 
-      <section className={'border-b py-10'}>
+      <section className={'w-full border-b py-10'}>
         <Locations className={'container mx-auto'}/>
       </section>
     </main>

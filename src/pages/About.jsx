@@ -1,19 +1,20 @@
-import numberOne from 'src/assets/images/number-one.png'
+import Banner from 'src/containers/Banner.jsx'
+
+import numberOneBig from 'src/assets/images/number-one.png'
 import countries from 'src/assets/images/countries.png'
-import banner1 from 'src/assets/images/mid-banner-3.png'
-import banner2 from 'src/assets/images/mid-banner-4.png'
-import Banners from 'src/containers/Banners.jsx'
 import bigBanner from 'src/assets/images/big-banner.png'
+import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png'
+import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png'
 
 const About = () => {
   return (
     <main>
       <section className={'border-b py-10'}>
-        <div className={'flex p-10'}>
+        <div className={'container mx-auto flex p-10'}>
           <div className={'flex flex-1 flex-col justify-between'}>
             <div>
               <h1
-                className={'uppercase text-7xl bg-clip-text text-transparent bg-gradient-to-b from-black to-white mt-5'}>
+                className={'uppercase text-xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-black to-white mt-5'}>
                 о vuse
               </h1>
               <p className={'mt-8'}>
@@ -50,7 +51,7 @@ const About = () => {
           </div>
 
           <div className={'flex-1 flex flex-col justify-between items-center'}>
-            <img src={numberOne} alt="number-one"/>
+            <img src={numberOneBig} alt="number-one"/>
             <img src={countries} alt="countries" className={'mt-10'}/>
 
             <p className={'mt-4 text-xs'}>
@@ -62,11 +63,25 @@ const About = () => {
       </section>
 
       <section className={'py-10'}>
-        <Banners className={'container mx-auto'} banner1={banner1} banner2={banner2}/>
+        <div className={'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'}>
+          <Banner
+            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 lg:px-10 py-5'}
+            image={imgMidBanner1}
+            title={'Проверенно учеными'}
+            text={'1000 часов тестирования 50 учеными прежде чем Vuse Go появился на рынке'}
+          />
+          <Banner
+            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-4 bg-no-repeat bg-cover px-5 lg:px-10 py-5'}
+            image={imgMidBanner2}
+            title={'В VUSE НА 99% МЕНЬШЕ ТОКСИЧНЫХ ВЕЩЕСТВ, ЧЕМ В СИГАРЕТАХ'}
+          />
+        </div>
       </section>
 
       <section className={'flex justify-center pb-32'}>
-        <img src={bigBanner} alt="banner"/>
+        <div className={'container mx-auto'}>
+          <img src={bigBanner} alt="banner"/>
+        </div>
       </section>
     </main>
   )

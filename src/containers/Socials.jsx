@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import robot from 'src/assets/images/icons/robot.svg'
@@ -22,15 +21,15 @@ const Tastes = ({className}) => {
           <p className={'text-xl uppercase'}>
             {t('social.text')}
           </p>
-          <NavLink to='/'>
+          <a href='https://t.me/vuse_uz_bot' target={'_blank'}>
             <img src={robot} alt="social"/>
-          </NavLink>
-          <NavLink to='/'>
+          </a>
+          <a href='https://t.me/+n_xP7bHGuf9iZGM6' target={'_blank'}>
             <img src={telegram} alt="social"/>
-          </NavLink>
-          <NavLink to='/'>
+          </a>
+          <a href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D' target={'_blank'}>
             <img src={instagram} alt="social"/>
-          </NavLink>
+          </a>
         </div>
       </div>
 

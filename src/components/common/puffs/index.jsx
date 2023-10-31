@@ -1,4 +1,5 @@
 import { IconRate } from 'src/assets/icons/index.jsx'
+import { NavLink } from 'react-router-dom'
 
 export const GetRatingCircles = (rating, color) => {
   let circles = [
@@ -6,11 +7,11 @@ export const GetRatingCircles = (rating, color) => {
     <IconRate color={'none'} key={2}/>,
     <IconRate color={'none'} key={3}/>,
     <IconRate color={'none'} key={4}/>,
-    <IconRate color={'none'} key={5}/>
+    <IconRate color={'none'} key={5}/>,
   ]
 
   for (let i = 0; i < rating; i++) {
-    circles[i] = <span key={i}><IconRate color={color || "white"}/></span>
+    circles[i] = <span key={i}><IconRate color={color || 'white'}/></span>
   }
 
   return (
@@ -24,7 +25,7 @@ export const GetPuffsInfo = (arr) => {
   let puffs = []
   arr.map((num, i) => puffs.push(
     <div key={i}>
-      <p><a href={`device-${num}`}>{num}</a></p>
+      <p><NavLink to={`/device-${num}`}>{num}</NavLink></p>
     </div>,
   ))
 

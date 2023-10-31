@@ -12,6 +12,11 @@ import Age from 'src/components/common/age/index.jsx'
 import Footer from 'src/components/common/footer/index.jsx'
 import Taste from 'src/pages/Taste.jsx'
 import About from 'src/pages/About.jsx'
+import ServicePoints from 'src/pages/ServicePoints.jsx'
+import Contacts from 'src/pages/Contacts.jsx'
+import Utility from 'src/pages/Utility.jsx'
+import Health from './pages/Health.jsx'
+import Differences from './pages/Differences.jsx'
 
 const App = () => {
 
@@ -23,6 +28,11 @@ const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/taste" element={<Taste/>}/>
+          <Route path="/service" element={<ServicePoints/>}/>
+          <Route path="/contacts" element={<Contacts/>}/>
+          <Route path="/utility" element={<Utility/>}/>
+          <Route path="/health" element={<Health/>}/>
+          <Route path="/differences" element={<Differences/>}/>
           <Route path="/device-500" element={<Device500/>}/>
           <Route path="/device-700" element={<Device700/>}/>
           <Route path="/device-1500" element={<Device1500/>}/>

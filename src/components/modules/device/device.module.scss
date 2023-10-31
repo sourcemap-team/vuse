@@ -2,11 +2,11 @@
   @apply relative;
   &:hover {
     .bottom {
-      @apply -translate-y-1/4;
+      @apply lg:-translate-y-1/4;
     }
 
     .more {
-      @apply opacity-100
+      @apply lg:opacity-100
     }
   }
 
@@ -15,6 +15,6 @@
   }
 
   .more {
-    @apply transition-opacity ease-in-out duration-500 opacity-0;
+    @apply hidden lg:block transition-opacity ease-in-out duration-500 opacity-0;
   }
 }

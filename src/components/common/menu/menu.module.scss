@@ -1,7 +1,7 @@
 .menu {
   @apply sticky top-0 z-50;
   .nav {
-    @apply flex items-center justify-between bg-primary px-4 lg:px-16 py-3;
+    @apply relative z-30 flex items-center justify-between bg-primary px-4 lg:px-16 py-3;
 
     .logo {
       @apply flex;
@@ -33,7 +33,7 @@
   }
 
   .nav2 {
-    @apply hidden lg:flex items-center justify-between px-4 lg:px-16 py-2 bg-white border-b border-b-primary;
+    @apply relative z-20 transition-transform ease-in-out duration-300 hidden lg:flex items-center justify-between px-4 lg:px-16 py-2 bg-white border-b border-b-primary;
     .devices {
       @apply flex justify-center gap-5;
 
