@@ -10,7 +10,7 @@ const About = () => {
   return (
     <main>
       <section className={'border-b py-10'}>
-        <div className={'container mx-auto flex p-10'}>
+        <div className={'container mx-auto flex flex-col lg:flex-row px-3 lg:p-10'}>
           <div className={'flex flex-1 flex-col justify-between'}>
             <div>
               <h1
@@ -36,10 +36,10 @@ const About = () => {
             </div>
             <div>
               <h1
-                className={'font-bold text-7xl bg-clip-text text-transparent bg-gradient-to-b from-[#44E7FC] to-[#4C36E6] mt-5'}>
+                className={'font-bold text-2xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-[#44E7FC] to-[#4C36E6] mt-2 lg:mt-5'}>
                 10 лет
               </h1>
-              <p className={'mt-8'}>
+              <p className={'mt-4 lg:mt-8'}>
                 Бренд Vuse появился в США в 2013 году. И вот уже многие годы он<br/>
                 предлагает высококачественный продукт во всем мире.
               </p>
@@ -62,7 +62,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className={'py-10'}>
+      <section className={'px-3 lg:px-0 mt-10'}>
         <div className={'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'}>
           <Banner
             className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 lg:px-10 py-5'}
@@ -78,7 +78,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className={'flex justify-center pb-32'}>
+      <section className={'flex justify-center px-3 lg:px-0 pb-10 lg:pb-32 mt-10'}>
         <div className={'container mx-auto'}>
           <img src={bigBanner} alt="banner"/>
         </div>

@@ -20,7 +20,7 @@ const ServicePoints = () => {
         </div>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>

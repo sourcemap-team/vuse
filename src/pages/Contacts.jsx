@@ -7,9 +7,9 @@ import help from 'src/assets/images/icons/help-circle.svg'
 const Contacts = () => {
   return (
     <main className={'flex flex-col items-center'}>
-      <section className={'container mx-auto mt-4'}>
+      <section className={'container mx-auto mt-4 px-3 lg:px-0'}>
         <h2
-          className={'text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+          className={'text-xl lg:text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
           ОТПРАВЬТЕ НАМ<br/>
           СООБЩЕНИЕ
         </h2>
@@ -18,8 +18,8 @@ const Contacts = () => {
           Мы стремимся отвечать на все сообщения в течение 24 часов.
         </p>
 
-        <div className={'flex justify-center mt-20'}>
-          <form className={'lg:w-1/2'} action={console.log}>
+        <div className={'flex justify-center pt-10 lg:mt-20'}>
+          <form className={'w-full lg:w-1/2'} action={console.log}>
             <div className={'flex flex-col'}>
               <label htmlFor="username">
                 Ваше имя
@@ -57,22 +57,22 @@ const Contacts = () => {
         </div>
       </section>
 
-      <section className={'container mx-auto grid grid-cols-3 gap-10 mt-20'}>
-        <button className={'bg-gray-100 rounded-xl flex flex-col justify-center items-center py-10'}>
+      <section className={'container mx-auto grid grid-cols-3 gap-5 lg:gap-10 mt-20 px-3 lg:px-0'}>
+        <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={phone} alt="phone"/>
           <p className={'mt-5'}>
             Call Centre (1252)
           </p>
         </button>
 
-        <button className={'bg-gray-100 rounded-xl flex flex-col justify-center items-center py-10'}>
+        <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={telegram} alt="telegram"/>
           <p className={'mt-5'}>
             Телеграм
           </p>
         </button>
 
-        <button className={'bg-gray-100 rounded-xl flex flex-col justify-center items-center py-10'}>
+        <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={help} alt="help"/>
           <p className={'mt-5'}>
             Вопросы и ответы
@@ -80,7 +80,7 @@ const Contacts = () => {
         </button>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>

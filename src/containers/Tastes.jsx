@@ -49,22 +49,22 @@ const Tastes = ({className, filterEnabled}) => {
       </h2>
 
       {filterEnabled &&
-        <div className={'flex items-center bg-gray-100 rounded-lg py-4 mt-10'}>
+        <div className={'flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg py-4 mt-10'}>
           <div className={'px-6'}>
-            <p className={'uppercase text-xl'}>
+            <p className={'uppercase text-center lg:text-start'}>
               выбери<br/>количество<br/>затяжек
             </p>
           </div>
-          <div className={'flex flex-grow justify-between gap-10 px-6'}>
+          <div className={'grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 px-6 mt-3 lg:mt-0'}>
             {allPuffs.map(puff =>
               <button
-                className={`${filter === puff ? 'bg-primary text-white' : 'bg-white'} transition-colors duration-200 ease-in-out rounded-full w-full text-xl py-3`}
+                className={`${filter === puff ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-2`}
                 onClick={() => handleFilter(puff)} key={puff}>
                 {puff}
               </button>,
             )}
             <button
-              className={`${!filter ? 'bg-primary text-white' : 'bg-white'} transition-colors duration-200 ease-in-out rounded-full w-full text-xl p-3`}
+              className={`${!filter ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-2`}
               onClick={() => handleFilter(null)}>
               Все устройства
             </button>
@@ -72,7 +72,7 @@ const Tastes = ({className, filterEnabled}) => {
         </div>
       }
 
-      <div className={'grid grid-cols-2 lg:grid-cols-6 gap-0 lg:pt-10'}>
+      <div className={'grid grid-cols-2 lg:grid-cols-6 gap-0 lg:pt-10 mt-5'}>
         {filter ?
           allImages.map((image, i) => t(`tastes.taste-${i + 1}.puffs`, {returnObjects: true}).includes(filter) &&
             <Taste image={image} taste={`taste-${i + 1}`} key={i}/>,

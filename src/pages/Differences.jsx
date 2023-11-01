@@ -17,18 +17,18 @@ import researchGroup from 'src/assets/images/icons/research-group.svg'
 const Health = () => {
   return (
     <main className={'pt-10 flex flex-col items-center'}>
-      <section className={'w-2/3 flex flex-col items-center p-10'}>
+      <section className={'w-full lg:w-2/3 flex flex-col items-center px-3 lg:p-10'}>
         <h2
-          className={'text-6xl uppercase text-center bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+          className={'text-xl lg:text-6xl uppercase text-center bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
           vuse отличия от сигарет
         </h2>
 
-        <h3 className={'font-bold text-center text-3xl mt-6'}>
+        <h3 className={'font-bold text-center text-lg lg:text-3xl mt-2 lg:mt-6'}>
           Сигарета VS Vuse
         </h3>
 
-        <div className={'flex items-center justify-between mt-6'}>
-          <div className={'w-1/2 flex items-center justify-between border-e'}>
+        <div className={'flex flex-col lg:flex-row items-center justify-between mt-6'}>
+          <div className={'w-full lg:w-1/2 flex items-center justify-between lg:border-e'}>
             <div>
               <div className={'flex items-center'}>
                 <img src={differenceIcon1} alt="icon"/>
@@ -57,13 +57,13 @@ const Health = () => {
                 </p>
               </div>
             </div>
-            <div className={'px-10'}>
+            <div className={'lg:px-10'}>
               <img src={cigarette} alt="cigarette"/>
             </div>
           </div>
 
-          <div className={'w-1/2 flex items-center justify-between'}>
-            <div className={'px-10'}>
+          <div className={'w-full lg:w-1/2 flex items-center justify-between mt-5 lg:mt-0'}>
+            <div className={'lg:px-10'}>
               <img src={vape} alt="cigarette"/>
             </div>
             <div>
@@ -113,17 +113,17 @@ const Health = () => {
           вызываемыми табакокурением, чем традиционные курильщики.
         </p>
 
-        <div className={'flex mt-6'}>
-          <div className={'flex items-center'}>
+        <div className={'w-full lg:w-auto flex justify-evenly mt-6'}>
+          <div className={'flex flex-col lg:flex-row items-center'}>
             <img src={researchUK} alt="icon"/>
-            <p className={'px-5'}>
+            <p className={'lg:px-5'}>
               Проводилось в<br/>
               Великобритании
             </p>
           </div>
-          <div className={'flex items-center'}>
+          <div className={'flex flex-col lg:flex-row items-center'}>
             <img src={researchGroup} alt="icon"/>
-            <p className={'px-5'}>
+            <p className={'lg:px-5'}>
               213 Участников<br/>
               исследования
             </p>
@@ -144,7 +144,7 @@ const Health = () => {
         </p>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>

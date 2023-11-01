@@ -25,8 +25,8 @@ const Devices = ({className}) => {
           image={device5000}
           imageMobile={device5000Mobile}
           link={'device-5000'}
-          device={t('devices.device-1')}
-          description={t('devices.description')}
+          device={t('devices.device-1.name')}
+          description={t('devices.device-1.description')}
           tastes={5}
           hasIndicator
           rechargeable
@@ -38,8 +38,8 @@ const Devices = ({className}) => {
           className={'pt-8'}
           image={device3000}
           link={'device-3000'}
-          device={t('devices.device-2')}
-          description={t('devices.description')}
+          device={t('devices.device-2.name')}
+          description={t('devices.device-2.description')}
           tastes={5}
           hasIndicator
           rechargeable
@@ -49,8 +49,8 @@ const Devices = ({className}) => {
           className={'pt-8'}
           image={device1500}
           link={'device-1500'}
-          device={t('devices.device-3')}
-          description={t('devices.description')}
+          device={t('devices.device-3.name')}
+          description={t('devices.device-3.description')}
           tastes={11}
         />
       </div>
@@ -60,8 +60,8 @@ const Devices = ({className}) => {
           className={'pt-8'}
           image={device700}
           link={'device-700'}
-          device={t('devices.device-4')}
-          description={t('devices.description')}
+          device={t('devices.device-4.name')}
+          description={t('devices.device-4.description')}
           tastes={2}
           airProof
         />
@@ -70,8 +70,8 @@ const Devices = ({className}) => {
           className={'pt-8'}
           image={device500}
           link={'device-500'}
-          device={t('devices.device-5')}
-          description={t('devices.description')}
+          device={t('devices.device-5.name')}
+          description={t('devices.device-5.description')}
           tastes={4}
         />
       </div>

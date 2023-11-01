@@ -9,17 +9,39 @@
   "age": "ПРОДУКТ СОДЕРЖИТ НИКОТИН И ВЫЗЫВАЕТ ПРИВЫКАНИЕ. ТОЛЬКО ДЛЯ ЛИЦ СТАРШЕ 21.",
   "devices": {
     "title": "Наши устройства",
+    "taste": "вкуса",
     "tastes": "вкусов",
     "liquid": "Индикатор<br/>жидкости",
     "recharge": "Можно<br/>подзаряжать",
     "air": "AIRPROOF<br/>кнтролер",
-    "description": "Новые технологии для большего эффекта",
     "controller": "AIRPROOF<br/>кнтролер",
-    "device-1": "5000",
-    "device-2": "3000",
-    "device-3": "go max 1500",
-    "device-4": "vega 700",
-    "device-5": "go 500"
+    "device-1": {
+      "name": "5000",
+      "value": "5000",
+      "isNew": true,
+      "description": "Новая платформа"
+    },
+    "device-2": {
+      "name": "3000",
+      "value": "3000",
+      "isNew": true,
+      "description": "Новая платформа"
+    },
+    "device-3": {
+      "name": "go max 1500",
+      "value": "1500",
+      "description": "Еще больше вкусов"
+    },
+    "device-4": {
+      "name": "Go 700",
+      "value": "700",
+      "description": "Удобный формат, стильный дизайн"
+    },
+    "device-5": {
+      "name": "go 500",
+      "value": "500",
+      "description": "Удобный формат"
+    }
   },
   "faq": {
     "title": "Часто задаваемые<br/>вопросы"

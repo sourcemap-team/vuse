@@ -87,23 +87,33 @@ const Menu = () => {
         <div className={m.devices}>
           <NavLink className={isActive} to="/device-500">
             <img src={device500} alt="device"/>
-            <span>GO 500</span>
+            <span>
+              {t(`devices.device-5.name`)}
+            </span>
           </NavLink>
           <NavLink className={isActive} to="/device-700">
             <img src={device700} alt="device"/>
-            <span className={m.new}>VEGA 700</span>
+            <span className={m.new}>
+              {t(`devices.device-4.name`)}
+            </span>
           </NavLink>
           <NavLink className={isActive} to="/device-1500">
             <img src={device1500} alt="device"/>
-            <span>GO MAX 1500</span>
+            <span>
+              {t(`devices.device-3.name`)}
+            </span>
           </NavLink>
           <NavLink className={isActive} to="/device-3000">
             <img src={device3000} alt="device"/>
-            <span className={m.new}>3000</span>
+            <span className={m.new}>
+              {t(`devices.device-2.name`)}
+            </span>
           </NavLink>
           <NavLink className={isActive} to="/device-5000">
             <img src={device5000} alt="device"/>
-            <span className={m.new}>5000</span>
+            <span className={m.new}>
+              {t(`devices.device-1.name`)}
+            </span>
           </NavLink>
         </div>
 

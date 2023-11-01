@@ -14,7 +14,7 @@ const Device = ({className, image, imageMobile, device, link, description, taste
       <div className={m.device}>
 
         <div className={'absolute h-full'}>
-          <div className={'h-full flex flex-col justify-between p-4 lg:py-10 lg:ps-10'}>
+          <div className={'h-full flex flex-col justify-between p-4 pb-7 lg:py-10 lg:ps-10'}>
             <div>
               <div className={'flex items-center text-white'}>
                 <IconDevice5000 color={'#fff'}/>
@@ -62,7 +62,7 @@ const Device = ({className, image, imageMobile, device, link, description, taste
             <div>
               <div className={m.bottom}>
                 <img src={logo} className={'w-1/2 lg:w-auto'} alt="logo"/>
-                <p className={'lg:text-4xl text-white uppercase lg:mt-3'}>
+                <p className={'lg:text-4xl text-white uppercase mt-2 lg:mt-3'}>
                   {device}
                 </p>
                 <p className={'text-white mt-5 hidden lg:block'}>

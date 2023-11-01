@@ -5,7 +5,7 @@ const FAQ = ({className}) => {
   return (
     <div className={className}>
       <h2
-        className={'text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+        className={'text-xl lg:text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
         <Trans i18nKey={`faq.title`} components={{br: <br/>}}/>
       </h2>
 

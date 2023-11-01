@@ -6,9 +6,9 @@ import agency from 'src/assets/images/cancer-agency.png'
 const Health = () => {
   return (
     <main className={'pt-10 flex flex-col items-center'}>
-      <section className={'w-2/3 p-10'}>
+      <section className={'lg:w-2/3 px-3 lg:p-10'}>
         <h2
-          className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+          className={'lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
           что говорят органы<br/>
           здравоохранения?
         </h2>
@@ -52,7 +52,7 @@ const Health = () => {
         </p>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>

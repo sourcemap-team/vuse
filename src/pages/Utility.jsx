@@ -6,10 +6,10 @@ import poster from 'src/assets/images/poster.png'
 
 const Utility = () => {
   return (
-    <main className={'bg-gray-50 pt-10 flex flex-col items-center'}>
-      <section className={'w-2/3 bg-white rounded-xl mb-10 p-10'}>
+    <main className={'bg-gray-50 pt-10 flex flex-col items-center px-3 lg:px-0'}>
+      <section className={'lg:w-2/3 bg-white rounded-xl mb-10 p-10'}>
         <h2
-          className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+          className={'text-xl lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
           Vuse -<br/>
           первый глобальный углеродно-нейтральный<br/>
           вейпинг бренд*
@@ -75,7 +75,7 @@ const Utility = () => {
         </div>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>

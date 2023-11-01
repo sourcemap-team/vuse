@@ -91,7 +91,7 @@ const Locations = ({className}) => {
               на карте
             </h1>
             <div className={'w-full bg-gray-100 rounded-full px-5 mt-10'}>
-              <select className={'text-gray-500 bg-gray-100 w-full py-3 rounded-full focus:outline-0'}
+              <select className={'text-gray-500 bg-gray-100 w-full py-5 rounded-full focus:outline-0'}
                       onChange={(e) => handleCity(e.target.value)}>
                 {Object.keys(cities).map(city => <option key={city} value={city}>{cities[city].title}</option>)}
               </select>
@@ -140,7 +140,7 @@ const Locations = ({className}) => {
             </button>
           </div>
         </div>
-        <div className={'filter-grayscale h-[300px] w-full lg:h-[700px] mt-5 lg:mt-0 ps-20'} id="map"/>
+        <div className={'filter-grayscale h-[300px] w-full lg:h-[700px] mt-5 lg:mt-0 lg:ps-20'} id="map"/>
       </div>
     </div>
   )

@@ -43,26 +43,27 @@ const Device1500 = () => {
   return (
     <main className={'flex flex-col items-center'}>
       <section>
-        <DeviceBanner className={'container mx-auto'} name={'GO MAX 1500'} tastes={12}/>
+        <DeviceBanner className={'container mx-auto'} name={'GO 500'} tastes={4}/>
       </section>
 
       <section className={'w-full'}>
         <div className={'flex items-center justify-center bg-primary h-screen'}>
           <div
-            className={'text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#7E3CFF] via-[#AE64E4] to-[#FF8BA0]'}>
-            <p
-              className={''}>
+            className={'text-xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#7E3CFF] via-[#AE64E4] to-[#FF8BA0]'}>
+            <p>
               Его выбирают<br/>
               за айдентику,<br/>
               насыщенность
             </p>
             <div className={'flex items-center justify-center gap-3'}>
               <p className={'me-3'}>вкусов</p>
-              {colors.map((color, i) =>
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" key={i}>
-                  <circle cx="22.4044" cy="22.4044" r="22.4044" fill={color}/>
-                </svg>,
-              )}
+              <div className={'hidden lg:flex gap-3'}>
+                {colors.map((color, i) =>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" key={i}>
+                    <circle cx="22.4044" cy="22.4044" r="22.4044" fill={color}/>
+                  </svg>,
+                )}
+              </div>
             </div>
             <p>
               и удобство<br/>
@@ -74,9 +75,9 @@ const Device1500 = () => {
 
       <section className={'w-full p-10 py-20 border-b'}>
         <div className={'container mx-auto'}>
-          <div className={'flex justify-between'}>
+          <div className={'flex flex-col lg:flex-row justify-between'}>
             <h2
-              className={'text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+              className={'text-xl lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
               вкусы
             </h2>
             <p className={'text-xs'}>
@@ -86,7 +87,7 @@ const Device1500 = () => {
             </p>
           </div>
 
-          <div className={'grid grid-cols-4 gap-10 pt-10'}>
+          <div className={'grid grid-cols-1 lg:grid-cols-4 gap-10 pt-10'}>
             <DeviceCard image={device1} bg={taste1} specs={[3, 1]} taste={'taste-1'}/>
             <DeviceCard image={device2} bg={taste2} specs={[3, 1]} taste={'taste-2'}/>
             <DeviceCard image={device3} bg={taste3} specs={[3, 1]} taste={'taste-3'}/>
@@ -103,7 +104,7 @@ const Device1500 = () => {
         </div>
       </section>
 
-      <section className={'px-10 py-60'}>
+      <section className={'px-3 lg:px-10 py-10 lg:py-60'}>
         <FAQ className={'container mx-auto'}/>
       </section>
     </main>
