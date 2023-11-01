@@ -1,7 +1,181 @@
 {
-  "title": "Multi-language app",
-  "label": "Select another language!",
-  "about": "About me",
-  "home": "Home",
-  "user": "My name is: {{name}}"
+  "nav": {
+    "about": "О vuse",
+    "taste": "Вкусы",
+    "utility": "Программа утилизации",
+    "service": "Сервисные точки",
+    "contacts": "Контакты"
+  },
+  "age": "ПРОДУКТ СОДЕРЖИТ НИКОТИН И ВЫЗЫВАЕТ ПРИВЫКАНИЕ. ТОЛЬКО ДЛЯ ЛИЦ СТАРШЕ 21.",
+  "devices": {
+    "title": "Наши устройства",
+    "taste": "вкуса",
+    "tastes": "вкусов",
+    "liquid": "Индикатор<br/>жидкости",
+    "recharge": "Можно<br/>подзаряжать",
+    "air": "AIRPROOF<br/>кнтролер",
+    "controller": "AIRPROOF<br/>кнтролер",
+    "device-1": {
+      "name": "5000",
+      "value": "5000",
+      "isNew": true,
+      "description": "Новая платформа"
+    },
+    "device-2": {
+      "name": "3000",
+      "value": "3000",
+      "isNew": true,
+      "description": "Новая платформа"
+    },
+    "device-3": {
+      "name": "go max 1500",
+      "value": "1500",
+      "description": "Еще больше вкусов"
+    },
+    "device-4": {
+      "name": "Go 700",
+      "value": "700",
+      "description": "Удобный формат, стильный дизайн"
+    },
+    "device-5": {
+      "name": "go 500",
+      "value": "500",
+      "description": "Удобный формат"
+    }
+  },
+  "faq": {
+    "title": "Часто задаваемые<br/>вопросы"
+  },
+  "tastes": {
+    "title": "Выбери свое<br/>оригами вкусов",
+    "sweet": "Сладость",
+    "cold": "Холодок",
+    "taste-1": {
+      "title": "berry<br/>watermelon",
+      "text": "Сладкий аромат красных<br/>ягод с освежающим<br/>арбузным вкусом",
+      "puffs": [
+        500,
+        1500
+      ],
+      "sweet": 3,
+      "cold": 2
+    },
+    "taste-2": {
+      "title": "blueberry<br/>ice",
+      "text": "Черника с ледяной<br/>прохладой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 2,
+      "cold": 2
+    },
+    "taste-3": {
+      "title": "blueberry<br/>raspberry",
+      "text": "Голубика-малина",
+      "puffs": [
+        1500
+      ],
+      "sweet": 2,
+      "cold": 1
+    },
+    "taste-4": {
+      "title": "berry<br/>blend",
+      "text": "Клубника, малина,<br/>ежевика и черника",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 2,
+      "cold": 2
+    },
+    "taste-5": {
+      "title": "Creamy<br/>tobacco",
+      "text": "Кремовый табак",
+      "puffs": [
+        700
+      ],
+      "sweet": 1,
+      "cold": 2
+    },
+    "taste-6": {
+      "title": "Spearmint<br/>ice",
+      "text": "Перечная мята<br/>с ледяной прохладой",
+      "puffs": [
+        700,
+        1500
+      ],
+      "sweet": 2,
+      "cold": 4
+    },
+    "taste-7": {
+      "title": "passionfruit<br/>ice",
+      "text": "Маракуйя с ледяной<br/>прохладой",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 2,
+      "cold": 2
+    },
+    "taste-8": {
+      "title": "Mango<br/>ice",
+      "text": "Спелое манго с ледяной<br/>прохладой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 2
+    },
+    "taste-9": {
+      "title": "Grape<br/>ice",
+      "text": "Виноград с ледяной<br/>прохладной",
+      "puffs": [
+        1500
+      ],
+      "sweet": 3,
+      "cold": 1
+    },
+    "taste-10": {
+      "title": "Apple<br/>sour",
+      "text": "Зеленой яблоко<br/>с кислинкой",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 1,
+      "cold": 3
+    },
+    "taste-11": {
+      "title": "strawberry<br/>ice",
+      "text": "Сладкая и спелая<br/>клубника с ледяной<br/>прохладной ноткой",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 1
+    },
+    "taste-12": {
+      "title": "strawberry<br/>kiwi",
+      "text": "Спелая клубника,<br/>сбалансированная<br/>кислинкой киви",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 3,
+      "cold": 1
+    }
+  },
+  "social": {
+    "title": "мы в социальных сетях",
+    "text": "Будь в курсе:"
+  }
 }
