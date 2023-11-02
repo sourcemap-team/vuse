@@ -1,5 +1,6 @@
-import { IconDevice1500, IconLogoBig, IconTaste } from 'src/assets/icons/index.jsx'
+import { IconDevice1500, IconTaste } from 'src/assets/icons/index.jsx'
 import devices1500 from 'src/assets/images/devices/1500/device-banner.png'
+import logo from 'src/assets/images/icons/logo-black.svg'
 
 const DeviceBanner = ({className, name, tastes}) => {
 
@@ -8,8 +9,10 @@ const DeviceBanner = ({className, name, tastes}) => {
       <div className={'flex flex-col lg:flex-row px-3 lg:lx-0 py-10'}>
         <div className={'flex flex-1 order-2 lg:order-1 flex-col justify-between'}>
           <div>
-            <IconLogoBig color={'#1E1E1E'}/>
-            <h1 className={'text-xl lg:text-7xl mt-5'}>
+            <div className={'w-1/3 lg:w-auto'}>
+              <img src={logo} alt="logo"/>
+            </div>
+            <h1 className={'text-2xl uppercase lg:text-7xl mt-2 lg:mt-5'}>
               {name}
             </h1>
             <p className={'text-sm mt-8'}>
@@ -33,7 +36,7 @@ const DeviceBanner = ({className, name, tastes}) => {
                   <p>
                     VUSE
                   </p>
-                  <p className={'font-bold'}>
+                  <p className={'font-bold uppercase'}>
                     {name}
                   </p>
                 </div>

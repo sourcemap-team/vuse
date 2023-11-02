@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { cities, locationsData } from 'src/constants/locationsData.js'
-import { IconLogoBig } from 'src/assets/icons/index.jsx'
 
+import logo from 'src/assets/images/icons/logo-black.svg'
 import locationType1 from 'src/assets/images/icons/location-type-1.svg'
 import locationType2 from 'src/assets/images/icons/location-type-2.svg'
 import locationType3 from 'src/assets/images/icons/location-type-3.svg'
@@ -85,13 +85,15 @@ const Locations = ({className}) => {
     <div className={className}>
       <div className={'flex flex-col lg:flex-row justify-between'}>
         <div className={'flex flex-col justify-between'}>
-          <div>
-            <IconLogoBig color={'#1E1E1E'}/>
+          <div className={'mt-10'}>
+            <div className={'w-1/2 lg:w-auto'}>
+              <img src={logo} alt="logo"/>
+            </div>
             <h1 className={'text-3xl lg:text-7xl uppercase whitespace-nowrap mt-5'}>
               на карте
             </h1>
             <div className={'w-full bg-gray-100 rounded-full px-5 mt-10'}>
-              <select className={'text-gray-500 bg-gray-100 w-full py-3 rounded-full focus:outline-0'}
+              <select className={'custom-select text-gray-500 bg-gray-100 w-full py-3 rounded-full focus:outline-0'}
                       onChange={(e) => handleCity(e.target.value)}>
                 {Object.keys(cities).map(city => <option key={city} value={city}>{cities[city].title}</option>)}
               </select>

@@ -22,13 +22,13 @@ const Tastes = ({className}) => {
           <p className={'text-xl uppercase'}>
             {t('social.text')}
           </p>
-          <a href='https://t.me/vuse_uz_bot' target={'_blank'}>
+          <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
             <img src={robot} alt="social"/>
           </a>
-          <a href='https://t.me/+n_xP7bHGuf9iZGM6' target={'_blank'}>
+          <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
             <img src={telegram} alt="social"/>
           </a>
-          <a href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D' target={'_blank'}>
+          <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
             <img src={instagram} alt="social"/>
           </a>
         </div>
@@ -36,13 +36,13 @@ const Tastes = ({className}) => {
 
       <div className={'flex flex-col lg:flex-row gap-5 pt-10'}>
         <div>
-          <SocialsPost image={social1} link={'#'}/>
+          <SocialsPost image={social1} text={'Еще больше эмоций! Уже скоро… 🚀'} link={'https://www.instagram.com/p/CyVV1rgMmvj/'}/>
         </div>
         <div>
-          <SocialsPost image={social2} link={'#'}/>
+          <SocialsPost image={social2} text={'Скоро! Самая крутая вечеринка We use party'} link={'https://www.instagram.com/p/CzEL2JkoVZu/'}/>
         </div>
         <div>
-          <SocialsPost image={social3} link={'#'}/>
+          <SocialsPost image={social3} text={'Новости, которые вы ждали 😍'} link={'https://www.instagram.com/p/Cy_LzQSIa1M/'}/>
         </div>
       </div>
     </div>

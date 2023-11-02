@@ -1,11 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import m from './socialsPost.module.scss'
 
-const SocialsPost = ({
-                       className,
-                       image,
-                       link,
-                     }) => {
+const SocialsPost = ({className, image, text, link}) => {
 
   return (
     <div className={className}>
@@ -13,7 +9,7 @@ const SocialsPost = ({
         <div className={m.shadow}>
           <div className={m.more}>
             <p>
-              Поддержи культурную ценность
+              {text}
             </p>
             <NavLink to={link}>
               <button>

@@ -5,6 +5,7 @@ import countries from 'src/assets/images/countries.png'
 import bigBanner from 'src/assets/images/big-banner.png'
 import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png'
 import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png'
+import { NavLink } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -79,8 +80,34 @@ const About = () => {
       </section>
 
       <section className={'flex justify-center px-3 lg:px-0 pb-10 lg:pb-32 mt-10'}>
-        <div className={'container mx-auto'}>
-          <img src={bigBanner} alt="banner"/>
+        <div className={'container mx-auto relative'}>
+          <div className={'absolute h-full lg:w-1/3 flex flex-col items-start justify-between py-3 lg:py-10 ps-2 lg:ps-5'}>
+            <div className={'hidden lg:flex border-4 rounded-lg'}>
+              <p className={'text-white text-xs lg:text-md font-bold uppercase px-2 py-1 lg:px-5 lg:py-3'}>
+                take<br/>
+                back
+              </p>
+            </div>
+            <div>
+              <h3 className={'text-white font-bold text-sm lg:text-4xl'}>
+                Вместе мы можем
+                стать ответственнее
+                по отношению
+                к экологии
+              </h3>
+              <p className={'text-white text-xs lg:text-md mt-2 lg:mt-5'}>
+                Каждый желающий может сдать использованные
+                устройства Vuse в одну из сервисных точек для
+                дальнейшей переработки.
+              </p>
+            </div>
+            <NavLink to={'/utility'}>
+            <button className={'bg-yellow-500 px-5 py-1 lg:px-16 lg:py-2 text-xs rounded-full'}>
+              Подробнее
+            </button>
+            </NavLink>
+          </div>
+          <img src={bigBanner} className={'rounded-xl'} alt="banner"/>
         </div>
       </section>
     </main>

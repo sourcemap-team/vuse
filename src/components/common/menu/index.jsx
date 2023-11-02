@@ -13,13 +13,15 @@ import device700 from 'src/assets/images/icons/device700.svg'
 import device1500 from 'src/assets/images/icons/device1500.svg'
 import device3000 from 'src/assets/images/icons/device3000.svg'
 import device5000 from 'src/assets/images/icons/device5000.svg'
-import { IconLogo } from 'src/assets/icons/index.jsx'
 import { useEffect, useState } from 'react'
+import logo from 'src/assets/images/icons/logo.svg'
+import menu from 'src/assets/images/icons/menu.svg'
 
 const isActive = ({isActive}) => `${isActive ? m.active : ''}`
 
 const Menu = () => {
 
+  const [showMenu, setShowMenu] = useState(false)
   const {i18n, t} = useTranslation()
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
@@ -28,6 +30,10 @@ const Menu = () => {
   const onChangeLang = (e) => {
     const lang_code = e.target.value
     i18n.changeLanguage(lang_code)
+  }
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
   }
 
   useEffect(() => {
@@ -46,87 +52,102 @@ const Menu = () => {
 
   return (
     <nav className={m.menu}>
-      <div className={m.nav}>
-        <div className={m.logo}>
-          <NavLink className={isActive} to="/">
-            <IconLogo color={'white'}/>
-          </NavLink>
-        </div>
+      <div className={'relative flex justify-between lg:hidden bg-primary p-3 z-40'}>
+        <NavLink to="/">
+          <div className={'w-3/4 lg:w-auto'}>
+            <img src={logo} alt="logo"/>
+          </div>
+        </NavLink>
 
-        <div className={m.links}>
-          <NavLink className={isActive} to="/about">{t('nav.about')}</NavLink>
-          <NavLink className={isActive} to="/taste">{t('nav.taste')}</NavLink>
-          <NavLink className={isActive} to="/utility">{t('nav.utility')}</NavLink>
-          <NavLink className={isActive} to="/service">{t('nav.service')}</NavLink>
-          <NavLink className={isActive} to="/contacts">{t('nav.contacts')}</NavLink>
-        </div>
-
-        <div className={m.buttons}>
-          <select defaultValue={i18n.language} onChange={onChangeLang}>
-            {
-              LANGUAGES.map(({code, label}) => (
-                <option
-                  key={code}
-                  value={code}
-                >{label}</option>
-              ))
-            }
-          </select>
-          <NavLink className={isActive} to="/about">
-            <img src={help} alt="help"/>
-          </NavLink>
-          <NavLink className={isActive} to="/about">
-            <img src={avatar} alt="avatar"/>
-          </NavLink>
-        </div>
+        <button className={'text-white'} onClick={toggleMenu}>
+          <img src={menu} width={24} alt="menu"/>
+        </button>
       </div>
+      <div className={`${m.navbar} ${showMenu ? 'mt-10' : 'transform -translate-y-full'}`}>
+        <div className={m.nav}>
+          <div className={'hidden lg:flex'}>
+            <NavLink to="/">
+              <div className={'w-3/4 lg:w-auto'}>
+                <img src={logo} alt="logo"/>
+              </div>
+            </NavLink>
+          </div>
 
-      <div className={`${m.nav2} ${visible ? '' : 'transform -translate-y-16 -z-30'}`}>
-        <div className={'w-[100px]'}/>
+          <div className={m.links}>
+            <NavLink className={isActive} to="/about">{t('nav.about')}</NavLink>
+            <NavLink className={isActive} to="/taste">{t('nav.taste')}</NavLink>
+            <NavLink className={isActive} to="/utility">{t('nav.utility')}</NavLink>
+            <NavLink className={isActive} to="/service">{t('nav.service')}</NavLink>
+            <NavLink className={isActive} to="/contacts">{t('nav.contacts')}</NavLink>
+          </div>
 
-        <div className={m.devices}>
-          <NavLink className={isActive} to="/device-500">
-            <img src={device500} alt="device"/>
-            <span>
+          <div className={m.buttons}>
+            <select defaultValue={i18n.language} onChange={onChangeLang}>
+              {
+                LANGUAGES.map(({code, label}) => (
+                  <option
+                    key={code}
+                    value={code}
+                  >{label}</option>
+                ))
+              }
+            </select>
+            <NavLink className={isActive} to="/about">
+              <img src={help} alt="help"/>
+            </NavLink>
+            <NavLink className={isActive} to="/about">
+              <img src={avatar} alt="avatar"/>
+            </NavLink>
+          </div>
+        </div>
+
+        <div className={`${m.nav2} ${visible ? '' : 'lg:transform lg:-translate-y-16 lg:-z-30'}`}>
+          <div className={'hidden lg:block w-[100px]'}/>
+
+          <div className={m.devices}>
+            <NavLink className={isActive} to="/device-500">
+              <img src={device500} alt="device"/>
+              <span>
               {t(`devices.device-5.name`)}
             </span>
-          </NavLink>
-          <NavLink className={isActive} to="/device-700">
-            <img src={device700} alt="device"/>
-            <span className={m.new}>
+            </NavLink>
+            <NavLink className={isActive} to="/device-700">
+              <img src={device700} alt="device"/>
+              <span className={m.new}>
               {t(`devices.device-4.name`)}
             </span>
-          </NavLink>
-          <NavLink className={isActive} to="/device-1500">
-            <img src={device1500} alt="device"/>
-            <span>
+            </NavLink>
+            <NavLink className={isActive} to="/device-1500">
+              <img src={device1500} alt="device"/>
+              <span>
               {t(`devices.device-3.name`)}
             </span>
-          </NavLink>
-          <NavLink className={isActive} to="/device-3000">
-            <img src={device3000} alt="device"/>
-            <span className={m.new}>
+            </NavLink>
+            <NavLink className={isActive} to="/device-3000">
+              <img src={device3000} alt="device"/>
+              <span className={m.new}>
               {t(`devices.device-2.name`)}
             </span>
-          </NavLink>
-          <NavLink className={isActive} to="/device-5000">
-            <img src={device5000} alt="device"/>
-            <span className={m.new}>
+            </NavLink>
+            <NavLink className={isActive} to="/device-5000">
+              <img src={device5000} alt="device"/>
+              <span className={m.new}>
               {t(`devices.device-1.name`)}
             </span>
-          </NavLink>
-        </div>
+            </NavLink>
+          </div>
 
-        <div className={m.socials}>
-          <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
-            <img src={robot} alt="social"/>
-          </a>
-          <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
-            <img src={telegram} alt="social"/>
-          </a>
-          <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
-            <img src={instagram} alt="social"/>
-          </a>
+          <div className={m.socials}>
+            <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
+              <img src={robot} alt="social"/>
+            </a>
+            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
+              <img src={telegram} alt="social"/>
+            </a>
+            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
+              <img src={instagram} alt="social"/>
+            </a>
+          </div>
         </div>
       </div>
     </nav>

@@ -4,7 +4,7 @@ import Tastes from 'src/containers/Tastes.jsx'
 import Social from 'src/containers/Socials.jsx'
 import Locations from '../containers/Locations.jsx'
 
-import topBanner from 'src/assets/images/top-banner.jpg'
+import homeBanner from 'src/assets/videos/home-banner.mp4'
 import imgMidBanner1 from 'src/assets/images/img-mid-banner-1.png'
 import imgMidBanner2 from 'src/assets/images/img-mid-banner-2.png'
 
@@ -12,8 +12,10 @@ const Home = () => {
 
   return (
     <main>
-      <section>
-        <img src={topBanner} className={'w-full'} alt="banner"/>
+      <section className={'flex justify-center'}>
+        <video autoPlay playsInline muted loop>
+          <source src={homeBanner} type="video/mp4" />
+        </video>
       </section>
 
       <section className={'pt-3 lg:pt-10 px-3 lg:px-0'}>
