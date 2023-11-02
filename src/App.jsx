@@ -1,5 +1,5 @@
-import { Suspense } from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
 import Menu from 'src/components/common/menu'
 import Home from 'src/pages/Home.jsx'
@@ -20,30 +20,34 @@ import Differences from './pages/Differences.jsx'
 
 const App = () => {
 
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
-    <Suspense fallback="loading">
-      <BrowserRouter basename={'/vuse/'}>
-        <Menu/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/taste" element={<Taste/>}/>
-          <Route path="/service" element={<ServicePoints/>}/>
-          <Route path="/contacts" element={<Contacts/>}/>
-          <Route path="/utility" element={<Utility/>}/>
-          <Route path="/health" element={<Health/>}/>
-          <Route path="/differences" element={<Differences/>}/>
-          <Route path="/device-500" element={<Device500/>}/>
-          <Route path="/device-700" element={<Device700/>}/>
-          <Route path="/device-1500" element={<Device1500/>}/>
-          <Route path="/device-3000" element={<Device3000/>}/>
-          <Route path="/device-5000" element={<Device5000/>}/>
-          <Route path="*" element={<Navigate to="/" replace/>}/>
-        </Routes>
-        <Age/>
-        <Footer/>
-      </BrowserRouter>
-    </Suspense>
+    <>
+      <Menu/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/taste" element={<Taste/>}/>
+        <Route path="/service" element={<ServicePoints/>}/>
+        <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/utility" element={<Utility/>}/>
+        <Route path="/health" element={<Health/>}/>
+        <Route path="/differences" element={<Differences/>}/>
+        <Route path="/device-500" element={<Device500/>}/>
+        <Route path="/device-700" element={<Device700/>}/>
+        <Route path="/device-1500" element={<Device1500/>}/>
+        <Route path="/device-3000" element={<Device3000/>}/>
+        <Route path="/device-5000" element={<Device5000/>}/>
+        <Route path="*" element={<Navigate to="/" replace/>}/>
+      </Routes>
+      <Age/>
+      <Footer/>
+    </>
   )
 }
 export default App

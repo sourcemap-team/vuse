@@ -5,7 +5,18 @@ import { IconAir, IconDevice5000, IconLiquid, IconRecharge, IconTaste } from 'sr
 import logo from 'src/assets/images/icons/logo.svg'
 import m from './device.module.scss'
 
-const Device = ({className, image, imageMobile, device, link, description, tastes, hasIndicator, rechargeable, airProof}) => {
+const Device = ({
+                  className,
+                  image,
+                  imageMobile,
+                  device,
+                  link,
+                  description,
+                  tastes,
+                  hasIndicator,
+                  rechargeable,
+                  airProof,
+                }) => {
 
   const {t} = useTranslation()
 

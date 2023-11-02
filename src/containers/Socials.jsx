@@ -6,6 +6,7 @@ import instagram from 'src/assets/images/icons/instagram.svg'
 import social1 from 'src/assets/images/social-1.png'
 import social2 from 'src/assets/images/social-2.png'
 import social3 from 'src/assets/images/social-3.png'
+import SocialsPost from '../components/common/socialsPost/index.jsx'
 
 const Tastes = ({className}) => {
 
@@ -35,13 +36,13 @@ const Tastes = ({className}) => {
 
       <div className={'flex flex-col lg:flex-row gap-5 pt-10'}>
         <div>
-          <img src={social1} alt="image"/>
+          <SocialsPost image={social1} link={'#'}/>
         </div>
         <div>
-          <img src={social2} alt="image"/>
+          <SocialsPost image={social2} link={'#'}/>
         </div>
         <div>
-          <img src={social3} alt="image"/>
+          <SocialsPost image={social3} link={'#'}/>
         </div>
       </div>
     </div>

@@ -24,9 +24,9 @@ export const GetRatingCircles = (rating, color) => {
 export const GetPuffsInfo = (arr) => {
   let puffs = []
   arr.map((num, i) => puffs.push(
-    <div key={i}>
-      <p><NavLink to={`/device-${num}`}>{num}</NavLink></p>
-    </div>,
+    <div>
+      <NavLink key={i} to={`/device-${num}`}>{num}</NavLink>
+    </div>
   ))
 
   return puffs

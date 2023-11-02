@@ -74,12 +74,12 @@
   }
 
   .puffs {
-    @apply columns-2 gap-3 px-3 transition-all ease-in-out duration-500 opacity-0;
+    @apply grid grid-cols-2 gap-3 px-3 transition-all ease-in-out duration-500 opacity-0 mt-3;
 
     div {
-      @apply pt-3;
-      p {
-        @apply bg-white rounded-full text-center;
+      @apply transition-colors duration-300 ease-in-out text-center pt-1 bg-white rounded-full;
+      &:hover {
+        @apply bg-primary text-white;
       }
     }
   }

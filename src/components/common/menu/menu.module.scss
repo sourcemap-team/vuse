@@ -11,10 +11,10 @@
       @apply hidden lg:flex gap-10;
 
       a {
-        @apply decoration-0 text-white text-sm uppercase;
+        @apply text-gray-400 transition-colors duration-300 ease-in-out decoration-0 text-sm uppercase;
 
-        &.active {
-          @apply text-gray-400 font-bold;
+        &.active, &:hover {
+          @apply text-white;
         }
       }
     }
@@ -38,7 +38,11 @@
       @apply flex justify-center gap-5;
 
       a {
-        @apply flex items-center decoration-0 text-primary text-sm uppercase gap-3;
+        @apply transition-colors duration-300 ease-in-out flex items-center decoration-0 text-primary text-sm uppercase gap-3;
+
+        &:hover {
+          @apply text-gray-500;
+        }
 
         .new:after {
           @apply relative text-[0.5rem] content-["new"] font-bold -top-2;
