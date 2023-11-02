@@ -26,7 +26,7 @@ const Home = () => {
             title={'#1 вейп бренд в мире'}
             text={'*На основании оценки доли продаж в Мае 2022 продукции Vuse в ритейле от всей вейп категории в странах: США, Канада, Франция, Великобритания, Германия. Эти рынки охватывают 81% глобальной доли чистого товарооборота в закрытых системах.'}
           >
-            <button className={'bg-yellow-500 text-xs lg:text-md rounded-full px-5 py-2 mt-4'}>
+            <button className={'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4'}>
               Подробнее
             </button>
           </Banner>
@@ -36,7 +36,7 @@ const Home = () => {
             title={'Программа утилизации'}
             text={'*На основании оценки доли продаж в Мае 2022 продукции Vuse в ритейле от всей вейп категории в странах: США, Канада, Франция, Великобритания, Германия. Эти рынки охватывают 81% глобальной доли чистого товарооборота в закрытых системах.'}
           >
-            <button className={'bg-yellow-500 text-xs lg:text-md rounded-full px-5 py-2 mt-4'}>
+            <button className={'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4'}>
               Подробнее
             </button>
           </Banner>
