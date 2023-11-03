@@ -83,7 +83,7 @@ const Device = ({
 
               <div className={m.more}>
                 <NavLink to={link}>
-                  <button className={'bg-yellow-500 rounded-full px-5 py-2'}>
+                  <button className={'bg-yellow-500 rounded-full px-5 py-2 transition-colors duration-300 ease-in-out hover:bg-yellow-600'}>
                     Подробнее
                   </button>
                 </NavLink>

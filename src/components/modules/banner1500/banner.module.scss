@@ -1,0 +1,40 @@
+.container {
+  @apply relative flex justify-center;
+
+  .first {
+    @apply z-20;
+  }
+
+  .second, .third, .fourth, .fifth, .sixth {
+    @apply absolute bottom-7 transition-transform duration-1000 ease-in-out;
+  }
+
+  .second.moved {
+    transform: translate(60%, 1%) rotate(20deg);
+  }
+
+
+  .third.moved {
+    @apply delay-200;
+    transform: translate(-80%, 3%) rotate(-30deg);
+  }
+
+
+  .fourth.moved {
+    @apply delay-300;
+    transform: translate(120%, 2%) rotate(50deg);
+  }
+
+
+  .fifth.moved {
+    @apply delay-500;
+    transform: translate(-140%, 8%) rotate(-50deg);
+  }
+
+
+  .sixth.moved {
+    @apply delay-700;
+    transform: translate(140%, 15%) rotate(60deg);
+  }
+
+}

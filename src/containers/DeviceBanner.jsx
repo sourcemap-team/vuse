@@ -1,13 +1,13 @@
 import { IconDevice1500, IconTaste } from 'src/assets/icons/index.jsx'
-import devices1500 from 'src/assets/images/devices/1500/device-banner.png'
+
 import logo from 'src/assets/images/icons/logo-black.svg'
 
-const DeviceBanner = ({className, name, tastes}) => {
+const DeviceBanner = ({className, name, tastes, children}) => {
 
   return (
     <div className={className}>
-      <div className={'flex flex-col lg:flex-row px-3 lg:lx-0 py-10'}>
-        <div className={'flex flex-1 order-2 lg:order-1 flex-col justify-between'}>
+      <div className={'grid grid-cols-1 lg:grid-cols-2 px-3 lg:px-0 py-10'}>
+        <div className={'flex order-2 lg:order-1 flex-col justify-between'}>
           <div>
             <div className={'w-1/3 lg:w-auto'}>
               <img src={logo} alt="logo"/>
@@ -51,8 +51,8 @@ const DeviceBanner = ({className, name, tastes}) => {
           </div>
         </div>
 
-        <div className={'flex-1 order-1 lg:order-2 mb-10 lg:mb-0'}>
-          <img src={devices1500} alt="devices"/>
+        <div className={'h-full hidden lg:block order-1 lg:order-2 mb-10 lg:mb-0'}>
+          {children}
         </div>
       </div>
     </div>

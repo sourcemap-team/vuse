@@ -1,0 +1,16 @@
+.container {
+  @apply relative flex justify-center;
+
+  .first {
+    @apply z-20;
+  }
+
+  .second, .third {
+    @apply absolute bottom-5 transition-transform duration-1000 ease-in-out;
+  }
+
+  .second.moved {
+    transform: translate(70%, 4%) rotate(20deg);
+  }
+
+}

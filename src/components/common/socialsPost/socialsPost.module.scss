@@ -12,8 +12,11 @@
       @apply text-xl font-bold text-center text-white;
     }
 
-    button {
-      @apply bg-white rounded-full py-2 px-14 mt-3;
+    a {
+      @apply bg-white rounded-full py-2 px-14 mt-3 transition-colors duration-300 ease-in-out;
+      &:hover {
+        @apply bg-gray-100;
+      }
     }
   }
 

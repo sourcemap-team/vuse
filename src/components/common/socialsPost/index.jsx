@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import m from './socialsPost.module.scss'
 
 const SocialsPost = ({className, image, text, link}) => {
@@ -11,11 +10,9 @@ const SocialsPost = ({className, image, text, link}) => {
             <p>
               {text}
             </p>
-            <NavLink to={link}>
-              <button>
-                Подробнее
-              </button>
-            </NavLink>
+            <a href={link} target={'_blank'}>
+              Подробнее
+            </a>
           </div>
         </div>
 

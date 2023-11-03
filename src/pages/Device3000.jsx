@@ -14,6 +14,7 @@ import taste10 from 'src/assets/images/tastes/taste-10.png'
 import taste12 from 'src/assets/images/tastes/taste-12.png'
 import { useTranslation } from 'react-i18next'
 import GradientText from 'src/components/common/gradientText/index.jsx'
+import AnimatedBanner from 'src/components/modules/banner3000/index.jsx'
 
 const Device3000 = () => {
 
@@ -22,7 +23,9 @@ const Device3000 = () => {
   return (
     <main className={'flex flex-col items-center'}>
       <section>
-        <DeviceBanner className={'container mx-auto'} name={t(`devices.device-2.name`)} tastes={4}/>
+        <DeviceBanner className={'container mx-auto'} name={t(`devices.device-2.name`)} tastes={4}>
+          <AnimatedBanner/>
+        </DeviceBanner>
       </section>
 
       <section className={'w-full'}>
