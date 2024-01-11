@@ -1,63 +1,56 @@
 import Banner from 'src/containers/Banner.jsx'
 
-import numberOneBig from 'src/assets/images/number-one.png'
+import numberOne from 'src/assets/images/icons/numberOne.svg'
 import countries from 'src/assets/images/countries.png'
 import bigBanner from 'src/assets/images/big-banner.png'
 import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png'
 import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png'
 import { NavLink } from 'react-router-dom'
+import { Trans, useTranslation } from 'react-i18next'
+import GradientHeader from '../components/common/gradientHeader'
 
 const About = () => {
+  const {t} = useTranslation()
+
   return (
     <main>
       <section className={'border-b py-10'}>
         <div className={'container mx-auto flex flex-col lg:flex-row px-3 lg:p-10'}>
           <div className={'flex flex-1 flex-col justify-between'}>
             <div>
-              <h1
-                className={'uppercase text-xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-black to-white mt-5'}>
-                о vuse
-              </h1>
-              <p className={'mt-8'}>
-                Запустившись в 2013 году, сегодня Vuse является одним из ведущих<br/>
-                мировых брендов на рынке устройств для употребления никотина.
+              <GradientHeader className={'text-xl lg:text-7xl mt-5'}>
+                {t(`about.title`)}
+              </GradientHeader>
+              <p className={'mt-8 lg:text-base'}>
+                {t(`about.text1`)}
               </p>
-              <p className={'mt-4'}>
-                Продукты Vuse проходят 1000 часов тестирования 50 учеными, прежде<br/>
-                чем попасть к потребителю. Только когда мы полностью уверены, что<br/>
-                продукт соответствует стандартам качества, продукт допускается на<br/>
-                рынок.
+              <p className={'mt-4 lg:text-base'}>
+                {t(`about.text2`)}
               </p>
-              <p className={'mt-4'}>
-                Бренд Vuse стремится предоставить продукт удовлетворяющий<br/>
-                потребности потребителя. В линейке устройств для употребления<br/>
-                никотина Vuse GO и Vuse GO Max представлены различные вкусы,<br/>
-                включающие в себя фруктовые и ягодные оттенки.
+              <p className={'mt-4 lg:text-base'}>
+                {t(`about.text3`)}
               </p>
             </div>
             <div>
               <h1
                 className={'font-bold text-2xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-[#44E7FC] to-[#4C36E6] mt-2 lg:mt-5'}>
-                10 лет
+                {t(`about.years`)}
               </h1>
               <p className={'mt-4 lg:mt-8'}>
-                Бренд Vuse появился в США в 2013 году. И вот уже многие годы он<br/>
-                предлагает высококачественный продукт во всем мире.
+                {t(`about.text4`)}
               </p>
               <p className={'mt-4'}>
-                Vuse не останавливается на достигнутом, в продолжая искать новые<br/>
-                возможности сделать свой продукт еще лучше.
+                {t(`about.text5`)}
               </p>
             </div>
           </div>
 
           <div className={'flex-1 flex flex-col justify-between items-center'}>
-            <img src={numberOneBig} alt="number-one"/>
-            <img src={countries} alt="countries" className={'mt-10'}/>
+            <img src={numberOne} className={'order-2 lg:order-1 w-1/2 lg:w-auto mt-10 lg:mt-0'} alt="number-one"/>
+            <img src={countries} alt="countries" className={'order-1 lg:order-2 mt-10'}/>
 
-            <p className={'mt-4 text-xs'}>
-              *На основе данных о доле в обороте в категории Total Vapour, полученных независимой организацией по<br/>
-              исследованию рынка – Марлин, в измеряемой рознице (февраль 2022 - апрель 2022)
+            <p className={'order-3 mt-4 text-xs'}>
+              {t(`about.text6`)}
             </p>
           </div>
         </div>
@@ -66,49 +59,45 @@ const About = () => {
       <section className={'px-3 lg:px-0 mt-10'}>
         <div className={'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'}>
           <Banner
-            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 lg:px-10 py-5'}
+            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 py-5'}
             image={imgMidBanner1}
-            title={'Проверенно учеными'}
-            text={'1000 часов тестирования 50 учеными прежде чем Vuse Go появился на рынке'}
+            title={t(`about.banner1Title`)}
+            text={t(`about.banner1Text`)}
           />
           <Banner
-            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-4 bg-no-repeat bg-cover px-5 lg:px-10 py-5'}
+            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-4 bg-no-repeat bg-cover px-5 py-5'}
             image={imgMidBanner2}
-            title={'В VUSE НА 99% МЕНЬШЕ ТОКСИЧНЫХ ВЕЩЕСТВ, ЧЕМ В СИГАРЕТАХ'}
+            title={t(`about.banner2Title`)}
+            text={t(`about.banner2Text`)}
           />
         </div>
       </section>
 
       <section className={'flex justify-center px-3 lg:px-0 pb-10 lg:pb-32 mt-10'}>
-        <div className={'container mx-auto relative'}>
+        <div className={'container mx-auto bg-mid-banner-2 lg:bg-none rounded-xl relative p-3 lg:p-0'}>
           <div
-            className={'absolute h-full lg:w-1/3 flex flex-col items-start justify-between py-3 lg:py-10 ps-2 lg:ps-5'}>
+            className={'lg:absolute h-full lg:w-1/3 flex flex-col items-start justify-between py-3 lg:py-10 ps-2 lg:ps-10'}>
             <div className={'hidden lg:flex border-4 rounded-lg'}>
-              <p className={'text-white font-bold uppercase px-2 py-1 lg:px-5 lg:py-3'}>
-                take<br/>
-                back
+              <p className={'text-white font-bold uppercase px-2 py-1 text-xl lg:px-5 lg:py-3'}>
+                <Trans i18nKey="about.takeBack" components={{br: <br/>}}/>
               </p>
             </div>
             <div>
               <h3 className={'text-white font-bold text-sm lg:text-4xl'}>
-                Вместе мы можем
-                стать ответственнее
-                по отношению
-                к экологии
+                {t(`about.banner3Title`)}
               </h3>
               <p className={'text-white text-xs lg:text-base mt-2 lg:mt-5'}>
-                Каждый желающий может сдать использованные
-                устройства Vuse в одну из сервисных точек для
-                дальнейшей переработки.
+                {t(`about.banner3Text`)}
               </p>
             </div>
             <NavLink to={'/utility'}>
-              <button className={'bg-yellow-500 px-5 py-1 lg:px-16 lg:py-2 text-xs lg:text-base rounded-full'}>
-                Подробнее
+              <button
+                className={'bg-yellow-500 px-5 py-1 lg:px-16 lg:py-2 text-xs lg:text-base rounded-full mt-3 lg:mt-0'}>
+                {t(`about.more`)}
               </button>
             </NavLink>
           </div>
-          <img src={bigBanner} className={'rounded-xl'} alt="banner"/>
+          <img src={bigBanner} className={'rounded-xl hidden lg:block'} alt="banner"/>
         </div>
       </section>
     </main>

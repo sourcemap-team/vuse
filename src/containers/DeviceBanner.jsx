@@ -1,8 +1,11 @@
-import { IconDevice1500, IconTaste } from 'src/assets/icons/index.jsx'
+import { useTranslation } from 'react-i18next'
 
 import logo from 'src/assets/images/icons/logo-black.svg'
+import taste from 'src/assets/images/icons/taste-black.svg'
 
-const DeviceBanner = ({className, name, tastes, children}) => {
+const DeviceBanner = ({className, icon, name, text1, text2, tastes, children}) => {
+
+  const {t} = useTranslation()
 
   return (
     <div className={className}>
@@ -16,25 +19,19 @@ const DeviceBanner = ({className, name, tastes, children}) => {
               {name}
             </h1>
             <p className={'text-sm mt-8'}>
-              При лабораторных испытаниях подтверждено, что устройство может<br/>
-              обеспечивать 1500 затяжек продолжительностью 1 секунда с паузами в<br/>
-              29 секунд между затяжками.
+              {text1}
             </p>
           </div>
           <div className={'mt-8 lg:mt-0'}>
             <p>
-              Значимость этих проблем настолько очевидна, что выбранный<br/>
-              нами инновационный путь предполагает независимые способы<br/>
-              реализации модели развития. Таким образом, высококачественный<br/>
-              прототип будущего проекта предполагает независимые способы<br/>
-              реализации укрепления моральных ценностей.
+              {text2}
             </p>
             <div className={'flex items-center gap-10 mt-10'}>
               <div className={'flex items-center gap-3'}>
-                <IconDevice1500 color={'#1E1E1E'}/>
+                <img src={icon} alt="icon"/>
                 <div className={'pt-1'}>
                   <p>
-                    VUSE
+                    {t(`devices.brand`)}
                   </p>
                   <p className={'font-bold uppercase'}>
                     {name}
@@ -42,9 +39,9 @@ const DeviceBanner = ({className, name, tastes, children}) => {
                 </div>
               </div>
               <div className={'flex items-center gap-3'}>
-                <IconTaste color={'#1E1E1E'}/>
+                <img src={taste} alt="taste"/>
                 <p className={'font-bold'}>
-                  {tastes} {tastes > 4 ? 'вкусов' : 'вкуса'}
+                  {tastes} {tastes < 5 ? t(`devices.taste`) : t(`devices.tastes`)}
                 </p>
               </div>
             </div>

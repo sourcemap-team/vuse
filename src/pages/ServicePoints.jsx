@@ -10,13 +10,15 @@ const ServicePoints = () => {
         <Locations className={'container mx-auto'}/>
 
         <div className={'container mx-auto flex items-center justify-end uppercase text-xl font-bold mt-10'}>
-          <p className={''}>
-            Call centre
-          </p>
-          <img src={phone} className={'ms-5 me-1'} alt="phone"/>
-          <p className={''}>
-            1252
-          </p>
+          <a href="tel:1252" className={'flex items-center'}>
+            <p className={''}>
+              Call centre
+            </p>
+            <img src={phone} className={'ms-5 me-1'} alt="phone"/>
+            <p className={''}>
+              1252
+            </p>
+          </a>
         </div>
       </section>
 

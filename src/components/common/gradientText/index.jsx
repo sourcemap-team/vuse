@@ -1,36 +1,17 @@
-const colors = [
-  '#BE80EB',
-  '#F28C8C',
-  '#FFE768',
-  '#DF484F',
-  '#4BB1D0',
-  '#DBB942',
-  '#C84A3B',
-  '#4B56AF',
-]
-const GradientText = () => {
+const GradientText = ({topGradient, bottomGradient, topText, bottomText, image}) => {
   return (
-    <div className={'flex items-center justify-center bg-primary h-screen'}>
+    <div className={'flex flex-col items-center justify-center'}>
       <div
-        className={'text-4xl lg:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-[#7E3CFF] via-[#AE64E4] to-[#FF8BA0]'}>
+        className={`text-4xl lg:text-5xl uppercase font-bold text-center bg-clip-text text-transparent bg-gradient-to-b py-1 ${topGradient}`}>
         <p>
-          Его выбирают<br/>
-          за айдентику,<br/>
-          насыщенность
+          {topText}
         </p>
-        <div className={'flex items-center justify-center gap-3'}>
-          <p className={'me-3'}>вкусов</p>
-          <div className={'hidden lg:flex gap-3'}>
-            {colors.map((color, i) =>
-              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" key={i}>
-                <circle cx="22.4044" cy="22.4044" r="22.4044" fill={color}/>
-              </svg>,
-            )}
-          </div>
-        </div>
+      </div>
+        <img src={image} className={'mt-10'} alt="image"/>
+      <div
+        className={`text-4xl lg:text-5xl uppercase font-bold text-center bg-clip-text text-transparent bg-gradient-to-b py-1 ${bottomGradient}`}>
         <p>
-          и удобство<br/>
-          использования
+          {bottomText}
         </p>
       </div>
     </div>

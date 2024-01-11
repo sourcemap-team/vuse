@@ -1,0 +1,33 @@
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { Trans } from 'react-i18next'
+
+import m from './cookies.module.scss'
+
+const CookiesAlert = () => {
+
+  const [hidden, setHidden] = useState(sessionStorage.getItem('hideCookiesAlert'))
+
+  const handleHide = () => {
+    setHidden(true)
+    sessionStorage.setItem('hideCookiesAlert', 'true')
+  }
+
+  return (
+    <div className={hidden ? m.alertHidden : m.alert}>
+      <div className={'flex flex-col lg:flex-row items-center justify-between bg-primary p-5 lg:px-20 lg:py-10'}>
+        <p className={'text-white text-xs lg:text-base'}>
+          <Trans i18nKey={`cookies.alert`} components={{br: <br/>}}/>
+          <NavLink to={'cookies'}>
+            <Trans i18nKey={`cookies.alertLink`} components={{b: <b/>}}/>
+          </NavLink>
+        </p>
+
+        <button className={'bg-white px-10 py-3 rounded-full mt-5 lg:mt-0'} onClick={handleHide}>
+          <Trans i18nKey={`cookies.alertButton`}/>
+        </button>
+      </div>
+    </div>
+  )
+}
+export default CookiesAlert

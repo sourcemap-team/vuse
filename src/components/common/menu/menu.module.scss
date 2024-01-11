@@ -1,5 +1,5 @@
 .menu {
-  @apply sticky top-0 z-30;
+  @apply sticky top-0 z-40;
   .navbar {
     @apply transition-transform duration-300 ease-in-out fixed lg:sticky top-0 w-full lg:w-auto z-30 lg:transform-none;
     .nav {

@@ -63,7 +63,7 @@ const Menu = () => {
           <img src={menu} width={24} alt="menu"/>
         </button>
       </div>
-      <div className={`${m.navbar} ${showMenu ? 'mt-10' : 'transform -translate-y-full'}`}>
+      <div className={`${m.navbar} ${showMenu ? 'mt-10 lg:mt-0' : 'transform -translate-y-full'}`}>
         <div className={m.nav}>
           <div className={'hidden lg:flex'}>
             <NavLink to="/">
@@ -74,28 +74,26 @@ const Menu = () => {
           </div>
 
           <div className={m.links}>
-            <NavLink className={isActive} to="/about">{t('nav.about')}</NavLink>
-            <NavLink className={isActive} to="/taste">{t('nav.taste')}</NavLink>
-            <NavLink className={isActive} to="/utility">{t('nav.utility')}</NavLink>
-            <NavLink className={isActive} to="/service">{t('nav.service')}</NavLink>
-            <NavLink className={isActive} to="/contacts">{t('nav.contacts')}</NavLink>
+            <NavLink className={isActive} onClick={toggleMenu} to="/about">{t('nav.about')}</NavLink>
+            <NavLink className={isActive} onClick={toggleMenu} to="/taste">{t('nav.taste')}</NavLink>
+            <NavLink className={isActive} onClick={toggleMenu} to="/ru/rpi">{t('nav.utility')}</NavLink>
+            <NavLink className={isActive} onClick={toggleMenu} to="/service">{t('nav.service')}</NavLink>
+            <NavLink className={isActive} onClick={toggleMenu} to="/contacts">{t('nav.contacts')}</NavLink>
           </div>
 
           <div className={m.buttons}>
             <select defaultValue={i18n.language} onChange={onChangeLang}>
-              {
-                LANGUAGES.map(({code, label}) => (
-                  <option
-                    key={code}
-                    value={code}
-                  >{label}</option>
-                ))
-              }
+              {LANGUAGES.map(({code, label}) => (
+                <option
+                  key={code}
+                  value={code}
+                >{label}</option>
+              ))}
             </select>
-            <NavLink className={isActive} to="/about">
+            <NavLink className={isActive} onClick={toggleMenu} to="/about">
               <img src={help} alt="help"/>
             </NavLink>
-            <NavLink className={isActive} to="/about">
+            <NavLink className={isActive} onClick={toggleMenu} to="/about">
               <img src={avatar} alt="avatar"/>
             </NavLink>
           </div>
@@ -105,31 +103,31 @@ const Menu = () => {
           <div className={'hidden lg:block w-[100px]'}/>
 
           <div className={m.devices}>
-            <NavLink className={isActive} to="/device-500">
+            <NavLink className={isActive} onClick={toggleMenu} to="/device-500">
               <img src={device500} alt="device"/>
               <span>
               {t(`devices.device-5.name`)}
             </span>
             </NavLink>
-            <NavLink className={isActive} to="/device-700">
+            <NavLink className={isActive} onClick={toggleMenu} to="/device-700">
               <img src={device700} alt="device"/>
               <span className={m.new}>
               {t(`devices.device-4.name`)}
             </span>
             </NavLink>
-            <NavLink className={isActive} to="/device-1500">
+            <NavLink className={isActive} onClick={toggleMenu} to="/device-1500">
               <img src={device1500} alt="device"/>
               <span>
               {t(`devices.device-3.name`)}
             </span>
             </NavLink>
-            <NavLink className={isActive} to="/device-3000">
+            <NavLink className={isActive} onClick={toggleMenu} to="/device-3000">
               <img src={device3000} alt="device"/>
               <span className={m.new}>
               {t(`devices.device-2.name`)}
             </span>
             </NavLink>
-            <NavLink className={isActive} to="/device-5000">
+            <NavLink className={isActive} onClick={toggleMenu} to="/device-5000">
               <img src={device5000} alt="device"/>
               <span className={m.new}>
               {t(`devices.device-1.name`)}

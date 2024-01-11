@@ -3,10 +3,13 @@ import { NavLink } from 'react-router-dom'
 import robot from 'src/assets/images/icons/robot-white.svg'
 import telegram from 'src/assets/images/icons/telegram-white.svg'
 import instagram from 'src/assets/images/icons/instagram-white.svg'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const {t} = useTranslation()
+
   return (
-    <div className={'flex flex-col lg:flex-row bg-black text-white p-10 lg:gap-56'}>
+    <div className={'grid grid-cols-1 lg:grid-cols-4 bg-black text-white p-10 lg:gap-40'}>
       <div className={'flex flex-col justify-between'}>
         <div>
           <img src={logo} alt="logo"/>
@@ -14,13 +17,13 @@ const Footer = () => {
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>
-            <a href='https://t.me/vuse_uz_bot' target={'_blank'}>
+            <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
               <img src={robot} alt="social"/>
             </a>
-            <a href='https://t.me/+n_xP7bHGuf9iZGM6' target={'_blank'}>
+            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
               <img src={telegram} alt="social"/>
             </a>
-            <a href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D' target={'_blank'}>
+            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
               <img src={instagram} alt="social"/>
             </a>
           </div>
@@ -29,86 +32,82 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div>
         <div className={'mt-3'}>
-          <p className={'text-2xl'}>
-            Полезные ссылки
+          <p className={'text-xl whitespace-nowrap'}>
+            {t(`footer.block1Title`)}
           </p>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/service'}>
-            Часто задаваемые вопросы
+            {t(`footer.block1Link1`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/contacts'}>
-            Контакты
+            {t(`footer.block1Link2`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/service'}>
-            Где купить
+            {t(`footer.block1Link3`)}
           </NavLink>
         </div>
-      </div>
-
-      <div>
-        <div className={'mt-3'}>
-          <p className={'text-2xl'}>
-            Юридическая информация
-          </p>
-        </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/health'}>
-            Политика в отношении обработки<br/>персональных
-          </NavLink>
-        </div>
-        <div className={'mt-3'}>
-          <NavLink to={'/differences'}>
-            Согласие на обработку<br/>персональных данных
-          </NavLink>
-        </div>
-        <div className={'mt-3'}>
-          <NavLink to={'/'}>
-            Политика cookies
-          </NavLink>
-        </div>
-        <div className={'mt-3'}>
-          <NavLink to={'/'}>
-            Пользовательское соглашение
+            {t(`footer.block1Link4`)}
           </NavLink>
         </div>
       </div>
 
       <div>
         <div className={'mt-3'}>
-          <p className={'text-2xl'}>
-            Наши устройства
+          <p className={'text-xl whitespace-nowrap'}>
+            {t(`footer.block2Title`)}
           </p>
         </div>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
+          <NavLink to={'/cookies'}>
+            {t(`footer.block2Link1`)}
+          </NavLink>
+        </div>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
+          <NavLink to={'/privacy'}>
+            {t(`footer.block2Link2`)}
+          </NavLink>
+        </div>
+      </div>
+
+      <div>
         <div className={'mt-3'}>
+          <p className={'text-xl whitespace-nowrap'}>
+            {t(`footer.block3Title`)}
+          </p>
+        </div>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-500'}>
-            Vuse Go 500
+            {t(`footer.block3Link1`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-700'}>
-            Vuse Go 700
+            {t(`footer.block3Link2`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-1500'}>
-            Vuse Go Max 1500
+            {t(`footer.block3Link3`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-3000'}>
-            Vuse 3000
+            {t(`footer.block3Link4`)}
           </NavLink>
         </div>
-        <div className={'mt-3'}>
+        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-5000'}>
-            Vuse 5000
+            {t(`footer.block3Link5`)}
           </NavLink>
         </div>
       </div>

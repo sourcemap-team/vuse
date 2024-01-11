@@ -22,8 +22,7 @@ const DeviceCard = ({image, bg, taste}) => {
           <Trans i18nKey={`tastes.${taste}.title`} components={{br: <br/>}}/>
         </h3>
         <p className={m.text}>
-          Cладкий аромат красных ягод<br/>
-          c освежающим арбузным вкусом.
+          <Trans i18nKey={`tastes.${taste}.text`} components={{br: <br/>}}/>
         </p>
         <div className={m.specs}>
           <div>

@@ -3,11 +3,14 @@ import FAQ from 'src/containers/FAQ.jsx'
 import phone from 'src/assets/images/icons/phone-circle.svg'
 import telegram from 'src/assets/images/icons/telegram-circle.svg'
 import help from 'src/assets/images/icons/help-circle.svg'
+import { useTranslation } from 'react-i18next'
 
 const Contacts = () => {
+  const {t} = useTranslation()
+
   return (
     <main className={'flex flex-col items-center'}>
-      <section className={'container mx-auto mt-4 px-3 lg:px-0'}>
+      <section className={'hidden container mx-auto mt-4 px-3 lg:px-0'}>
         <h2
           className={'text-xl lg:text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
           ОТПРАВЬТЕ НАМ<br/>
@@ -58,24 +61,24 @@ const Contacts = () => {
       </section>
 
       <section className={'container mx-auto grid grid-cols-3 gap-5 lg:gap-10 mt-20 px-3 lg:px-0'}>
-        <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
+        <a href={'tel:1252'} className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={phone} alt="phone"/>
           <p className={'mt-5'}>
-            Call Centre (1252)
+            {t(`contacts.callCentre`)} ({t(`contacts.phone`)})
           </p>
-        </button>
+        </a>
 
-        <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
+        <a href={'https://t.me/+n_xP7bHGuf9iZGM6'} target={'_blank'} className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={telegram} alt="telegram"/>
           <p className={'mt-5'}>
-            Телеграм
+            {t(`contacts.telegram`)}
           </p>
-        </button>
+        </a>
 
         <button className={'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'}>
           <img src={help} alt="help"/>
           <p className={'mt-5'}>
-            Вопросы и ответы
+            {t(`contacts.faq`)}
           </p>
         </button>
       </section>

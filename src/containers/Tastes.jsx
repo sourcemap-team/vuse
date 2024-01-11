@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { Trans } from 'react-i18next'
-import { t } from 'i18next'
+import { Trans, useTranslation } from 'react-i18next'
 
-import Taste from 'src/components/modules/taste/index.jsx'
+import Taste from 'src/components/modules/taste'
 import taste1 from 'src/assets/images/tastes/taste-1.png'
 import taste2 from 'src/assets/images/tastes/taste-2.png'
 import taste3 from 'src/assets/images/tastes/taste-3.png'
@@ -15,6 +14,7 @@ import taste9 from 'src/assets/images/tastes/taste-9.png'
 import taste10 from 'src/assets/images/tastes/taste-10.png'
 import taste11 from 'src/assets/images/tastes/taste-11.png'
 import taste12 from 'src/assets/images/tastes/taste-12.png'
+import GradientHeader from '../components/common/gradientHeader'
 
 const allImages = [
   taste1,
@@ -36,6 +36,7 @@ const allPuffs = [500, 700, 1500, 3000, 5000]
 const Tastes = ({className, filterEnabled}) => {
 
   const [filter, setFilter] = useState(null)
+  const {t} = useTranslation()
 
   const handleFilter = (val) => {
     setFilter(val)
@@ -43,30 +44,29 @@ const Tastes = ({className, filterEnabled}) => {
 
   return (
     <div className={className}>
-      <h2
-        className={'text-xl lg:text-6xl uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'}>
+      <GradientHeader className={'text-xl lg:text-6xl py-2'}>
         <Trans i18nKey="tastes.title" components={{br: <br/>}}/>
-      </h2>
+      </GradientHeader>
 
       {filterEnabled &&
         <div className={'flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg py-4 mt-10'}>
           <div className={'px-6'}>
             <p className={'uppercase text-center lg:text-start'}>
-              выбери<br/>количество<br/>затяжек
+              <Trans i18nKey="tastes.filter" components={{br: <br/>}}/>
             </p>
           </div>
           <div className={'grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 px-6 mt-3 lg:mt-0'}>
             {allPuffs.map(puff =>
               <button
-                className={`${filter === puff ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-2`}
+                className={`${filter === puff ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-3`}
                 onClick={() => handleFilter(puff)} key={puff}>
                 {puff}
               </button>,
             )}
             <button
-              className={`${!filter ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-2`}
+              className={`${!filter ? 'bg-primary text-white' : 'bg-white'} whitespace-nowrap transition-colors duration-200 ease-in-out rounded-full w-full px-3 lg:px-4 py-3`}
               onClick={() => handleFilter(null)}>
-              Все устройства
+              {t(`tastes.allDevices`)}
             </button>
           </div>
         </div>

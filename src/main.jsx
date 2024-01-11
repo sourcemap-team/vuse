@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Suspense fallback="loading">
-      <BrowserRouter basename={'/vuse/'}>
+      <BrowserRouter basename={'/'}>
         <App/>
       </BrowserRouter>
     </Suspense>
