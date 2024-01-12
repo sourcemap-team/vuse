@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { cities, locationsData } from 'src/constants/locationsData.js'
+import { locationsData } from 'src/constants/locationsData.js'
 
 import logo from 'src/assets/images/icons/logo-black.svg'
 import locationType1 from 'src/assets/images/icons/location-type-1.svg'
@@ -11,11 +11,12 @@ import { useSearchParams } from 'react-router-dom'
 
 const Locations = ({className}) => {
 
-  const [searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams()
   const [myMap, setMyMap] = useState(null)
   const [myObjectManager, setObjectManager] = useState(null)
-  const [selectedFilter, setSelectedFilter] = useState( +searchParams.get('locationType') || 1)
+  const [selectedFilter, setSelectedFilter] = useState(+searchParams.get('locationType') || 1)
   const {t} = useTranslation()
+  const cities = t(`locations.cities`, {returnObjects: true})
 
   const init = () => {
     document.getElementById('map').innerHTML = ''
@@ -108,7 +109,10 @@ const Locations = ({className}) => {
             <div className={'w-full bg-gray-100 rounded-full px-5 mt-10'}>
               <select className={'custom-select text-gray-500 bg-gray-100 w-full py-3 rounded-full focus:outline-0'}
                       onChange={(e) => handleCity(e.target.value)}>
-                {Object.keys(cities).map(city => <option key={city} value={city}>{cities[city].title}</option>)}
+                {Object.keys(cities)
+                  .map(city =>
+                    <option key={city} value={city}>{cities[city].title}</option>,
+                  )}
               </select>
             </div>
           </div>

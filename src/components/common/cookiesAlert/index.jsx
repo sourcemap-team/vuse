@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Trans } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 
 import m from './cookies.module.scss'
 
 const CookiesAlert = () => {
 
+  const {t} = useTranslation()
   const [hidden, setHidden] = useState(sessionStorage.getItem('hideCookiesAlert'))
 
   const handleHide = () => {
@@ -24,7 +25,7 @@ const CookiesAlert = () => {
         </p>
 
         <button className={'bg-white px-10 py-3 rounded-full mt-5 lg:mt-0'} onClick={handleHide}>
-          <Trans i18nKey={`cookies.alertButton`}/>
+          {t(`cookies.alertButton`)}
         </button>
       </div>
     </div>

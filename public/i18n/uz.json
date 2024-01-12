@@ -352,7 +352,97 @@
     "text2": "Qayta ishlash",
     "text3": "Yang narx",
     "text4": "We Use partner",
-    "text5": "Sotib olish"
+    "text5": "Sotib olish",
+    "cities": {
+      "tashkent": {
+        "title": "Toshkent",
+        "zoom": 12,
+        "coordinates": [
+          41.311151,
+          69.279737
+        ]
+      },
+      "tashkentReg": {
+        "title": "Ташкентская область",
+        "zoom": 9,
+        "coordinates": [
+          41.311151,
+          69.279737
+        ]
+      },
+      "samarkandReg": {
+        "title": "Самаркандская область",
+        "zoom": 9,
+        "coordinates": [
+          40.000871,
+          66.344294
+        ]
+      },
+      "andijanReg": {
+        "title": "Андижанская область",
+        "zoom": 10,
+        "coordinates": [
+          40.728245,
+          72.322668
+        ]
+      },
+      "jizzaxReg": {
+        "title": "Джизакская область",
+        "zoom": 9,
+        "coordinates": [
+          40.368759,
+          67.838650
+        ]
+      },
+      "ferganaReg": {
+        "title": "Ферганская область",
+        "zoom": 10,
+        "coordinates": [
+          40.322333,
+          71.273471
+        ]
+      },
+      "namanganReg": {
+        "title": "Наманганская область",
+        "zoom": 10,
+        "coordinates": [
+          41.097463,
+          71.298965
+        ]
+      },
+      "buxaraReg": {
+        "title": "Бухарская область",
+        "zoom": 9,
+        "coordinates": [
+          40.225521,
+          63.709984
+        ]
+      },
+      "sirdaryaReg": {
+        "title": "Сырдарьинская область",
+        "zoom": 10,
+        "coordinates": [
+          40.597170,
+          68.650314
+        ]
+      },
+      "navoiyReg": {
+        "title": "Навоийская область",
+        "zoom": 8,
+        "coordinates": [
+          41.658195,
+          64.203411
+        ]
+      },
+      "karakalpakstan": {
+        "title": "Республика Каракалпакстан",
+        "zoom": 8,
+        "coordinates": [
+          43.328493,
+          59.233167
+        ]
+      }
+    }
   },
   "social": {
     "title": "Biz ijtimoiy tarmoqlarda",
