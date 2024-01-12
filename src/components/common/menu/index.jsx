@@ -23,18 +23,23 @@ const Menu = () => {
 
   const [showMenu, setShowMenu] = useState(false)
   const {i18n, t} = useTranslation()
-
+  const [selectedLang, setSelectedLang] = useState(i18n.language)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
 
   const onChangeLang = (e) => {
-    const lang_code = e.target.value
-    i18n.changeLanguage(lang_code)
+    localStorage.setItem('language', e.target.value)
+    i18n.changeLanguage(e.target.value)
+    setSelectedLang(e.target.value)
   }
 
   const toggleMenu = () => {
     setShowMenu(!showMenu)
   }
+
+  useEffect(() => {
+    setSelectedLang(i18n.language)
+  }, [i18n.language])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +87,7 @@ const Menu = () => {
           </div>
 
           <div className={m.buttons}>
-            <select defaultValue={i18n.language} onChange={onChangeLang}>
+            <select value={selectedLang} onChange={onChangeLang}>
               {LANGUAGES.map(({code, label}) => (
                 <option
                   key={code}

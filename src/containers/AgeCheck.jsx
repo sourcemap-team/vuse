@@ -44,6 +44,11 @@ const MaskedInput = ({handleAgeCheck}) => {
     handleAgeCheck()
   }
 
+  const onChangeLang = (code) => {
+    localStorage.setItem("language", code)
+    i18n.changeLanguage(code)
+  }
+
   return (
     <div className={'fixed flex justify-center items-center z-50 h-screen w-full overflow-hidden bg-primary'}>
       <div className={'lg:w-2/3 bg-white rounded-xl p-3 lg:p-20'}>
@@ -80,7 +85,7 @@ const MaskedInput = ({handleAgeCheck}) => {
             <button
               key={code}
               className={`${i18n.language === code ? 'text-primary' : 'text-gray-500'} font-bold`}
-              onClick={() => i18n.changeLanguage(code)}
+              onClick={() => onChangeLang(code)}
             >
               {label}
             </button>

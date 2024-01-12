@@ -21,10 +21,14 @@ import Privacy from 'src/pages/Privacy.jsx'
 import Cookies from 'src/pages/Cookies.jsx'
 import CookiesAlert from 'src/components/common/cookiesAlert/index.jsx'
 import LocationButton from './components/common/locationButton/index.jsx'
+import i18n from 'i18next'
 
 const App = () => {
   const [ageChecked, setAgeChecked] = useState(sessionStorage.getItem('ageChecked'))
   const {pathname} = useLocation()
+
+  if (localStorage.getItem('language'))
+    i18n.changeLanguage(localStorage.getItem('language'))
 
   useEffect(() => {
     window.scrollTo(0, 0)
