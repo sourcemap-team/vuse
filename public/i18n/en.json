@@ -1,0 +1,367 @@
+{
+  "restriction": {
+    "age": "THE PRODUCT CONTAINS NICOTINE AND IS ADDICTIVE. FOR USE BY PERSONS OVER 21 ONLY.",
+    "title": "Are you 21 years old?",
+    "text": "You are on the official website of electronic cigarettes. The information on the site is intended solely for consumers of tobacco or other nicotine-containing products who have reached the age of twenty, in order to inform about the characteristics and properties of products, about the range of products sold by JSC JV \"UZBAT A.O.\", the rules for using such products.",
+    "label": "Enter your date of birth",
+    "placeholder": "DD/MM/YY",
+    "enter": "Access"
+  },
+  "nav": {
+    "about": "ABOUT VUSE",
+    "taste": "FLAVORS",
+    "utility": "RECYCLING PROGRAM",
+    "service": "WHERE TO BUY",
+    "contacts": "CONTACTS"
+  },
+  "home": {
+    "more": "Learn more",
+    "banner1Title": "#1 vape brand in the world",
+    "banner1Text": "*Based on the assessment of Vuse's sales share from RRP in measurable retail in the Vapor category (i.e., the total value of the Vapor category in retail sales) in key Vapor markets: USA, Canada, France, UK, Germany - as of May 2023.",
+    "banner2Title": "Together we can be more responsible towards the environment",
+    "banner2Text": "Anyone can return used Vuse devices to one of the service points for further recycling."
+  },
+  "footer": {
+    "block1Title": "Useful Links",
+    "block1Link1": "Frequently Asked Questions",
+    "block1Link2": "Contacts",
+    "block1Link3": "Where to Buy",
+    "block1Link4": "About Vuse in Scientific Terms",
+    "block2Title": "Legal Information",
+    "block2Link1": "Cookie Policy",
+    "block2Link2": "Consent for Collection and Processing of Personal Data",
+    "block3Title": "Our Devices",
+    "block3Link1": "Vuse Go 500",
+    "block3Link2": "Vuse Go 700",
+    "block3Link3": "Vuse Go Max 1500",
+    "block3Link4": "Vuse 3000",
+    "block3Link5": "Vuse 5000"
+  },
+  "health": {
+    "title1": "IN THE LANGUAGE OF SCIENCE",
+    "text1": "PUBLIC HEALTH ENGLAND:",
+    "text2": "'Vaping products pose only a fraction of the risks associated with smoking, and switching from smoking to vaping can bring significant health benefits compared to continuing to smoke. Based on current knowledge, <b>it can be concluded that vaping is at least 95% less harmful than smoking.'»</b>",
+    "text3": "INTERNATIONAL AGENCY FOR RESEARCH ON CANCER, WHO:",
+    "text4": "'It is expected that the use of electronic cigarettes <b>cigarettes is associated with a lower risk of diseases and death than smoking tobacco. </b> Electronic cigarettes have the potential to reduce the enormous risks of diseases and death associated with smoking tobacco if the majority of smokers switch to electronic cigarettes.'",
+    "text5": "PUBLIC HEALTH ENGLAND (NOW HEALTH IMPROVEMENT SERVICE). REVIEW OF SCIENTIFIC DATA ON CIGARETTES AND HEATED TOBACCO SYSTEMS, 2018: EXECUTIVE SUMMARY.",
+    "text6": "WHO. ARE ELECTRONIC CIGARETTES LESS HARMFUL THAN TRADITIONAL CIGARETTES? JANUARY 29, 2020.",
+    "title2": "VUSE: DIFFERENCES FROM CIGARETTES",
+    "text7": "Cigarette vs Vuse",
+    "text8": "Process<br/>Combustion",
+    "text9": "Smoke and Smell",
+    "text10": "High Content<br/>Toxins and Tar",
+    "text11": "Ash",
+    "text12": "Vuse does not contain tobacco, combustible or heatable*",
+    "text13": "No Smoke",
+    "text14": "Tar-Free**",
+    "text15": "Ash-Free",
+    "text16": "VUSE STUDY",
+    "text17": "Participants who exclusively used Vuse<br/>demonstrated<br/> significantly better results<br/> in terms of biomarkers related to diseases,<br/> caused by smoking compared to traditional smokers.",
+    "text18": "Conducted in<br/> the United Kingdom",
+    "text19": "213 Participants<br/>in the study",
+    "text20": "This product is not risk-free and contains nicotine, which is addictive.<br/>*By 'tar-free' we mean absence of tar generated from smoking tobacco. This product is not risk-free<br/>and contains nicotine, which is addictive.",
+    "text21": "Haswell, I.E., Gale, n., Brown, e. Et al. Biomarkers of exposure and potential harm in exclusive users of electronic cigarettes and current, former, and<br/>never smokers. Intern emerg med (2023). Hitps://doi.Org/10.1007/s11739-023-03294-9"
+  },
+  "about": {
+    "title": "ABOUT VUSE",
+    "text1": "Launched in 2013, Vuse is now one of the leading global brands in the nicotine consumption device market.",
+    "text2": "Vuse products undergo 1000 hours of testing by 50 scientists before reaching the consumer. Only when we are fully confident that the product meets quality standards, is it allowed on the market.",
+    "text3": "Vuse brand strives to provide a product that meets consumer needs. The Vuse GO and Vuse GO Max nicotine consumption device range includes various flavors, featuring fruit and berry tones.",
+    "years": "10 years",
+    "text4": "Vuse brand appeared in the USA in 2013. For many years now, it has been offering a high-quality product worldwide.",
+    "text5": "Vuse does not rest on its laurels, continuing to seek new opportunities to make its product even better.",
+    "text6": "*Based on the assessment of Vuse's sales share from RRP in measurable retail in the Vapor category (i.e., the total value of the Vapor category in retail sales) in key Vapor markets: USA, Canada, France, UK, Germany - as of May 2023.",
+    "banner1Title": "Scientifically Verified",
+    "banner1Text": "1000 hours of testing by 50 scientists before Vuse Go appeared on the market",
+    "banner2Title": "99% less toxic substances than smoking* and we are working on this 1%",
+    "banner2Text": "*This product is not risk-free and contains nicotine, an addictive substance. Comparison of smoke from a standard scientific cigarette (about 9 mg of tar) and emissions from Vuse Go and Vuse Go Max based on the average of 9 harmful components, which the World Health Organization recommends reducing in cigarette smoke.",
+    "takeBack": "take<br/>back",
+    "banner3Title": "Together we can be more responsible towards the environment",
+    "banner3Text": "Anyone can return used Vuse devices to one of the service points for further recycling.",
+    "more": "Learn more"
+  },
+  "devices": {
+    "title": "Our devices",
+    "taste": "flavors",
+    "tastes": "flavors",
+    "tastesTitle": "flavors",
+    "brand": "VUSE",
+    "liquid": "Liquid<br/>indicator",
+    "recharge": "Can be<br/>charged",
+    "air": "Airflow<br/>controller",
+    "device-1": {
+      "name": "5000",
+      "value": "5000",
+      "isNew": true,
+      "description": "New platform",
+      "text1": "Up to 5000 puffs*",
+      "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
+      "topText": "NOW IN<br/>BIGGER FORMAT",
+      "bottomText": "FLOW CONTROL<br/>IS VISIBLE NOW"
+    },
+    "device-2": {
+      "name": "3000",
+      "value": "3000",
+      "isNew": true,
+      "description": "New platform",
+      "text1": "Up to 3000 puffs*",
+      "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
+      "topText": "NOW IN<br/>BIGGER FORMAT",
+      "bottomText": "FLOW CONTROL<br/>IS VISIBLE NOW"
+    },
+    "device-3": {
+      "name": "go max",
+      "value": "1500",
+      "description": "More flavors",
+      "text1": "Up to 1500 puffs*",
+      "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
+      "topText": "more vivid flavors",
+      "bottomText": ""
+    },
+    "device-4": {
+      "name": "Go 700",
+      "value": "700",
+      "description": "Convenient format, stylish design",
+      "text1": "Up to 700 puffs*",
+      "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
+      "topText": "New progressive<br/>device",
+      "bottomText": ""
+    },
+    "device-5": {
+      "name": "go",
+      "value": "500",
+      "description": "Convenient format",
+      "text1": "Up to 500 puffs*",
+      "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
+      "topText": "more vivid flavors",
+      "bottomText": ""
+    }
+  },
+  "tastes": {
+    "title": "ORIGAMI OF FLAVORS",
+    "filter": "NUMBER OF<br/>PUFFS",
+    "sweet": "Sweetness",
+    "cold": "Chill",
+    "allDevices": "All Devices",
+    "taste-1": {
+      "title": "berry<br/>watermelon",
+      "text": "SWEET RED BERRY AROMA<br/>WITH A REFRESHING<br/>WATERMELON TASTE",
+      "puffs": [
+        500,
+        1500
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "taste-2": {
+      "title": "blueberry<br/>ice",
+      "text": "BLUEBERRY<br/>ICE",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 3,
+      "cold": 3
+    },
+    "taste-3": {
+      "title": "blueberry<br/>raspberry",
+      "text": "RASPBERRY TASTE",
+      "puffs": [
+        1500
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "taste-4": {
+      "title": "berry<br/>blend",
+      "text": "STRAWBERRY, RASPBERRY,<br/>BLACKBERRY, AND BLUEBERRY",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 0
+    },
+    "taste-5": {
+      "title": "Creamy<br/>tobacco",
+      "text": "CREAMY TOBACCO",
+      "puffs": [
+        700
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "taste-6": {
+      "title": "Spearmint<br/>ice",
+      "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
+      "puffs": [
+        700,
+        1500
+      ],
+      "sweet": 2,
+      "cold": 3
+    },
+    "taste-7": {
+      "title": "passionfruit<br/>ice",
+      "text": "PASSIONFRUIT WITH ICY<br/>COOLNESS",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 4,
+      "cold": 3
+    },
+    "taste-8": {
+      "title": "Mango<br/>ice",
+      "text": "RIPE MANGO WITH ICY<br/>COOLNESS",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 5,
+      "cold": 3
+    },
+    "taste-9": {
+      "title": "Grape<br/>ice",
+      "text": "GRAPE WITH ICY<br/>COOLNESS",
+      "puffs": [
+        1500
+      ],
+      "sweet": 4,
+      "cold": 3
+    },
+    "taste-10": {
+      "title": "Apple<br/>sour",
+      "text": "GREEN APPLE<br/>WITH A TART TASTE",
+      "puffs": [
+        1500,
+        3000
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "taste-11": {
+      "title": "strawberry<br/>ice",
+      "text": "SWEET AND RIPE<br/>STRAWBERRY WITH AN ICY<br/>COOL NOTE",
+      "puffs": [
+        500,
+        1500,
+        3000,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 3
+    },
+    "taste-12": {
+      "title": "strawberry<br/>kiwi",
+      "text": "RIPE STRAWBERRY,<br/>BALANCED WITH<br/>THE TARTNESS OF KIWI",
+      "puffs": [
+        1500,
+        5000
+      ],
+      "sweet": 4,
+      "cold": 0
+    }
+  },
+  "utility": {
+    "title": "TOGETHER WE CAN BE MORE RESPONSIBLE TOWARDS THE ENVIRONMENT",
+    "text1": "In our social networks, we tell in more detail how you can contribute to preserving the environment and become more responsible",
+    "text2": "The ongoing carbon offsetting through reforestation projects in South America**",
+    "text3": "At Vuse, we believe that each of us plays a crucial role in protecting the environment. That's why we endorse an eco-friendly approach by sending used Vuse devices for recycling, thus contributing to nature preservation.",
+    "text4": "Together we can be more responsible towards the environmen",
+    "text5": "Anyone can return used Vuse devices to one of the service points for further recycling.",
+    "text6": "*Based on the internal forecast of Vuse Go, Vuse Go Max, VuseePod, ePen, eTank mini, devices and consumables Alto sales (calculated for March 2022) for 12 months starting from April 2022.",
+    "text7": "**Vuse neutrality was achieved by reducing carbon emissions, and the remaining carbon was offset by reforestation projects, including a project in Uruguay to plant trees on a 21,298 ha area, where intensive grazing led to soil erosion and land degradation. In addition to removing carbon dioxide and improving soil quality and biodiversity, the project will also lead to increased availability and quality of jobs.",
+    "callCentre": "Call centre",
+    "phone": "1252"
+  },
+  "contacts": {
+    "callCentre": "Call centre",
+    "phone": "1252",
+    "telegram": "Telegram",
+    "faq": "Questions and Answers"
+  },
+  "faq": {
+    "title": "FREQUENTLY ASKED <br/>QUESTIONS",
+    "question1": "What is Vuse?",
+    "answer1": "Vuse is a disposable nicotine consumption device. As demonstrated by product laboratory testing, each disposable Vuse vape provides up to 500/700/1500/3000/5000 puffs until the battery is discharged. However, this figure can vary depending on individual usage characteristics. Vuse does not support refilling, as this can lead to leakage and damage to your device.",
+    "question2": "How to use Vuse?",
+    "answer2": "The design of Vuse implies ease and slimness for convenient use. Vuse is a disposable nicotine consumption device that does not require recharging (in the case of 500/700/1500) or refilling. Simply open the package and use Vuse. There are no buttons on the device - Vuse is activated by a puff. Then the device automatically activates and the LED indicator lights up.",
+    "question3": "Vuse Storage Precautions",
+    "answer3": "- Store your Vuse at a temperature of 0-35°C.<br/>- Do not crush, pierce, burn, or immerse the device in water; keep it in a dry place.<br/>- Never leave the device under direct sunlight or near heat sources.<br/>- Do not use near flammable liquids or gases.",
+    "question4": "How to clean a disposable Vuse vape?",
+    "answer4": "Use a dry cloth. You can also use antibacterial wipes to clean the mouthpiece. Let it dry before using.",
+    "question5": "Why does the device blink blue?",
+    "answer5": "The blue flashing indicator at the bottom of the device means that the battery is discharged, so the device should be disposed of. Please visit the Recycling Program page for more information on disposal.",
+    "question6": "Who can use the Vuse device?",
+    "answer6": "The disposable Vuse vape is intended for consumers of nicotine-containing products who are 21 years of age and older. Not for use by: people under 21; people with an allergy/sensitivity to nicotine; pregnant or breastfeeding women; people who should avoid tobacco or nicotine-containing products for medical reasons; people with cardiovascular diseases.",
+    "question7": "Do I need to charge the Vuse device?",
+    "answer7": "No, Vuse is a disposable device and is not rechargeable. As demonstrated by laboratory testing of the product, each disposable Vuse Go/Vuse Go Max provides up to 500/1500 puffs before the battery is discharged. However, this number may vary depending on individual usage characteristics.",
+    "question8": "Can I return used products for recycling?",
+    "answer8": "We strive to minimize our environmental impact and comply with the recycling rules for all our products. If you are a consumer of our brand, you can return the used disposable vape to us. Please visit the \"Recycling Program\" page for more information on the website.",
+    "question9": "What are the technical specifications of Vuse Go/Vuse Go Max?",
+    "answer9": "Vuse Go contains 2ml of liquid and has a 370mAh battery. Vuse Go Max contains 4.8ml of liquid and has an 800mAh battery."
+  },
+  "privacy": {
+    "title": "AGREEMENT ON THE COLLECTION AND PROCESSING OF PERSONAL DATA",
+    "text": "I, in accordance with the Law of the Republic of Uzbekistan 'On Personal Data' No. ZRU-547 dated July 02, 2019 (hereinafter referred to as the 'Personal Data Law'), give my consent for the collection, processing, and/or assignment of the collection and processing of my personal data: last name, first name, patronymic; year of birth; phone number, to the owner of the personal data database AO SP 'UZBAT A.O.' (100084, Uzbekistan, Tashkent city, Yunusabad district, Minor passage, house 77) (hereinafter referred to as the 'Company'), as well as the operator of the personal data database Individual entrepreneur 'Rashidov Akmal Viktorovich' (Tashkent city, Chilanzar district, 17, Ulitsa Botirma, 33, 55) (hereinafter referred to as the 'Third Party'), for the purpose of using the vuse.uz website, obtaining information about disposable nicotine consumption devices Vuse, posted in accordance with Article 2 of the Law of the Republic of Uzbekistan 'On Advertising' No. ZRU-776 dated June 07, 2022, for the formation of an information database of Company's consumers, interaction with the support service, participation in conducted research, surveys, programs related to disposable nicotine consumption devices, including through phone calls, messenger messages, etc., from third parties (with whom the Company has contracts for the provision of relevant services), leaving feedback, complaints, receiving user rewards (if applicable), sending information about events organized by the Company and participation in them, not prohibited by current legislation. I consent to the provision of my personal data provided by me to third parties to whom the Company assigns the collection and processing of personal data and with whom the Company has concluded contracts for the provision of relevant services within the purposes specified above.<br/>The actions with my personal data performed by the Company and third parties include: collection, recording, systematization, storage, modification, addition, use, provision, transfer to third parties, including cross-border transfer, access by personnel, depersonalization, and destruction. <br/>Mixed processing of my personal data by any means - both without the use of automation tools and automated processing with the transfer of received information using the information and telecommunication network Internet.<br/>This consent is valid for 10 (ten) years unless revoked by me (the subject of personal data) earlier than this period.<br/>I am aware and agree that the withdrawal of consent to the processing of personal data may be made by me at any time and is submitted in the form of a written statement signed by me personally and sent to the address of the Company's location."
+  },
+  "cookies": {
+    "title1": "COOKIE POLICY",
+    "title2": "WHAT IS COOKIE?",
+    "text1": "The website https://vuse.uz/ru uses its own technical and marketing cookies, as well as partner cookies (third-party service providers) to offer users certain features for viewing and using the site's pages. Some of these cookies allow us to check the quality of the website's operation and improve its performance characteristics, making it more user-friendly, accumulate statistics on site visits, and take measures to improve it, providing advertising content to users based on their interests.<br/>Most internet browsers are set to accept cookies automatically. However, users can independently change their browser settings - disable or limit the use of cookies, and receive notifications of their use. If different devices (tablet, smartphone, computer, etc.) are used, it is necessary to ensure that each device's browser is configured according to your decision regarding the use of cookies. For this, refer to the browser's instructions to make the necessary settings.<br/>Attention! By continuing to browse the pages of our site https://vuse.uz/ru, you accept the terms of our Cookie Policy, and you agree to the transfer of data collected about you through cookies to third parties and receiving marketing materials posted on the site.<br/>If you do not accept the terms of our Cookie Policy, you may change your browser settings or stop browsing the site's pages.<br/>However, blocking all cookies (including essential ones) may restrict access to our site or its specific functions or sections.<br/>To learn how to change cookie settings, you can follow the links provided below:",
+    "link1text": "Google Chrome",
+    "link1": "https://support.google.com/chrome/answer/95647",
+    "link2text": "InternetExplorer",
+    "link2": "https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d",
+    "link3text": "Opera",
+    "link3": "https://help.opera.com/Windows/11.50/en/cookies.html",
+    "link4text": "Firefox",
+    "link4": "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US",
+    "link5text": "Safari",
+    "link5": "https://support.apple.com/en-gb/HT201265",
+    "title3": "WHAT IS COOKIE?",
+    "text2": "For more detailed information about the individual types of cookies used by us for specific purposes, please see below.<br/>For more detailed information about the individual types of cookies used by us for specific purposes, please see below.",
+    "text3": "Session cookies",
+    "text4": "Stored in your browser only during your browser session, i.e., until you leave the site.",
+    "text5": "Persistent Cookies",
+    "text6": "Stored in your browser even after the session has ended (unless you delete them).",
+    "text7": "Functional Cookies",
+    "text8": "Allow the website to remember all your choices associated with it (e.g., changing text size, pages with custom settings). They also enable the website to \"recognize\" you on each visit and personalize your viewing experience.",
+    "text9": "Information Gathering Cookies",
+    "text10": "Collect and accumulate information about your use of the website, in particular, which web pages you have visited, the presence of error messages. These files do not collect personally identifiable information. The collected information is accumulated in a way that ensures anonymity. \"Information gatherers\" are used to improve the functionality of the website.",
+    "text11": "Cookies for Analytics/Usage Assessment/Site Testing",
+    "text12": "Allow identifying and counting the number of visitors and tracking their movement on our site. This information helps us optimize our website, for example, by helping users find information more quickly, identifying the most popular sections. By testing different versions of features and parameters of our site, we make it more user-friendly.",
+    "title4": "OUR PARTNERS' COOKIES",
+    "text13": "To learn how our partners use cookies, please refer to their privacy policies (links below). We also provide links to opt-out of their services (if you think you don't need them).<br/>We use services like Yandex.Metrica, Google.Analytics, which allow us to analyze visitor activity on the site and improve its functionality. These services collect data on an anonymous basis and do not gather information about the personal identity of the site visitor, not identifying them as an individual (do not establish identity).<br/>The information obtained can be used by us, as the site owner, along with third-party organizations - our partners to improve the functioning of the site and its sections.<br/>Yandex<br/>These technologies allow us to evaluate the effectiveness of the advertising we place using Yandex. Yandex Privacy Policy<br/>Yandex.Metrica<br/>Terms of use for the Yandex.Metrica API service<br/>Google<br/>These cookies allow us to evaluate the effectiveness of the advertising we place using Google. How Google uses cookies in advertising<br/>Google Privacy Policy<br/>Google Analytics<br/>With its help, we can assess the use of our site and services, and also obtain statistical data about visits to our site. You can block Google Analytics here: https://tools.google.com/dlpage/gaoptout?hl=en-GB<br/>Providers, partner sites, and online services may also set other cookies for analytical, statistical, marketing purposes, or to ensure the functionality of embedded third-party content.",
+    "title5": "CHANGES",
+    "text14": "We may change our Cookie Policy at any time by posting it on our Website. Any changes become effective within 7 days from the time the updated document appears on the Website. If you continue to use the website after the changes are made, this automatically confirms your agreement with the new terms.",
+    "title6": "HOW TO CONTACT US",
+    "text15": "Phone: 1252",
+    "alert": "This website uses cookies. For more information,<br/>please read the ",
+    "alertLink": "<b>cookie policy<b/>",
+    "alertButton": "Continue"
+  },
+  "locations": {
+    "onMap": "VUSE ON THE MAP",
+    "text1": "Brand stores",
+    "text2": "Recycling",
+    "text3": "New price",
+    "text4": "We Use partner",
+    "text5": "Where to buy"
+  },
+  "social": {
+    "title": "WE'RE ON SOCIAL MEDIA",
+    "text": "STAY TUNED:",
+    "post1": "Get to know the second character in the \"Inspired by Tomorrow\" story - DJ Trace.",
+    "post2": "We introduce you to incredible individuals whose talents and efforts are shaping the future story!",
+    "post3": "Immerse yourself in the atmosphere of bright patterns and colors with the artist Alim Maratovich.",
+    "link1": "https://www.instagram.com/p/Cu9uZ2eozDv/",
+    "link2": "https://www.instagram.com/p/CuuJKuspsA-/",
+    "link3": "https://www.instagram.com/p/Cu4W3_gsoL2/"
+  }
+}
