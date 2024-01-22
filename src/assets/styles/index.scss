@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "fonts";
+
+.line-height-1 {
+  line-height: 1rem;
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.bg-mid-banner-1 {
+  background-image: url("src/assets/images/bg-mid-banner-1.png");
+}
+
+.bg-mid-banner-2 {
+  background-image: url("src/assets/images/bg-mid-banner-2.png");
+}
+
+.bg-mid-banner-3 {
+  background-image: url("src/assets/images/bg-mid-banner-3.png");
+}
+
+.bg-mid-banner-4 {
+  background-image: url("src/assets/images/bg-mid-banner-4.png");
+}
+
+.custom-select {
+  -webkit-appearance: initial;
+  background-image: url('src/assets/images/icons/select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}

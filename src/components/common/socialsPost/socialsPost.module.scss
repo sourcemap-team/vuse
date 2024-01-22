@@ -1,0 +1,34 @@
+.post {
+  @apply relative;
+
+  .shadow {
+    @apply transition-shadow duration-500 ease-in-out absolute h-full w-full;
+  }
+
+  .more {
+    @apply h-full flex flex-col items-center justify-end transition-all ease-in-out duration-500 opacity-0 p-10;
+
+    p {
+      @apply text-xl font-bold text-center text-white;
+    }
+
+    a {
+      @apply bg-white rounded-full py-2 px-14 mt-3 transition-colors duration-300 ease-in-out;
+      &:hover {
+        @apply bg-gray-100;
+      }
+    }
+  }
+
+  &:hover {
+    @apply shadow-inner;
+
+    .shadow {
+      box-shadow: inset 0 -15em 7em -7em #000000;
+    }
+
+    .more {
+      @apply opacity-100
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.card {
+  @apply relative overflow-hidden bg-gray-100 rounded-xl;
+
+  .device {
+    @apply relative flex justify-center transform -mb-32 pt-5 z-20;
+  }
+
+  .background {
+    @apply transition-all ease-in-out duration-500 w-full absolute transform translate-y-60 flex justify-center px-10 opacity-0 z-0;
+  }
+
+  .info {
+    @apply relative transition-all ease-in-out duration-500 rounded-t-xl transform translate-y-32 p-5 z-20;
+
+    h3 {
+      @apply text-2xl text-center font-bold uppercase;
+    }
+
+    .text {
+      @apply transition-opacity ease-in-out duration-500 text-sm text-center mt-5 opacity-0;
+    }
+
+    .specs {
+      @apply transition-opacity ease-in-out duration-500 flex justify-between mt-5 opacity-0;
+    }
+  }
+
+  &:hover {
+    @apply bg-opacity-100;
+
+    .background {
+        @apply transform -translate-y-56 rotate-90 opacity-100;
+    }
+
+    .info {
+      @apply transform translate-y-0 bg-gray-200;
+
+      .text {
+        @apply opacity-100;
+      }
+
+      .specs {
+        @apply opacity-100;
+      }
+    }
+  }
+}
