@@ -21,7 +21,7 @@ const Locations = ({className}) => {
   const init = () => {
     document.getElementById('map').innerHTML = ''
     const map = new ymaps.Map('map', {
-      center: [41.311151, 69.279737],
+      center: [40.1811, 44.5136],
       zoom: 12,
       controls: [],
     }, {
@@ -125,30 +125,30 @@ const Locations = ({className}) => {
                 {t(`locations.text1`)}
               </p>
             </button>
-            <button
-              className={`${selectedFilter === 2 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}
-              onClick={() => handleLocationsType(2)}>
-              <img src={locationType2} alt="location"/>
-              <p className={'ms-3'}>
-                {t(`locations.text2`)}
-              </p>
-            </button>
-            <button
-              className={`${selectedFilter === 3 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}
-              onClick={() => handleLocationsType(3)}>
-              <img src={locationType3} alt="location"/>
-              <p className={'ms-3'}>
-                {t(`locations.text3`)}
-              </p>
-            </button>
-            <button
-              className={`${selectedFilter === 4 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}
-              onClick={() => handleLocationsType(4)}>
-              <img src={locationType4} alt="location"/>
-              <p className={'ms-3'}>
-                {t(`locations.text4`)}
-              </p>
-            </button>
+            {/*<button*/}
+            {/*  className={`${selectedFilter === 2 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}*/}
+            {/*  onClick={() => handleLocationsType(2)}>*/}
+            {/*  <img src={locationType2} alt="location"/>*/}
+            {/*  <p className={'ms-3'}>*/}
+            {/*    {t(`locations.text2`)}*/}
+            {/*  </p>*/}
+            {/*</button>*/}
+            {/*<button*/}
+            {/*  className={`${selectedFilter === 3 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}*/}
+            {/*  onClick={() => handleLocationsType(3)}>*/}
+            {/*  <img src={locationType3} alt="location"/>*/}
+            {/*  <p className={'ms-3'}>*/}
+            {/*    {t(`locations.text3`)}*/}
+            {/*  </p>*/}
+            {/*</button>*/}
+            {/*<button*/}
+            {/*  className={`${selectedFilter === 4 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}*/}
+            {/*  onClick={() => handleLocationsType(4)}>*/}
+            {/*  <img src={locationType4} alt="location"/>*/}
+            {/*  <p className={'ms-3'}>*/}
+            {/*    {t(`locations.text4`)}*/}
+            {/*  </p>*/}
+            {/*</button>*/}
             {/*<button*/}
             {/*  className={`${selectedFilter === 5 ? 'bg-primary text-white' : ''} w-full lg:w-2/3 flex items-center rounded-full border-2 border-primary p-2 mt-4`}*/}
             {/*  onClick={() => handleLocationsType(5)}>*/}

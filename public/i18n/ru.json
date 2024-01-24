@@ -119,7 +119,7 @@
       "bottomText": ""
     },
     "device-4": {
-      "name": "Go 700",
+      "name": "Vuse Go 700",
       "value": "700",
       "description": "Удобный формат, стильный дизайн",
       "text1": "До 700 затяжек*",
@@ -354,6 +354,13 @@
     "text4": "We Use partner",
     "text5": "Где купить",
     "cities": {
+      "armenia": {
+        "title": "Армения",
+        "zoom": "12",
+        "coordinates": [
+          40.1811, 44.5136
+        ]
+      },
       "tashkent": {
         "title": "Ташкент",
         "zoom": 12,

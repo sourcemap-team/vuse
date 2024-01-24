@@ -31,7 +31,8 @@ const allImages = [
   taste12,
 ]
 
-const allPuffs = [500, 700, 1500, 3000, 5000]
+// const allPuffs = [500, 700, 1500, 3000, 5000]
+const allPuffs = [700]
 
 const Tastes = ({className, filterEnabled}) => {
 

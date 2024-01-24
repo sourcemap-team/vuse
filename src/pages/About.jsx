@@ -56,50 +56,50 @@ const About = () => {
         </div>
       </section>
 
-      <section className={'px-3 lg:px-0 mt-10'}>
-        <div className={'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'}>
-          <Banner
-            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 py-5'}
-            image={imgMidBanner1}
-            title={t(`about.banner1Title`)}
-            text={t(`about.banner1Text`)}
-          />
-          <Banner
-            className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-4 bg-no-repeat bg-cover px-5 py-5'}
-            image={imgMidBanner2}
-            title={t(`about.banner2Title`)}
-            text={t(`about.banner2Text`)}
-          />
-        </div>
-      </section>
+      {/*<section className={'px-3 lg:px-0 mt-10'}>*/}
+      {/*  <div className={'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'}>*/}
+      {/*    <Banner*/}
+      {/*      className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-3 bg-no-repeat bg-cover px-5 py-5'}*/}
+      {/*      image={imgMidBanner1}*/}
+      {/*      title={t(`about.banner1Title`)}*/}
+      {/*      text={t(`about.banner1Text`)}*/}
+      {/*    />*/}
+      {/*    <Banner*/}
+      {/*      className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-4 bg-no-repeat bg-cover px-5 py-5'}*/}
+      {/*      image={imgMidBanner2}*/}
+      {/*      title={t(`about.banner2Title`)}*/}
+      {/*      text={t(`about.banner2Text`)}*/}
+      {/*    />*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
-      <section className={'flex justify-center px-3 lg:px-0 pb-10 lg:pb-32 mt-10'}>
-        <div className={'container mx-auto bg-mid-banner-2 lg:bg-none rounded-xl relative p-3 lg:p-0'}>
-          <div
-            className={'lg:absolute h-full lg:w-1/3 flex flex-col items-start justify-between py-3 lg:py-10 ps-2 lg:ps-10'}>
-            <div className={'hidden lg:flex border-4 rounded-lg'}>
-              <p className={'text-white font-bold uppercase px-2 py-1 text-xl lg:px-5 lg:py-3'}>
-                <Trans i18nKey="about.takeBack" components={{br: <br/>}}/>
-              </p>
-            </div>
-            <div>
-              <h3 className={'text-white font-bold text-sm lg:text-4xl'}>
-                {t(`about.banner3Title`)}
-              </h3>
-              <p className={'text-white text-xs lg:text-base mt-2 lg:mt-5'}>
-                {t(`about.banner3Text`)}
-              </p>
-            </div>
-            <NavLink to={'/utility'}>
-              <button
-                className={'bg-yellow-500 px-5 py-1 lg:px-16 lg:py-2 text-xs lg:text-base rounded-full mt-3 lg:mt-0'}>
-                {t(`about.more`)}
-              </button>
-            </NavLink>
-          </div>
-          <img src={bigBanner} className={'rounded-xl hidden lg:block'} alt="banner"/>
-        </div>
-      </section>
+      {/*<section className={'flex justify-center px-3 lg:px-0 pb-10 lg:pb-32 mt-10'}>*/}
+      {/*  <div className={'container mx-auto bg-mid-banner-2 lg:bg-none rounded-xl relative p-3 lg:p-0'}>*/}
+      {/*    <div*/}
+      {/*      className={'lg:absolute h-full lg:w-1/3 flex flex-col items-start justify-between py-3 lg:py-10 ps-2 lg:ps-10'}>*/}
+      {/*      <div className={'hidden lg:flex border-4 rounded-lg'}>*/}
+      {/*        <p className={'text-white font-bold uppercase px-2 py-1 text-xl lg:px-5 lg:py-3'}>*/}
+      {/*          <Trans i18nKey="about.takeBack" components={{br: <br/>}}/>*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
+      {/*      <div>*/}
+      {/*        <h3 className={'text-white font-bold text-sm lg:text-4xl'}>*/}
+      {/*          {t(`about.banner3Title`)}*/}
+      {/*        </h3>*/}
+      {/*        <p className={'text-white text-xs lg:text-base mt-2 lg:mt-5'}>*/}
+      {/*          {t(`about.banner3Text`)}*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
+      {/*      <NavLink to={'/utility'}>*/}
+      {/*        <button*/}
+      {/*          className={'bg-yellow-500 px-5 py-1 lg:px-16 lg:py-2 text-xs lg:text-base rounded-full mt-3 lg:mt-0'}>*/}
+      {/*          {t(`about.more`)}*/}
+      {/*        </button>*/}
+      {/*      </NavLink>*/}
+      {/*    </div>*/}
+      {/*    <img src={bigBanner} className={'rounded-xl hidden lg:block'} alt="banner"/>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
     </main>
   )
 }

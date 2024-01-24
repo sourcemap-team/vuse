@@ -81,8 +81,8 @@ const Menu = () => {
           <div className={m.links}>
             <NavLink className={isActive} onClick={toggleMenu} to="/about">{t('nav.about')}</NavLink>
             <NavLink className={isActive} onClick={toggleMenu} to="/taste">{t('nav.taste')}</NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/ru/rpi">{t('nav.utility')}</NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/service">{t('nav.service')}</NavLink>
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/ru/rpi">{t('nav.utility')}</NavLink>*/}
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/service">{t('nav.service')}</NavLink>*/}
             <NavLink className={isActive} onClick={toggleMenu} to="/contacts">{t('nav.contacts')}</NavLink>
           </div>
 
@@ -95,12 +95,12 @@ const Menu = () => {
                 >{label}</option>
               ))}
             </select>
-            <NavLink className={isActive} onClick={toggleMenu} to="/about">
-              <img src={help} alt="help"/>
-            </NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/about">
-              <img src={avatar} alt="avatar"/>
-            </NavLink>
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/about">*/}
+            {/*  <img src={help} alt="help"/>*/}
+            {/*</NavLink>*/}
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/about">*/}
+            {/*  <img src={avatar} alt="avatar"/>*/}
+            {/*</NavLink>*/}
           </div>
         </div>
 
@@ -108,46 +108,46 @@ const Menu = () => {
           <div className={'hidden lg:block w-[100px]'}/>
 
           <div className={m.devices}>
-            <NavLink className={isActive} onClick={toggleMenu} to="/device-500">
-              <img src={device500} alt="device"/>
-              <span>
-              {t(`devices.device-5.name`)}
-            </span>
-            </NavLink>
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/device-500">*/}
+            {/*  <img src={device500} alt="device"/>*/}
+            {/*  <span>*/}
+            {/*  {t(`devices.device-5.name`)}*/}
+            {/*</span>*/}
+            {/*</NavLink>*/}
             <NavLink className={isActive} onClick={toggleMenu} to="/device-700">
               <img src={device700} alt="device"/>
               <span className={m.new}>
               {t(`devices.device-4.name`)}
             </span>
             </NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/device-1500">
-              <img src={device1500} alt="device"/>
-              <span>
-              {t(`devices.device-3.name`)}
-            </span>
-            </NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/device-3000">
-              <img src={device3000} alt="device"/>
-              <span className={m.new}>
-              {t(`devices.device-2.name`)}
-            </span>
-            </NavLink>
-            <NavLink className={isActive} onClick={toggleMenu} to="/device-5000">
-              <img src={device5000} alt="device"/>
-              <span className={m.new}>
-              {t(`devices.device-1.name`)}
-            </span>
-            </NavLink>
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/device-1500">*/}
+            {/*  <img src={device1500} alt="device"/>*/}
+            {/*  <span>*/}
+            {/*  {t(`devices.device-3.name`)}*/}
+            {/*</span>*/}
+            {/*</NavLink>*/}
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/device-3000">*/}
+            {/*  <img src={device3000} alt="device"/>*/}
+            {/*  <span className={m.new}>*/}
+            {/*  {t(`devices.device-2.name`)}*/}
+            {/*</span>*/}
+            {/*</NavLink>*/}
+            {/*<NavLink className={isActive} onClick={toggleMenu} to="/device-5000">*/}
+            {/*  <img src={device5000} alt="device"/>*/}
+            {/*  <span className={m.new}>*/}
+            {/*  {t(`devices.device-1.name`)}*/}
+            {/*</span>*/}
+            {/*</NavLink>*/}
           </div>
 
           <div className={m.socials}>
-            <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
+            <a href="https://t.me/vuse_uz_bot" target={'_blank'} rel="noreferrer">
               <img src={robot} alt="social"/>
             </a>
-            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
+            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'} rel="noreferrer">
               <img src={telegram} alt="social"/>
             </a>
-            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
+            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'} rel="noreferrer">
               <img src={instagram} alt="social"/>
             </a>
           </div>

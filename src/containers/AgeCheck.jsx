@@ -64,6 +64,7 @@ const MaskedInput = ({handleAgeCheck}) => {
           </label>
           <form className={'flex items-center gap-5 mt-2'} onSubmit={handleSubmit}>
             <input
+              autoFocus
               type={'text'}
               name={'age'}
               value={inputValue}

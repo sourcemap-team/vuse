@@ -17,18 +17,18 @@ const Footer = () => {
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>
-            <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
+            <a href="https://t.me/vuse_uz_bot" target={'_blank'} rel="noreferrer">
               <img src={robot} alt="social"/>
             </a>
-            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'}>
+            <a href="https://t.me/+n_xP7bHGuf9iZGM6" target={'_blank'} rel="noreferrer">
               <img src={telegram} alt="social"/>
             </a>
-            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'}>
+            <a href="https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D" target={'_blank'} rel="noreferrer">
               <img src={instagram} alt="social"/>
             </a>
           </div>
           <div className={'mt-5'}>
-            <a href="https://vuse.com" className={'text-gray-500'} target={'_blank'}>vuse.com</a>
+            <a href="https://vuse.com" className={'text-gray-500'} target={'_blank'} rel="noreferrer">vuse.com</a>
           </div>
         </div>
       </div>
@@ -49,16 +49,16 @@ const Footer = () => {
             {t(`footer.block1Link2`)}
           </NavLink>
         </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/service'}>
-            {t(`footer.block1Link3`)}
-          </NavLink>
-        </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/health'}>
-            {t(`footer.block1Link4`)}
-          </NavLink>
-        </div>
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/service'}>*/}
+        {/*    {t(`footer.block1Link3`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/health'}>*/}
+        {/*    {t(`footer.block1Link4`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
       </div>
 
       <div>
@@ -85,31 +85,31 @@ const Footer = () => {
             {t(`footer.block3Title`)}
           </p>
         </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/device-500'}>
-            {t(`footer.block3Link1`)}
-          </NavLink>
-        </div>
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/device-500'}>*/}
+        {/*    {t(`footer.block3Link1`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
         <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
           <NavLink to={'/device-700'}>
             {t(`footer.block3Link2`)}
           </NavLink>
         </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/device-1500'}>
-            {t(`footer.block3Link3`)}
-          </NavLink>
-        </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/device-3000'}>
-            {t(`footer.block3Link4`)}
-          </NavLink>
-        </div>
-        <div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>
-          <NavLink to={'/device-5000'}>
-            {t(`footer.block3Link5`)}
-          </NavLink>
-        </div>
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/device-1500'}>*/}
+        {/*    {t(`footer.block3Link3`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/device-3000'}>*/}
+        {/*    {t(`footer.block3Link4`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
+        {/*<div className={'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'}>*/}
+        {/*  <NavLink to={'/device-5000'}>*/}
+        {/*    {t(`footer.block3Link5`)}*/}
+        {/*  </NavLink>*/}
+        {/*</div>*/}
       </div>
     </div>
   )
