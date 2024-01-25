@@ -10,8 +10,8 @@ import GradientHeader from 'src/components/common/gradientHeader'
 
 import device5 from 'src/assets/images/devices/700/device-taste-5.png'
 import device6 from 'src/assets/images/devices/700/device-taste-6.png'
-import taste5 from 'src/assets/images/tastes/taste-5.png'
-import taste6 from 'src/assets/images/tastes/taste-6.png'
+import creamyTobacco from 'src/assets/images/tastes/creamy-tobacco.png'
+import spearmintIce from 'src/assets/images/tastes/spearmint-ice.png'
 import icon from 'src/assets/images/icons/device700.svg'
 import banner from 'src/assets/images/devices/700/device-banner.png'
 
@@ -50,8 +50,8 @@ const Device700 = () => {
           </GradientHeader>
 
           <div className={'grid grid-cols-1 lg:grid-cols-4 gap-10 pt-10'}>
-            <DeviceCard image={device5} bg={taste5} specs={[3, 1]} taste={'taste-5'}/>
-            <DeviceCard image={device6} bg={taste6} specs={[3, 1]} taste={'taste-6'}/>
+            <DeviceCard image={device5} bg={creamyTobacco} specs={[3, 1]} taste={'creamy-tobacco'}/>
+            <DeviceCard image={device6} bg={spearmintIce} specs={[3, 1]} taste={'spearmint-ice'}/>
           </div>
         </div>
       </section>

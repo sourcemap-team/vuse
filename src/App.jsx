@@ -3,11 +3,11 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
 import Menu from 'src/components/common/menu'
 import Home from 'src/pages/Home.jsx'
-import Device500 from 'src/pages/Device500.jsx'
+// import Device500 from 'src/pages/Device500.jsx'
 import Device700 from 'src/pages/Device700.jsx'
-import Device1500 from 'src/pages/Device1500.jsx'
-import Device3000 from 'src/pages/Device3000.jsx'
-import Device5000 from 'src/pages/Device5000.jsx'
+// import Device1500 from 'src/pages/Device1500.jsx'
+// import Device3000 from 'src/pages/Device3000.jsx'
+// import Device5000 from 'src/pages/Device5000.jsx'
 import Age from 'src/components/common/age'
 import Footer from 'src/components/common/footer'
 import Taste from 'src/pages/Taste.jsx'
@@ -53,11 +53,11 @@ const App = () => {
         <Route path="/health" element={<Health/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/cookies" element={<Cookies/>}/>
-        <Route path="/device-500" element={<Device500/>}/>
+        {/*<Route path="/device-500" element={<Device500/>}/>*/}
         <Route path="/device-700" element={<Device700/>}/>
-        <Route path="/device-1500" element={<Device1500/>}/>
-        <Route path="/device-3000" element={<Device3000/>}/>
-        <Route path="/device-5000" element={<Device5000/>}/>
+        {/*<Route path="/device-1500" element={<Device1500/>}/>*/}
+        {/*<Route path="/device-3000" element={<Device3000/>}/>*/}
+        {/*<Route path="/device-5000" element={<Device5000/>}/>*/}
         <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
       <LocationButton/>

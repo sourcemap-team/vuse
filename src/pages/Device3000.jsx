@@ -15,7 +15,7 @@ import device10 from 'src/assets/images/devices/3000/device-taste-10.png'
 import device12 from 'src/assets/images/devices/3000/device-taste-12.png'
 import taste2 from 'src/assets/images/tastes/taste-2.png'
 import taste7 from 'src/assets/images/tastes/taste-7.png'
-import taste8 from 'src/assets/images/tastes/taste-8.png'
+import mangoIce from 'src/assets/images/tastes/mango-ice.png'
 import taste10 from 'src/assets/images/tastes/taste-10.png'
 import taste12 from 'src/assets/images/tastes/taste-12.png'
 import icon from 'src/assets/images/icons/device3000.svg'
@@ -58,7 +58,7 @@ const Device3000 = () => {
           <div className={'grid grid-cols-1 lg:grid-cols-4 gap-10 pt-10'}>
             <DeviceCard image={device2} bg={taste2} specs={[3, 1]} taste={'taste-2'}/>
             <DeviceCard image={device7} bg={taste7} specs={[3, 1]} taste={'taste-7'}/>
-            <DeviceCard image={device8} bg={taste8} specs={[3, 1]} taste={'taste-8'}/>
+            <DeviceCard image={device8} bg={mangoIce} specs={[3, 1]} taste={'mango-ice'}/>
             <DeviceCard image={device10} bg={taste10} specs={[3, 1]} taste={'taste-10'}/>
             <DeviceCard image={device12} bg={taste12} specs={[3, 1]} taste={'taste-12'}/>
           </div>

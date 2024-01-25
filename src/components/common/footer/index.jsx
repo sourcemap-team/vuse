@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={'flex flex-col justify-between'}>
         <div>
           <img src={logo} alt="logo"/>
-          <p className={'text-gray-500 mt-3'}>© 2023</p>
+          <p className={'text-gray-500 mt-3'}>© 2024</p>
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>

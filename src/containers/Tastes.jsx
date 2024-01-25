@@ -2,34 +2,17 @@ import { useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 
 import Taste from 'src/components/modules/taste'
-import taste1 from 'src/assets/images/tastes/taste-1.png'
-import taste2 from 'src/assets/images/tastes/taste-2.png'
-import taste3 from 'src/assets/images/tastes/taste-3.png'
-import taste4 from 'src/assets/images/tastes/taste-4.png'
-import taste5 from 'src/assets/images/tastes/taste-5.png'
-import taste6 from 'src/assets/images/tastes/taste-6.png'
-import taste7 from 'src/assets/images/tastes/taste-7.png'
-import taste8 from 'src/assets/images/tastes/taste-8.png'
-import taste9 from 'src/assets/images/tastes/taste-9.png'
-import taste10 from 'src/assets/images/tastes/taste-10.png'
-import taste11 from 'src/assets/images/tastes/taste-11.png'
-import taste12 from 'src/assets/images/tastes/taste-12.png'
+
+
+import berryIce from 'src/assets/images/tastes/berry-ice.png'
+import mangoIce from 'src/assets/images/tastes/mango-ice.png'
+import strawBerryKiwi from 'src/assets/images/tastes/strawberry-kiwi.png'
+import watermelonIce from 'src/assets/images/tastes/watermelon-ice.png'
+import creamyTobacco from 'src/assets/images/tastes/creamy-tobacco.png'
+import spearmintIce from 'src/assets/images/tastes/spearmint-ice.png'
+
 import GradientHeader from '../components/common/gradientHeader'
 
-const allImages = [
-  taste1,
-  taste2,
-  taste3,
-  taste4,
-  taste5,
-  taste6,
-  taste7,
-  taste8,
-  taste9,
-  taste10,
-  taste11,
-  taste12,
-]
 
 // const allPuffs = [500, 700, 1500, 3000, 5000]
 const allPuffs = [700]
@@ -38,6 +21,33 @@ const Tastes = ({className, filterEnabled}) => {
 
   const [filter, setFilter] = useState(null)
   const {t} = useTranslation()
+
+  const allTastes = [
+    {
+      id: 'mango-ice',
+      image: mangoIce
+    },
+    {
+      id: 'berry-ice',
+      image: berryIce
+    },
+    {
+      id: 'strawberry-kiwi',
+      image: strawBerryKiwi
+    },
+    {
+      id: 'watermelon-ice',
+      image: watermelonIce
+    },
+    {
+      id: 'creamy-tobacco',
+      image: creamyTobacco
+    },
+    {
+      id: 'spearmint-ice',
+      image: spearmintIce
+    }
+  ]
 
   const handleFilter = (val) => {
     setFilter(val)
@@ -75,12 +85,12 @@ const Tastes = ({className, filterEnabled}) => {
 
       <div className={'grid grid-cols-2 lg:grid-cols-6 gap-0 lg:pt-10 mt-5'}>
         {filter ?
-          allImages.map((image, i) => t(`tastes.taste-${i + 1}.puffs`, {returnObjects: true}).includes(filter) &&
-            <Taste image={image} taste={`taste-${i + 1}`} key={i}/>,
+            allTastes.map((taste) => t(`tastes.${taste.id}.puffs`, {returnObjects: true}).includes(filter) &&
+            <Taste image={taste.image} taste={taste.id} key={taste.id}/>,
           )
           :
-          allImages.map((image, i) =>
-            <Taste image={image} taste={`taste-${i + 1}`} key={i}/>,
+            allTastes.map((taste) =>
+            <Taste image={taste.image} taste={taste.id} key={taste.id}/>,
           )
         }
       </div>
