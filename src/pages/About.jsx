@@ -1,57 +1,71 @@
-import Banner from 'src/containers/Banner.jsx'
+import Banner from 'src/containers/Banner.jsx';
 
-import numberOne from 'src/assets/images/icons/numberOne.svg'
-import countries from 'src/assets/images/countries.png'
-import bigBanner from 'src/assets/images/big-banner.png'
-import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png'
-import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png'
-import { NavLink } from 'react-router-dom'
-import { Trans, useTranslation } from 'react-i18next'
-import GradientHeader from '../components/common/gradientHeader'
+import numberOne from 'src/assets/images/icons/numberOne.svg';
+import numberOneAm from 'src/assets/images/icons/numberOneAm.svg';
+import countries from 'src/assets/images/countries.png';
+import countriesAm from 'src/assets/images/countriesAm.png';
+import bigBanner from 'src/assets/images/big-banner.png';
+import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png';
+import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png';
+import { NavLink } from 'react-router-dom';
+import { Trans, useTranslation } from 'react-i18next';
+import GradientHeader from '../components/common/gradientHeader';
 
 const About = () => {
-  const {t} = useTranslation()
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  let imageNumberOneToDisplay;
+  let imageCountriesToDisplay;
+  if (currentLanguage === 'am') {
+    imageNumberOneToDisplay = numberOneAm;
+    imageCountriesToDisplay = countriesAm;
+  } else {
+    imageNumberOneToDisplay = numberOne;
+    imageCountriesToDisplay = countries;
+  }
 
   return (
     <main>
       <section className={'border-b py-10'}>
-        <div className={'container mx-auto flex flex-col lg:flex-row px-3 lg:p-10'}>
+        <div
+          className={'container mx-auto flex flex-col lg:flex-row px-3 lg:p-10'}
+        >
           <div className={'flex flex-1 flex-col justify-between'}>
             <div>
               <GradientHeader className={'text-xl lg:text-7xl mt-5'}>
                 {t(`about.title`)}
               </GradientHeader>
-              <p className={'mt-8 lg:text-base'}>
-                {t(`about.text1`)}
-              </p>
-              <p className={'mt-4 lg:text-base'}>
-                {t(`about.text2`)}
-              </p>
-              <p className={'mt-4 lg:text-base'}>
-                {t(`about.text3`)}
-              </p>
+              <p className={'mt-8 lg:text-base'}>{t(`about.text1`)}</p>
+              <p className={'mt-4 lg:text-base'}>{t(`about.text2`)}</p>
+              <p className={'mt-4 lg:text-base'}>{t(`about.text3`)}</p>
             </div>
             <div>
               <h1
-                className={'font-bold text-2xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-[#44E7FC] to-[#4C36E6] mt-2 lg:mt-5'}>
+                className={
+                  'font-bold text-2xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-[#44E7FC] to-[#4C36E6] mt-2 lg:mt-5'
+                }
+              >
                 {t(`about.years`)}
               </h1>
-              <p className={'mt-4 lg:mt-8'}>
-                {t(`about.text4`)}
-              </p>
-              <p className={'mt-4'}>
-                {t(`about.text5`)}
-              </p>
+              <p className={'mt-4 lg:mt-8'}>{t(`about.text4`)}</p>
+              <p className={'mt-4'}>{t(`about.text5`)}</p>
             </div>
           </div>
 
           <div className={'flex-1 flex flex-col justify-between items-center'}>
-            <img src={numberOne} className={'order-2 lg:order-1 w-1/2 lg:w-auto mt-10 lg:mt-0'} alt="number-one"/>
-            <img src={countries} alt="countries" className={'order-1 lg:order-2 mt-10'}/>
+            <img
+              src={imageNumberOneToDisplay}
+              className={'order-2 lg:order-1 w-1/2 lg:w-auto mt-10 lg:mt-0'}
+              alt='number-one'
+            />
+            <img
+              src={imageCountriesToDisplay}
+              alt='countries'
+              className={'order-1 lg:order-2 mt-10'}
+            />
 
-            <p className={'order-3 mt-4 text-xs'}>
-              {t(`about.text6`)}
-            </p>
+            <p className={'order-3 mt-4 text-xs'}>{t(`about.text6`)}</p>
           </div>
         </div>
       </section>
@@ -101,7 +115,7 @@ const About = () => {
       {/*  </div>*/}
       {/*</section>*/}
     </main>
-  )
-}
+  );
+};
 
-export default About
+export default About;
