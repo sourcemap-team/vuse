@@ -139,7 +139,7 @@
   },
   "tastes": {
     "title": "ORIGAMI OF FLAVORS",
-    "filter": "NUMBER OF<br/>PUFFS",
+    "filter": "*NUMBER OF<br/>PUFFS",
     "sweet": "Sweetness",
     "cold": "Chill",
     "allDevices": "All Devices",
