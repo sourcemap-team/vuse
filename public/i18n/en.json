@@ -143,128 +143,59 @@
     "sweet": "Sweetness",
     "cold": "Chill",
     "allDevices": "All Devices",
-    "taste-1": {
-      "title": "berry<br/>watermelon",
-      "text": "SWEET RED BERRY AROMA<br/>WITH A REFRESHING<br/>WATERMELON TASTE",
-      "puffs": [
-        500,
-        1500
-      ],
-      "sweet": 3,
-      "cold": 0
-    },
-    "taste-2": {
-      "title": "blueberry<br/>ice",
-      "text": "BLUEBERRY<br/>ICE",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 3,
-      "cold": 3
-    },
-    "taste-3": {
-      "title": "blueberry<br/>raspberry",
-      "text": "RASPBERRY TASTE",
-      "puffs": [
-        1500
-      ],
-      "sweet": 3,
-      "cold": 0
-    },
-    "taste-4": {
-      "title": "berry<br/>blend",
-      "text": "STRAWBERRY, RASPBERRY,<br/>BLACKBERRY, AND BLUEBERRY",
-      "puffs": [
-        1500,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 0
-    },
-    "taste-5": {
-      "title": "Creamy<br/>tobacco",
-      "text": "CREAMY TOBACCO",
+    "mango-ice": {
+      "title": "Mango<br/>ice",
+      "text": "RIPE MANGO WITH ICY <br/> COOLNESS",
       "puffs": [
         700
       ],
       "sweet": 3,
       "cold": 0
     },
-    "taste-6": {
-      "title": "Spearmint<br/>ice",
-      "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
+    "berry-ice": {
+      "title": "Berry<br/>ice",
+      "text": "BERRY WITH ICY <br/>COOLNESS",
       "puffs": [
-        700,
-        1500
+        700
       ],
-      "sweet": 2,
+      "sweet": 3,
       "cold": 3
     },
-    "taste-7": {
-      "title": "passionfruit<br/>ice",
-      "text": "PASSIONFRUIT WITH ICY<br/>COOLNESS",
+    "strawberry-kiwi": {
+      "title": "Strawberry<br/>kiwi",
+      "text": "RIPE STRAWBERRY,<br/>BALANCED WITH<br/>THE TARTNESS OF KIWI",
       "puffs": [
-        1500,
-        3000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-8": {
-      "title": "Mango<br/>ice",
-      "text": "RIPE MANGO WITH ICY<br/>COOLNESS",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 5,
-      "cold": 3
-    },
-    "taste-9": {
-      "title": "Grape<br/>ice",
-      "text": "GRAPE WITH ICY<br/>COOLNESS",
-      "puffs": [
-        1500
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-10": {
-      "title": "Apple<br/>sour",
-      "text": "GREEN APPLE<br/>WITH A TART TASTE",
-      "puffs": [
-        1500,
-        3000
+        700
       ],
       "sweet": 3,
       "cold": 0
     },
-    "taste-11": {
-      "title": "strawberry<br/>ice",
-      "text": "SWEET AND RIPE<br/>STRAWBERRY WITH AN ICY<br/>COOL NOTE",
+    "watermelon-ice": {
+      "title": "Watermelon<br/>Ice",
+      "text": "Нужен текст,<br/>Нужен текст, нужен текст",
       "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-12": {
-      "title": "strawberry<br/>kiwi",
-      "text": "RIPE STRAWBERRY,<br/>BALANCED WITH<br/>THE TARTNESS OF KIWI",
-      "puffs": [
-        1500,
-        5000
+        700
       ],
       "sweet": 4,
       "cold": 0
+    },
+    "creamy-tobacco": {
+      "title": "Creamy<br/>tobacco",
+      "text": "Нужен текст, <br/> нужен текст",
+      "puffs": [
+        700
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "spearmint-ice": {
+      "title": "Spearmint<br/>ice",
+      "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
+      "puffs": [
+        700
+      ],
+      "sweet": 2,
+      "cold": 3
     }
   },
   "utility": {

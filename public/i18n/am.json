@@ -154,7 +154,7 @@
     },
     "berry-ice": {
       "title": "Berry<br/>ice",
-      "text": "черники с ледяной<br/>прохладой",
+      "text": "Ягоды с ледяной<br/>прохладой",
       "puffs": [
         700
       ],
@@ -196,69 +196,6 @@
       ],
       "sweet": 2,
       "cold": 3
-    },
-    "taste-7": {
-      "title": "passionfruit<br/>ice",
-      "text": "PASSIONFRUIT WITH ICY<br/>COOLNESS",
-      "puffs": [
-        1500,
-        3000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-8": {
-      "title": "Mango<br/>ice",
-      "text": "RIPE MANGO WITH ICY<br/>COOLNESS",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 5,
-      "cold": 3
-    },
-    "taste-9": {
-      "title": "Grape<br/>ice",
-      "text": "GRAPE WITH ICY<br/>COOLNESS",
-      "puffs": [
-        1500
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-10": {
-      "title": "Apple<br/>sour",
-      "text": "GREEN APPLE<br/>WITH A TART TASTE",
-      "puffs": [
-        1500,
-        3000
-      ],
-      "sweet": 3,
-      "cold": 0
-    },
-    "taste-11": {
-      "title": "strawberry<br/>ice",
-      "text": "SWEET AND RIPE<br/>STRAWBERRY WITH AN ICY<br/>COOL NOTE",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-12": {
-      "title": "strawberry<br/>kiwi",
-      "text": "RIPE STRAWBERRY,<br/>BALANCED WITH<br/>THE TARTNESS OF KIWI",
-      "puffs": [
-        1500,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 0
     }
   },
   "utility": {

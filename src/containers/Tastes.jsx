@@ -87,8 +87,7 @@ const Tastes = ({className, filterEnabled}) => {
         {filter ?
             allTastes.map((taste) => t(`tastes.${taste.id}.puffs`, {returnObjects: true}).includes(filter) &&
             <Taste image={taste.image} taste={taste.id} key={taste.id}/>,
-          )
-          :
+          ) :
             allTastes.map((taste) =>
             <Taste image={taste.image} taste={taste.id} key={taste.id}/>,
           )

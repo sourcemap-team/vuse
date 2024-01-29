@@ -143,128 +143,59 @@
     "sweet": "Сладость",
     "cold": "Холодок",
     "allDevices": "Все устройства",
-    "taste-1": {
-      "title": "berry<br/>watermelon",
-      "text": "Сладкий аромат красных<br/>ягод с освежающим<br/>арбузным вкусом",
-      "puffs": [
-        500,
-        1500
-      ],
-      "sweet": 3,
-      "cold": 0
-    },
-    "taste-2": {
-      "title": "blueberry<br/>ice",
-      "text": "Черника с ледяной<br/>прохладой",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 3,
-      "cold": 3
-    },
-    "taste-3": {
-      "title": "blueberry<br/>raspberry",
-      "text": "Вкус малины",
-      "puffs": [
-        1500
-      ],
-      "sweet": 3,
-      "cold": 0
-    },
-    "taste-4": {
-      "title": "berry<br/>blend",
-      "text": "Клубника, малина,<br/>ежевика и черника",
-      "puffs": [
-        1500,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 0
-    },
-    "taste-5": {
-      "title": "Creamy<br/>tobacco",
-      "text": "Кремовый табак",
+    "mango-ice": {
+      "title": "Mango<br/>ice",
+      "text": "Спелое манго с ледяной <br/> прохладой",
       "puffs": [
         700
       ],
       "sweet": 3,
       "cold": 0
     },
-    "taste-6": {
-      "title": "Spearmint<br/>ice",
-      "text": "Перечная мята<br/>с ледяной прохладой",
+    "berry-ice": {
+      "title": "Berry<br/>ice",
+      "text": "Ягоды с ледяной<br/>прохладой",
       "puffs": [
-        700,
-        1500
+        700
       ],
-      "sweet": 2,
+      "sweet": 3,
       "cold": 3
     },
-    "taste-7": {
-      "title": "passionfruit<br/>ice",
-      "text": "Маракуйя с ледяной<br/>прохладой",
+    "strawberry-kiwi": {
+      "title": "Strawberry<br/>kiwi",
+      "text": "Спелая клубника,<br/>сбалансированная<br/>кислинка киви",
       "puffs": [
-        1500,
-        3000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-8": {
-      "title": "Mango<br/>ice",
-      "text": "Спелое манго с ледяной<br/>прохладой",
-      "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 5,
-      "cold": 3
-    },
-    "taste-9": {
-      "title": "Grape<br/>ice",
-      "text": "Виноград с ледяной<br/>прохладной",
-      "puffs": [
-        1500
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-10": {
-      "title": "Apple<br/>sour",
-      "text": "Зеленой яблоко<br/>с кислинкой",
-      "puffs": [
-        1500,
-        3000
+        700
       ],
       "sweet": 3,
       "cold": 0
     },
-    "taste-11": {
-      "title": "strawberry<br/>ice",
-      "text": "Сладкая и спелая<br/>клубника с ледяной<br/>прохладной ноткой",
+    "watermelon-ice": {
+      "title": "Watermelon<br/>Ice",
+      "text": "Нужен текст,<br/>Нужен текст, нужен текст",
       "puffs": [
-        500,
-        1500,
-        3000,
-        5000
-      ],
-      "sweet": 4,
-      "cold": 3
-    },
-    "taste-12": {
-      "title": "strawberry<br/>kiwi",
-      "text": "Спелая клубника,<br/>сбалансированная<br/>кислинкой киви",
-      "puffs": [
-        1500,
-        5000
+        700
       ],
       "sweet": 4,
       "cold": 0
+    },
+    "creamy-tobacco": {
+      "title": "Creamy<br/>tobacco",
+      "text": "Нужен текст, <br/> нужен текст",
+      "puffs": [
+        700
+      ],
+      "sweet": 3,
+      "cold": 0
+    },
+    "spearmint-ice": {
+      "title": "Spearmint<br/>ice",
+      "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
+      "puffs": [
+        700
+      ],
+      "sweet": 2,
+      "cold": 3
     }
   },
   "utility": {
