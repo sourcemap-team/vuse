@@ -48,7 +48,7 @@ const Home = () => {
             <NavLink to={'/about'}>
               <button
                 className={
-                  'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4 transition-colors duration-300 ease-in-out hover:bg-yellow-600'
+                  'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4 transition-colors duration-300 ease-in-out hover:bg-yellow-600 min-w-[133px]'
                 }
               >
                 {t(`home.more`)}
