@@ -1,13 +1,25 @@
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import icon from 'src/assets/images/icons/location-button.svg';
 
 export default function LocationButton() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById('locations');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 0);
+  };
+
   return (
-    <NavLink
+    <button
       className={'fixed bottom-16 right-10 w-[75px] lg:w-[100px] z-40'}
-      to={'/#locations'}
+      onClick={handleClick}
     >
       <img src={icon} alt='icon' />
-    </NavLink>
+    </button>
   );
 }
