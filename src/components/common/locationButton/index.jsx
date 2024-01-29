@@ -1,17 +1,26 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import icon from 'src/assets/images/icons/location-button.svg';
 
 export default function LocationButton() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleClick = () => {
-    navigate('/');
+  const scrollToLocations = () => {
     setTimeout(() => {
       const element = document.getElementById('locations');
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 0);
+  };
+
+  const handleClick = () => {
+    if (location.pathname === '/') {
+      scrollToLocations();
+    } else if (location.pathname === '/taste') {
+      navigate('/taste');
+      scrollToLocations();
+    }
   };
 
   return (

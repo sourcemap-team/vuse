@@ -106,6 +106,13 @@ const Tastes = ({ className, filterEnabled }) => {
               <Taste image={taste.image} taste={taste.id} key={taste.id} />
             ))}
       </div>
+      <p
+        className={
+          'text-black font-sans text-base normal-case font-normal leading-[120%] -tracking-[1px] text-center lg:text-start max-w-[780px]'
+        }
+      >
+        <Trans i18nKey='tastes.description' components={{ br: <br /> }} />
+      </p>
     </div>
   );
 };

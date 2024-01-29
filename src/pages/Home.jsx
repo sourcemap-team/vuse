@@ -110,7 +110,7 @@ const Home = () => {
         id={'locations'}
         className={'border-b py-3 lg:py-10 px-3 lg:px-0'}
       >
-        <Locations className={'container mx-auto'} id='locations' />
+        <Locations className={'container mx-auto'} />
       </section>
 
       <section className={'py-3 lg:py-10 px-3 lg:px-0'}>
