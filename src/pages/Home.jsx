@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Devices from 'src/containers/Devices.jsx';
 import Banner from 'src/containers/Banner.jsx';
@@ -6,15 +6,39 @@ import Tastes from 'src/containers/Tastes.jsx';
 import Social from 'src/containers/Socials.jsx';
 import Locations from '../containers/Locations.jsx';
 
-import homeBanner from 'src/assets/videos/home-banner.mp4';
+import homeBannerAm from 'src/assets/videos/home-banner-AM.mp4';
+import homeBannerRu from 'src/assets/videos/home-banner-RU.mp4';
+import homeBannerEn from 'src/assets/videos/home-banner-EN.mp4';
+
 import imgMidBanner1 from 'src/assets/images/img-mid-banner-1.png';
 import imgMidBanner2 from 'src/assets/images/img-mid-banner-2.png';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
+
+  const [videoToDisplay, setVideoToDisplay] = useState(
+    getVideoSource(i18n.language)
+  );
+
+  function getVideoSource(lang) {
+    switch (lang) {
+      case 'am':
+        return homeBannerAm;
+      case 'ru':
+        return homeBannerRu;
+      case 'en':
+        return homeBannerEn;
+      default:
+        return homeBannerEn;
+    }
+  }
+
+  useEffect(() => {
+    setVideoToDisplay(getVideoSource(i18n.language));
+  }, [i18n.language]);
 
   useEffect(() => {
     const element = document.getElementById('locations');
@@ -27,7 +51,10 @@ const Home = () => {
     <main>
       <section className={'flex justify-center'}>
         <video autoPlay playsInline muted loop>
-          <source src={homeBanner} type='video/mp4' />
+          <source
+            src={`${videoToDisplay}?v=${new Date().getTime()}`}
+            type='video/mp4'
+          />
         </video>
       </section>
 
