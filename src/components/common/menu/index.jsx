@@ -162,7 +162,7 @@ const Menu = () => {
               <img src={telegram} alt="social"/>
             </a> */}
             <a
-              href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D'
+              href='https://www.instagram.com/vuse.arm?igsh=MzRlODBiNWFlZA=='
               target={'_blank'}
               rel='noreferrer'
             >
