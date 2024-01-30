@@ -8,19 +8,19 @@ import GradientText from 'src/components/common/gradientText';
 import AnimatedBanner from 'src/components/modules/banner700';
 import GradientHeader from 'src/components/common/gradientHeader';
 
-import deviceCreamyTobacco from 'src/assets/images/devices/700/device-creamy-tobacco-min.png';
-import deviceSpearmintIce from 'src/assets/images/devices/700/device-spearmint-ice-min.png';
-import deviceBerryWatermelon from 'src/assets/images/devices/700/device-berry-watermelon-min.png';
-import deviceBlueberryIce from 'src/assets/images/devices/700/device-blueberry-ice-min.png';
-import deviceMangoIce from 'src/assets/images/devices/700/device-mango-ice-min.png';
-import deviceStrawberryIce from 'src/assets/images/devices/700/device-strawberry-ice-min.png';
+import deviceCreamyTobacco from 'src/assets/images/devices/700/device-creamy-tobacco.png';
+import deviceSpearmintIce from 'src/assets/images/devices/700/device-spearmint-ice.png';
+import deviceBerryWatermelon from 'src/assets/images/devices/700/device-berry-watermelon.png';
+import deviceBlueberryIce from 'src/assets/images/devices/700/device-blueberry-ice.png';
+import deviceMangoIce from 'src/assets/images/devices/700/device-mango-ice.png';
+import deviceStrawberryIce from 'src/assets/images/devices/700/device-strawberry-ice.png';
 
 import creamyTobacco from 'src/assets/images/tastes/creamy-tobacco.png';
 import spearmintIce from 'src/assets/images/tastes/spearmint-ice.png';
-import berryWatermelonTaste from 'src/assets/images/tastes/compressed/watermelon-ice-min.png';
-import blueberryIceTaste from 'src/assets/images/tastes/compressed/berry-ice-min.png';
-import mangoIceTaste from 'src/assets/images/tastes/compressed/mango-ice-min.png';
-import strawberryIceTaste from 'src/assets/images/tastes/compressed/strawberry-kiwi-min.png';
+import berryWatermelonTaste from 'src/assets/images/tastes/compressed/watermelon-ice.png';
+import blueberryIceTaste from 'src/assets/images/tastes/compressed/berry-ice.png';
+import mangoIceTaste from 'src/assets/images/tastes/compressed/mango-ice.png';
+import strawberryIceTaste from 'src/assets/images/tastes/compressed/strawberry-kiwi.png';
 
 import icon from 'src/assets/images/icons/device700.svg';
 import banner from 'src/assets/images/devices/700/device-banner.png';
@@ -79,10 +79,9 @@ const Device700 = () => {
             {t(`devices.tastesTitle`)}
           </GradientHeader>
 
-          {/* <div className={'grid grid-cols-1 lg:grid-cols-4 gap-10 pt-10'}> */}
           <div
             className={
-              'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-10'
+              'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2 pt-2'
             }
           >
             <DeviceCard
@@ -99,7 +98,7 @@ const Device700 = () => {
               specs={[3, 1]}
               taste={'spearmint-ice'}
             />
-            {/* <DeviceCard
+            <DeviceCard
               className='max-w-full'
               image={deviceBerryWatermelon}
               bg={berryWatermelonTaste}
@@ -126,7 +125,7 @@ const Device700 = () => {
               bg={strawberryIceTaste}
               specs={[3, 1]}
               taste={'strawberry-kiwi'}
-            /> */}
+            />
           </div>
         </div>
       </section>

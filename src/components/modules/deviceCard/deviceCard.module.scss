@@ -25,7 +25,11 @@
     }
 
     .specs {
-      @apply transition-opacity ease-in-out duration-500 flex justify-between mt-5 opacity-0;
+      @apply transition-opacity ease-in-out duration-500 flex-col justify-between items-center mt-5 opacity-0;
+
+      > div {
+        @apply flex flex-col items-center;
+      }
     }
   }
 
