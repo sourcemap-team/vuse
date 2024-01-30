@@ -1,7 +1,7 @@
 {
   "restriction": {
-    "age": "THE PRODUCT CONTAINS NICOTINE AND IS ADDICTIVE. FOR USE BY PERSONS OVER 21 ONLY.",
-    "title": "Are you 21 years old?",
+    "age": "THE PRODUCT CONTAINS NICOTINE AND IS ADDICTIVE. FOR USE BY PERSONS OVER 18 ONLY.",
+    "title": "Are you 18 years old?",
     "text": "You are on the official website of electronic cigarettes. The information on the site is intended solely for consumers of tobacco or other nicotine-containing products who have reached the age of twenty, in order to inform about the characteristics and properties of products, about the range of products and the rules for using such products.",
     "label": "Enter your date of birth",
     "placeholder": "DD/MM/YY",

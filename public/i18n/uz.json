@@ -1,7 +1,7 @@
 {
   "restriction": {
-    "age": "MAHSULOT NIKOTINNI O'Z ICHIGA OLADI VA O‘ZIGA QARAM QILADI. FFAQATGINA 21 YOSHGA YETGAN SHAXSLARGA MO‘LJALLANGAN.",
-    "title": "Siz 21 yoshdamisiz?",
+    "age": "MAHSULOT NIKOTINNI O'Z ICHIGA OLADI VA O‘ZIGA QARAM QILADI. FFAQATGINA 18 YOSHGA YETGAN SHAXSLARGA MO‘LJALLANGAN.",
+    "title": "Siz 18 yoshdamisiz?",
     "text": "Siz tamaki elektron tamaki rasmiy veb-saytidasiz. Saytdagi ma’lumotlar 21 yoshga to’lgan, tamaki yoki tarkibida nikotin mavjud bo’lgan boshqa mahsulotni iste’mol qiluvchilar uchun mahsulotning xususiyati va xossalari, “UZBAT A.J.” AJ Qo’shma korxonasi tomonidan ishlab chiqarilgan mahsulot assortimenti, bunday mahsulotdan foydalanish qoidalari.",
     "label": "Tug'ilgan kuningizni kiriting",
     "placeholder": "kun/oy/yil",
