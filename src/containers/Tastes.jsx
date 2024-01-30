@@ -3,12 +3,12 @@ import { Trans, useTranslation } from 'react-i18next';
 
 import Taste from 'src/components/modules/taste';
 
-import berryIce from 'src/assets/images/tastes/berry-ice.png';
-import mangoIce from 'src/assets/images/tastes/mango-ice.png';
-import strawBerryKiwi from 'src/assets/images/tastes/strawberry-kiwi.png';
-import watermelonIce from 'src/assets/images/tastes/watermelon-ice.png';
-import creamyTobacco from 'src/assets/images/tastes/creamy-tobacco.png';
-import spearmintIce from 'src/assets/images/tastes/spearmint-ice.png';
+import berryIce from 'src/assets/images/tastes/compressed/berry-ice.png';
+import mangoIce from 'src/assets/images/tastes/compressed/mango-ice.png';
+import strawBerryKiwi from 'src/assets/images/tastes/compressed/strawberry-kiwi.png';
+import watermelonIce from 'src/assets/images/tastes/compressed/watermelon-ice.png';
+import creamyTobacco from 'src/assets/images/tastes/compressed/creamy-tobacco.png';
+import spearmintIce from 'src/assets/images/tastes/compressed/spearmint-ice.png';
 
 import GradientHeader from '../components/common/gradientHeader';
 
