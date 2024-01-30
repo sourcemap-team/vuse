@@ -86,14 +86,12 @@ const Contacts = () => {
       </section>
 
       <section
-        className={
-          'container mx-auto grid grid-cols-3 gap-5 lg:gap-10 mt-20 px-3 lg:px-0'
-        }
+        className={'container mx-auto flex justify-center mt-20 px-3 lg:px-0'}
       >
         <a
           href={'tel:1252'}
           className={
-            'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'
+            'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10 max-w-sm w-full'
           }
         >
           <img src={phone} alt='phone' />
@@ -102,7 +100,7 @@ const Contacts = () => {
           </p>
         </a>
 
-        <a
+        {/* <a
           href={'https://t.me/+n_xP7bHGuf9iZGM6'}
           target={'_blank'}
           className={
@@ -111,16 +109,16 @@ const Contacts = () => {
         >
           <img src={telegram} alt='telegram' />
           <p className={'mt-5'}>{t(`contacts.telegram`)}</p>
-        </a>
+        </a> */}
 
-        <button
+        {/* <button
           className={
             'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'
           }
         >
           <img src={help} alt='help' />
           <p className={'mt-5'}>{t(`contacts.faq`)}</p>
-        </button>
+        </button> */}
       </section>
 
       <section className={'px-3 lg:px-10 py-10 lg:py-60'} id='faq'>
