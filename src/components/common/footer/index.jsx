@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div>
           <div className={'flex gap-8 mt-5'}>
-            <a
+            {/* <a
               href='https://t.me/vuse_uz_bot'
               target={'_blank'}
               rel='noreferrer'
@@ -34,7 +34,7 @@ const Footer = () => {
               rel='noreferrer'
             >
               <img src={telegram} alt='social' />
-            </a>
+            </a> */}
             <a
               href='https://www.instagram.com/vuse.uz/?igshid=MzRlODBiNWFlZA%3D%3D'
               target={'_blank'}
