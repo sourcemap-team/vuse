@@ -1,6 +1,5 @@
 export const LANGUAGES = [
-  { label: 'AM', code: 'am'},
-  { label: "РУ", code: "ru" },
-  { label: "UZ", code: "uz" },
-  { label: "EN", code: "en" },
+  { label: 'AM', code: 'am' },
+  { label: 'РУ', code: 'ru' },
+  { label: 'EN', code: 'en' },
 ];
