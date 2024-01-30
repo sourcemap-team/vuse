@@ -1,7 +1,7 @@
 {
   "restriction": {
-    "age": "MAHSULOT NIKOTINNI O'Z ICHIGA OLADI VA O‘ZIGA QARAM QILADI. FFAQATGINA 21 YOSHGA YETGAN SHAXSLARGA MO‘LJALLANGAN.",
-    "title": "Siz 21 yoshdamisiz?",
+    "age": "MAHSULOT NIKOTINNI O'Z ICHIGA OLADI VA O‘ZIGA QARAM QILADI. FFAQATGINA 18 YOSHGA YETGAN SHAXSLARGA MO‘LJALLANGAN.",
+    "title": "Siz 18 yoshdamisiz?",
     "text": "Siz tamaki elektron tamaki rasmiy veb-saytidasiz. Saytdagi ma’lumotlar 21 yoshga to’lgan, tamaki yoki tarkibida nikotin mavjud bo’lgan boshqa mahsulotni iste’mol qiluvchilar uchun mahsulotning xususiyati va xossalari, “UZBAT A.J.” AJ Qo’shma korxonasi tomonidan ishlab chiqarilgan mahsulot assortimenti, bunday mahsulotdan foydalanish qoidalari.",
     "label": "Tug'ilgan kuningizni kiriting",
     "placeholder": "kun/oy/yil",
@@ -139,61 +139,50 @@
   },
   "tastes": {
     "title": "Ta'mlar origamisi",
-    "filter": "Tortilish<br/>soni",
+    "filter": "*Tortilish<br/>soni",
     "sweet": "Shirinligi",
     "cold": "Sovuqligi",
     "allDevices": "Barcha qurilmalar",
+    "description": "*Yangi mahsulotning laboratoriya sinovlariga asoslangan va individual iste'mol usullariga qarab farq qilishi mumkin",
     "mango-ice": {
       "title": "Mango<br/>ice",
       "text": "Спелое манго с ледяной <br/> прохладой",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 3,
       "cold": 0
     },
     "berry-ice": {
       "title": "Berry<br/>ice",
       "text": "черники с ледяной<br/>прохладой",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 3,
       "cold": 3
     },
     "strawberry-kiwi": {
       "title": "Strawberry<br/>kiwi",
       "text": "Спелая клубника,<br/>сбалансированная<br/>кислинка киви",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 3,
       "cold": 0
     },
     "watermelon-ice": {
       "title": "Watermelon<br/>Ice",
       "text": "Нужен текст,<br/>Нужен текст, нужен текст",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 4,
       "cold": 0
     },
     "creamy-tobacco": {
       "title": "Creamy<br/>tobacco",
       "text": "Нужен текст, <br/> нужен текст",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 3,
       "cold": 0
     },
     "spearmint-ice": {
       "title": "Spearmint<br/>ice",
       "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
-      "puffs": [
-        700
-      ],
+      "puffs": [700],
       "sweet": 2,
       "cold": 3
     }
@@ -288,90 +277,57 @@
       "tashkent": {
         "title": "Toshkent",
         "zoom": 12,
-        "coordinates": [
-          41.311151,
-          69.279737
-        ]
+        "coordinates": [41.311151, 69.279737]
       },
       "tashkentReg": {
         "title": "Ташкентская область",
         "zoom": 9,
-        "coordinates": [
-          41.311151,
-          69.279737
-        ]
+        "coordinates": [41.311151, 69.279737]
       },
       "samarkandReg": {
         "title": "Самаркандская область",
         "zoom": 9,
-        "coordinates": [
-          40.000871,
-          66.344294
-        ]
+        "coordinates": [40.000871, 66.344294]
       },
       "andijanReg": {
         "title": "Андижанская область",
         "zoom": 10,
-        "coordinates": [
-          40.728245,
-          72.322668
-        ]
+        "coordinates": [40.728245, 72.322668]
       },
       "jizzaxReg": {
         "title": "Джизакская область",
         "zoom": 9,
-        "coordinates": [
-          40.368759,
-          67.838650
-        ]
+        "coordinates": [40.368759, 67.83865]
       },
       "ferganaReg": {
         "title": "Ферганская область",
         "zoom": 10,
-        "coordinates": [
-          40.322333,
-          71.273471
-        ]
+        "coordinates": [40.322333, 71.273471]
       },
       "namanganReg": {
         "title": "Наманганская область",
         "zoom": 10,
-        "coordinates": [
-          41.097463,
-          71.298965
-        ]
+        "coordinates": [41.097463, 71.298965]
       },
       "buxaraReg": {
         "title": "Бухарская область",
         "zoom": 9,
-        "coordinates": [
-          40.225521,
-          63.709984
-        ]
+        "coordinates": [40.225521, 63.709984]
       },
       "sirdaryaReg": {
         "title": "Сырдарьинская область",
         "zoom": 10,
-        "coordinates": [
-          40.597170,
-          68.650314
-        ]
+        "coordinates": [40.59717, 68.650314]
       },
       "navoiyReg": {
         "title": "Навоийская область",
         "zoom": 8,
-        "coordinates": [
-          41.658195,
-          64.203411
-        ]
+        "coordinates": [41.658195, 64.203411]
       },
       "karakalpakstan": {
         "title": "Республика Каракалпакстан",
         "zoom": 8,
-        "coordinates": [
-          43.328493,
-          59.233167
-        ]
+        "coordinates": [43.328493, 59.233167]
       }
     }
   },
