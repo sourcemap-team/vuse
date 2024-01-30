@@ -101,13 +101,13 @@ const Footer = () => {
         >
           <NavLink to={'/cookies'}>{t(`footer.block2Link1`)}</NavLink>
         </div>
-        <div
+        {/* <div
           className={
             'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'
           }
         >
           <NavLink to={'/privacy'}>{t(`footer.block2Link2`)}</NavLink>
-        </div>
+        </div> */}
       </div>
 
       <div>
