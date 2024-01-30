@@ -99,7 +99,7 @@ const Device700 = () => {
               specs={[3, 1]}
               taste={'spearmint-ice'}
             />
-            <DeviceCard
+            {/* <DeviceCard
               className='max-w-full'
               image={deviceBerryWatermelon}
               bg={berryWatermelonTaste}
@@ -126,7 +126,7 @@ const Device700 = () => {
               bg={strawberryIceTaste}
               specs={[3, 1]}
               taste={'strawberry-kiwi'}
-            />
+            /> */}
           </div>
         </div>
       </section>

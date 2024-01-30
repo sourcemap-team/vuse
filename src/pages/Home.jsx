@@ -50,11 +50,8 @@ const Home = () => {
   return (
     <main>
       <section className={'flex justify-center'}>
-        <video autoPlay playsInline muted loop>
-          <source
-            src={`${videoToDisplay}?v=${new Date().getTime()}`}
-            type='video/mp4'
-          />
+        <video autoPlay playsInline muted loop key={videoToDisplay}>
+          <source src={videoToDisplay} type='video/mp4' />
         </video>
       </section>
 

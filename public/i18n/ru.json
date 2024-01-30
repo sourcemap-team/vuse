@@ -174,14 +174,14 @@
     },
     "creamy-tobacco": {
       "title": "Creamy<br/>tobacco",
-      "text": "Нужен текст, <br/> нужен текст",
+      "text": "КРЕМОВЫЙ<br/>ТАБАК",
       "puffs": [700],
       "sweet": 3,
       "cold": 0
     },
     "spearmint-ice": {
       "title": "Spearmint<br/>ice",
-      "text": "PEPPERMINT<br/>WITH ICY COOLNESS",
+      "text": "ПЕРЕЧНАЯ МЯТА<br/>С ЛЕДЯНОЙ ПРОХЛАДКОЙ",
       "puffs": [700],
       "sweet": 2,
       "cold": 3
