@@ -1,8 +1,12 @@
 .card {
-  @apply relative overflow-hidden bg-gray-100 rounded-xl;
+  @apply relative overflow-hidden bg-gray-100 rounded-xl w-full;
 
   .device {
     @apply relative flex justify-center transform -mb-32 pt-5 z-20;
+  }
+
+  .device img {
+    @apply h-auto;
   }
 
   .background {
@@ -29,7 +33,7 @@
     @apply bg-opacity-100;
 
     .background {
-        @apply transform -translate-y-56 rotate-90 opacity-100;
+      @apply transform -translate-y-56 rotate-90 opacity-100;
     }
 
     .info {
