@@ -32,7 +32,7 @@ const Tastes = ({ className }) => {
         </div>
       </div>
 
-      <div className={'flex flex-col lg:flex-row gap-5 pt-10'}>
+      {/* <div className={'flex flex-col lg:flex-row gap-5 pt-10'}>
         <div>
           <SocialsPost
             image={social1}
@@ -54,7 +54,7 @@ const Tastes = ({ className }) => {
             link={t('social.link3')}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
