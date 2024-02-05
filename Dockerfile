@@ -1,4 +1,4 @@
-FROM node:lts-alpine as BUILD_IMAGE
+FROM --platform=linux/amd64 node:lts-alpine as BUILD_IMAGE
 WORKDIR /
 
 COPY package.json .
