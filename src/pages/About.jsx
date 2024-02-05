@@ -1,9 +1,13 @@
 import Banner from 'src/containers/Banner.jsx';
 
-import numberOne from 'src/assets/images/icons/numberOne.svg';
+import numberOne from 'src/assets/images/numberOne.png';
 import numberOneAm from 'src/assets/images/icons/numberOneAm.svg';
 import countries from 'src/assets/images/countries.png';
 import countriesAm from 'src/assets/images/countriesAm.png';
+
+import numberOneEn from 'src/assets/images/numberOneEn.png';
+import countriesEn from 'src/assets/images/countriesEn.png';
+
 import bigBanner from 'src/assets/images/big-banner.png';
 import imgMidBanner1 from 'src/assets/images/img-mid-banner-3.png';
 import imgMidBanner2 from 'src/assets/images/img-mid-banner-4.png';
@@ -20,6 +24,9 @@ const About = () => {
   if (currentLanguage === 'am') {
     imageNumberOneToDisplay = numberOneAm;
     imageCountriesToDisplay = countriesAm;
+  } else if (currentLanguage === 'en') {
+    imageNumberOneToDisplay = numberOneEn;
+    imageCountriesToDisplay = countriesEn;
   } else {
     imageNumberOneToDisplay = numberOne;
     imageCountriesToDisplay = countries;

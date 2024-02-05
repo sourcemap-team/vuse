@@ -2,7 +2,7 @@
   "restriction": {
     "age": "THE PRODUCT CONTAINS NICOTINE AND IS ADDICTIVE. FOR USE BY PERSONS OVER 18 ONLY.",
     "title": "Are you 18 years old?",
-    "text": "You are on the official website of electronic cigarettes. The information on the site is intended solely for consumers of tobacco or other nicotine-containing products who have reached the age of twenty, in order to inform about the characteristics and properties of products, about the range of products and the rules for using such products.",
+    "text": "You are on the official website of electronic cigarettes. The information on the site is intended solely for consumers of tobacco or other nicotine-containing products who have reached the age of eighteen, in order to inform about the characteristics and properties of products, about the range of products and the rules for using such products.",
     "label": "Enter your date of birth",
     "placeholder": "DD/MM/YY",
     "enter": "Access"
@@ -174,7 +174,7 @@
     },
     "creamy-tobacco": {
       "title": "Creamy<br/>tobacco",
-      "text": "Нужен текст, <br/> нужен текст",
+      "text": "Creamy Tobacco",
       "puffs": [700],
       "sweet": 3,
       "cold": 0
@@ -208,9 +208,9 @@
   "faq": {
     "title": "FREQUENTLY ASKED QUESTIONS",
     "question1": "What is Vuse?",
-    "answer1": "Vuse is a disposable nicotine consumption device. As demonstrated by product laboratory testing, each disposable Vuse vape provides up to 500/700/1500/3000/5000 puffs until the battery is discharged. However, this figure can vary depending on individual usage characteristics. Vuse does not support refilling, as this can lead to leakage and damage to your device.",
+    "answer1": "Vuse is a disposable nicotine consumption device. As demonstrated by product laboratory testing, each disposable Vuse vape provides up to 700 puffs until the battery is discharged. However, this figure can vary depending on individual usage characteristics. Vuse does not support refilling, as this can lead to leakage and damage to your device.",
     "question2": "How to use Vuse?",
-    "answer2": "The design of Vuse implies ease and slimness for convenient use. Vuse is a disposable nicotine consumption device that does not require recharging (in the case of 500/700/1500) or refilling. Simply open the package and use Vuse. There are no buttons on the device - Vuse is activated by a puff. Then the device automatically activates and the LED indicator lights up.",
+    "answer2": "The design of Vuse implies ease and slimness for convenient use. Vuse is a disposable nicotine consumption device that does not require recharging or refilling. Simply open the package and use Vuse. There are no buttons on the device - Vuse is activated by a puff. Then the device automatically activates and the LED indicator lights up.",
     "question3": "Vuse Storage Precautions",
     "answer3": "- Store your Vuse at a temperature of 0-35°C.<br/>- Do not crush, pierce, burn, or immerse the device in water; keep it in a dry place.<br/>- Never leave the device under direct sunlight or near heat sources.<br/>- Do not use near flammable liquids or gases.",
     "question4": "How to clean a disposable Vuse vape?",
@@ -218,7 +218,7 @@
     "question5": "Why does the device blink blue?",
     "answer5": "The blue flashing indicator at the bottom of the device means that the battery is discharged, so the device should be disposed of. Please visit the Recycling Program page for more information on disposal.",
     "question6": "Who can use the Vuse device?",
-    "answer6": "The disposable Vuse vape is intended for consumers of nicotine-containing products who are 21 years of age and older. Not for use by: people under 21; people with an allergy/sensitivity to nicotine; pregnant or breastfeeding women; people who should avoid tobacco or nicotine-containing products for medical reasons; people with cardiovascular diseases.",
+    "answer6": "The disposable Vuse vape is intended for consumers of nicotine-containing products who are 18 years of age and older. Not for use by: people under 18; people with an allergy/sensitivity to nicotine; pregnant or breastfeeding women; people who should avoid tobacco or nicotine-containing products for medical reasons; people with cardiovascular diseases.",
     "question7": "Do I need to charge the Vuse device?",
     "answer7": "No, Vuse is a disposable device and is not rechargeable. As demonstrated by laboratory testing of the product, each disposable Vuse Go/Vuse Go Max provides up to 500/1500 puffs before the battery is discharged. However, this number may vary depending on individual usage characteristics.",
     "question8": "Can I return used products for recycling?",
@@ -233,7 +233,7 @@
   "cookies": {
     "title1": "COOKIE POLICY",
     "title2": "WHAT IS COOKIE?",
-    "text1": "The website https://vuse.uz/ru uses its own technical and marketing cookies, as well as partner cookies (third-party service providers) to offer users certain features for viewing and using the site's pages. Some of these cookies allow us to check the quality of the website's operation and improve its performance characteristics, making it more user-friendly, accumulate statistics on site visits, and take measures to improve it, providing advertising content to users based on their interests.<br/>Most internet browsers are set to accept cookies automatically. However, users can independently change their browser settings - disable or limit the use of cookies, and receive notifications of their use. If different devices (tablet, smartphone, computer, etc.) are used, it is necessary to ensure that each device's browser is configured according to your decision regarding the use of cookies. For this, refer to the browser's instructions to make the necessary settings.<br/>Attention! By continuing to browse the pages of our site https://vuse.uz/ru, you accept the terms of our Cookie Policy, and you agree to the transfer of data collected about you through cookies to third parties and receiving marketing materials posted on the site.<br/>If you do not accept the terms of our Cookie Policy, you may change your browser settings or stop browsing the site's pages.<br/>However, blocking all cookies (including essential ones) may restrict access to our site or its specific functions or sections.<br/>To learn how to change cookie settings, you can follow the links provided below:",
+    "text1": "The website https://vuse-go.am/ uses its own technical and marketing cookies, as well as partner cookies (third-party service providers) to offer users certain features for viewing and using the site's pages. Some of these cookies allow us to check the quality of the website's operation and improve its performance characteristics, making it more user-friendly, accumulate statistics on site visits, and take measures to improve it, providing advertising content to users based on their interests.<br/>Most internet browsers are set to accept cookies automatically. However, users can independently change their browser settings - disable or limit the use of cookies, and receive notifications of their use. If different devices (tablet, smartphone, computer, etc.) are used, it is necessary to ensure that each device's browser is configured according to your decision regarding the use of cookies. For this, refer to the browser's instructions to make the necessary settings.<br/>Attention! By continuing to browse the pages of our site https://vuse.uz/ru, you accept the terms of our Cookie Policy, and you agree to the transfer of data collected about you through cookies to third parties and receiving marketing materials posted on the site.<br/>If you do not accept the terms of our Cookie Policy, you may change your browser settings or stop browsing the site's pages.<br/>However, blocking all cookies (including essential ones) may restrict access to our site or its specific functions or sections.<br/>To learn how to change cookie settings, you can follow the links provided below:",
     "link1text": "Google Chrome",
     "link1": "https://support.google.com/chrome/answer/95647",
     "link2text": "InternetExplorer",
@@ -274,60 +274,10 @@
     "text4": "We Use partner",
     "text5": "Where to buy",
     "cities": {
-      "tashkent": {
-        "title": "Tashkent",
-        "zoom": 12,
-        "coordinates": [41.311151, 69.279737]
-      },
-      "tashkentReg": {
-        "title": "Ташкентская область",
-        "zoom": 9,
-        "coordinates": [41.311151, 69.279737]
-      },
-      "samarkandReg": {
-        "title": "Самаркандская область",
-        "zoom": 9,
-        "coordinates": [40.000871, 66.344294]
-      },
-      "andijanReg": {
-        "title": "Андижанская область",
-        "zoom": 10,
-        "coordinates": [40.728245, 72.322668]
-      },
-      "jizzaxReg": {
-        "title": "Джизакская область",
-        "zoom": 9,
-        "coordinates": [40.368759, 67.83865]
-      },
-      "ferganaReg": {
-        "title": "Ферганская область",
-        "zoom": 10,
-        "coordinates": [40.322333, 71.273471]
-      },
-      "namanganReg": {
-        "title": "Наманганская область",
-        "zoom": 10,
-        "coordinates": [41.097463, 71.298965]
-      },
-      "buxaraReg": {
-        "title": "Бухарская область",
-        "zoom": 9,
-        "coordinates": [40.225521, 63.709984]
-      },
-      "sirdaryaReg": {
-        "title": "Сырдарьинская область",
-        "zoom": 10,
-        "coordinates": [40.59717, 68.650314]
-      },
-      "navoiyReg": {
-        "title": "Навоийская область",
-        "zoom": 8,
-        "coordinates": [41.658195, 64.203411]
-      },
-      "karakalpakstan": {
-        "title": "Республика Каракалпакстан",
-        "zoom": 8,
-        "coordinates": [43.328493, 59.233167]
+      "armenia": {
+        "title": "Armenia",
+        "zoom": "12",
+        "coordinates": [40.1811, 44.5136]
       }
     }
   },
