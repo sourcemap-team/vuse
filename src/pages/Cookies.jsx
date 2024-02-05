@@ -109,13 +109,13 @@ const Cookies = () => {
             <Trans i18nKey={`cookies.text12`} components={{br: <><br/><br/></>}}/>
           </p>
 
-          <h3 className={'font-bold text-3xl mt-6'}>
+          {/* <h3 className={'font-bold text-3xl mt-6'}>
             {t(`cookies.title4`)}
           </h3>
 
           <p className={'mt-5'}>
             <Trans i18nKey={`cookies.text13`} components={{br: <><br/><br/></>}}/>
-          </p>
+          </p> */}
 
           <h3 className={'font-bold text-3xl mt-6'}>
             {t(`cookies.title5`)}
