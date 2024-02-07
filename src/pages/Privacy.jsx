@@ -21,9 +21,9 @@ const Privacy = () => {
         </section>
       </div>
 
-      <section className={'border-b py-3 lg:py-10 px-3 lg:px-0'}>
+      {/* <section className={'border-b py-3 lg:py-10 px-3 lg:px-0'}>
         <Locations className={'container mx-auto'}/>
-      </section>
+      </section> */}
 
       <div className={'flex flex-col items-center'}>
         <section className={'lg:w-2/3 lg:px-10 py-10 lg:py-60'}>

@@ -22,7 +22,7 @@ const Contacts = () => {
 
   return (
     <main className={'flex flex-col items-center'}>
-      <section className={'hidden container mx-auto mt-4 px-3 lg:px-0'}>
+      {/* <section className={'hidden container mx-auto mt-4 px-3 lg:px-0'}>
         <h2
           className={
             'text-xl lg:text-6xl text-center uppercase bg-clip-text text-transparent bg-gradient-to-b from-black to-white py-2'
@@ -83,9 +83,9 @@ const Contacts = () => {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
 
-      <section
+      {/* <section
         className={'container mx-auto flex justify-center mt-20 px-3 lg:px-0'}
       >
         <a
@@ -98,9 +98,9 @@ const Contacts = () => {
           <p className={'mt-5'}>
             {t(`contacts.callCentre`)} ({t(`contacts.phone`)})
           </p>
-        </a>
+        </a> */}
 
-        {/* <a
+      {/* <a
           href={'https://t.me/+n_xP7bHGuf9iZGM6'}
           target={'_blank'}
           className={
@@ -111,7 +111,7 @@ const Contacts = () => {
           <p className={'mt-5'}>{t(`contacts.telegram`)}</p>
         </a> */}
 
-        {/* <button
+      {/* <button
           className={
             'bg-gray-100 rounded-xl flex flex-col items-center pt-3 lg:py-10'
           }
@@ -119,9 +119,9 @@ const Contacts = () => {
           <img src={help} alt='help' />
           <p className={'mt-5'}>{t(`contacts.faq`)}</p>
         </button> */}
-      </section>
+      {/* </section> */}
 
-      <section className={'px-3 lg:px-10 py-10 lg:py-60'} id='faq'>
+      <section className={'px-3 lg:px-10 py-10 lg:py-20'} id='faq'>
         <FAQ className={'container mx-auto'} />
       </section>
     </main>

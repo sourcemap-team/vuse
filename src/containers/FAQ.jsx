@@ -33,21 +33,21 @@ const FAQ = ({ className }) => {
           title={t('faq.question4')}
           content={t('faq.answer4')}
         />
-        <Accordion
+        {/* <Accordion
           className={'mt-3'}
           title={t('faq.question5')}
           content={t('faq.answer5')}
-        />
+        /> */}
         <Accordion
           className={'mt-3'}
           title={t('faq.question6')}
           content={t('faq.answer6')}
         />
-        <Accordion
+        {/* <Accordion
           className={'mt-3'}
           title={t('faq.question8')}
           content={t('faq.answer8')}
-        />
+        /> */}
       </div>
     </div>
   );

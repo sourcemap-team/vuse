@@ -1,11 +1,11 @@
 import Banner from 'src/containers/Banner.jsx';
 
-import numberOne from 'src/assets/images/numberOne.png';
-import numberOneAm from 'src/assets/images/icons/numberOneAm.svg';
-import countries from 'src/assets/images/countries.png';
-import countriesAm from 'src/assets/images/countriesAm.png';
-
+import numberOneRu from 'src/assets/images/numberOne.png';
+import numberOneAm from 'src/assets/images/numberOneAm.png';
 import numberOneEn from 'src/assets/images/numberOneEn.png';
+
+import countriesRu from 'src/assets/images/countries.png';
+import countriesAm from 'src/assets/images/countriesAm.png';
 import countriesEn from 'src/assets/images/countriesEn.png';
 
 import bigBanner from 'src/assets/images/big-banner.png';
@@ -18,19 +18,20 @@ import GradientHeader from '../components/common/gradientHeader';
 const About = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
+  const imagesNumberOne = {
+    am: numberOneAm,
+    en: numberOneEn,
+    ru: numberOneRu,
+  };
 
-  let imageNumberOneToDisplay;
-  let imageCountriesToDisplay;
-  if (currentLanguage === 'am') {
-    imageNumberOneToDisplay = numberOneAm;
-    imageCountriesToDisplay = countriesAm;
-  } else if (currentLanguage === 'en') {
-    imageNumberOneToDisplay = numberOneEn;
-    imageCountriesToDisplay = countriesEn;
-  } else {
-    imageNumberOneToDisplay = numberOne;
-    imageCountriesToDisplay = countries;
-  }
+  const imagesCountries = {
+    am: countriesAm,
+    en: countriesEn,
+    ru: countriesRu,
+  };
+
+  const imageNumberOneToDisplay = imagesNumberOne[currentLanguage];
+  const imageCountriesToDisplay = imagesCountries[currentLanguage];
 
   return (
     <main>

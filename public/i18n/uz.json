@@ -139,7 +139,7 @@
   },
   "tastes": {
     "title": "Ta'mlar origamisi",
-    "filter": "*Tortilish<br/>soni",
+    "filter": "Tortilish<br/>soni*",
     "sweet": "Shirinligi",
     "cold": "Sovuqligi",
     "allDevices": "Barcha qurilmalar",

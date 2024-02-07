@@ -12,7 +12,7 @@
     "taste": "FLAVORS",
     "utility": "RECYCLING PROGRAM",
     "service": "WHERE TO BUY",
-    "contacts": "CONTACTS"
+    "contacts": "Questions and answers"
   },
   "home": {
     "more": "Learn more",
@@ -24,7 +24,7 @@
   "footer": {
     "block1Title": "Useful Links",
     "block1Link1": "Frequently Asked Questions",
-    "block1Link2": "Contacts",
+    "block1Link2": "Questions and answers",
     "block1Link3": "Where to Buy",
     "block1Link4": "About Vuse in Scientific Terms",
     "block2Title": "Legal Information",
@@ -124,7 +124,7 @@
       "description": "Convenient format, stylish design",
       "text1": "Up to 700 puffs*",
       "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
-      "topText": "New progressive<br/>device",
+      "topText": "Progressive<br/>device",
       "bottomText": ""
     },
     "device-5": {
@@ -139,14 +139,14 @@
   },
   "tastes": {
     "title": "ORIGAMI OF FLAVORS",
-    "filter": "*NUMBER OF<br/>PUFFS",
+    "filter": "NUMBER OF<br/>PUFFS*",
     "sweet": "Sweetness",
     "cold": "Chill",
     "allDevices": "All Devices",
     "description": "*Based on laboratory testing of the new product and may vary depending on individual consumption patterns",
     "mango-ice": {
       "title": "Mango<br/>ice",
-      "text": "RIPE MANGO WITH ICY <br/> COOLNESS",
+      "text": "RIPE MANGO FLAVOR <br/> WITH AN ICY CHILL",
       "puffs": [700],
       "sweet": 3,
       "cold": 0
@@ -167,14 +167,14 @@
     },
     "watermelon-ice": {
       "title": "Watermelon<br/>Ice",
-      "text": "Refreshing taste<br/>of icy coolness of<br/>watermelon",
+      "text": "WATERMELON FLAVOR<br/>WITH AN ICY CHILL",
       "puffs": [700],
       "sweet": 4,
       "cold": 0
     },
     "creamy-tobacco": {
       "title": "Creamy<br/>tobacco",
-      "text": "Creamy Tobacco",
+      "text": "CREAMY TOBACCO",
       "puffs": [700],
       "sweet": 3,
       "cold": 0
@@ -210,7 +210,7 @@
     "question1": "What is Vuse?",
     "answer1": "Vuse is a disposable nicotine consumption device. As demonstrated by product laboratory testing, each disposable Vuse vape provides up to 700 puffs until the battery is discharged. However, this figure can vary depending on individual usage characteristics. Vuse does not support refilling, as this can lead to leakage and damage to your device.",
     "question2": "How to use Vuse?",
-    "answer2": "The design of Vuse implies ease and slimness for convenient use. Vuse is a disposable nicotine consumption device that does not require recharging or refilling. Simply open the package and use Vuse. There are no buttons on the device - Vuse is activated by a puff. Then the device automatically activates and the LED indicator lights up.",
+    "answer2": "The design of Vuse implies ease and slimness for convenient use. Vuse is a disposable nicotine consumption device that does not require recharging. Just open the package and use Vuse. The Vuse is activated by tightening. Then the device automatically activates and the LED indicator lights up.",
     "question3": "Vuse Storage Precautions",
     "answer3": "- Store your Vuse at a temperature of 0-35°C.<br/>- Do not crush, pierce, burn, or immerse the device in water; keep it in a dry place.<br/>- Never leave the device under direct sunlight or near heat sources.<br/>- Do not use near flammable liquids or gases.",
     "question4": "How to clean a disposable Vuse vape?",

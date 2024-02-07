@@ -62,7 +62,7 @@ const App = () => {
         {/*<Route path="/device-5000" element={<Device5000/>}/>*/}
         <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
-      {pathname !== '/contacts' && <LocationButton />}
+      {/* {pathname !== '/contacts' && <LocationButton />} */}
       <Age />
       <CookiesAlert />
       <Footer />

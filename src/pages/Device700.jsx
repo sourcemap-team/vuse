@@ -23,10 +23,21 @@ import mangoIceTaste from 'src/assets/images/tastes/compressed/mango-ice.png';
 import strawberryIceTaste from 'src/assets/images/tastes/compressed/strawberry-kiwi.png';
 
 import icon from 'src/assets/images/icons/device700.svg';
-import banner from 'src/assets/images/devices/700/device-banner.png';
+import bannerRu from 'src/assets/images/devices/700/device-banner-RU.png';
+import bannerEn from 'src/assets/images/devices/700/device-banner-EN.png';
+import bannerAm from 'src/assets/images/devices/700/device-banner-AM.png';
 
 const Device700 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  const banners = {
+    am: bannerAm,
+    en: bannerEn,
+    ru: bannerRu,
+  };
+
+  const bannerToDisplay = banners[currentLanguage] || bannerRu;
 
   return (
     <main className={'flex flex-col items-center overflow-x-hidden'}>
@@ -69,7 +80,7 @@ const Device700 = () => {
           }
           topGradient={'from-[#FFA471] to-[#000000]'}
           bottomGradient={'from-[#2B9CAB] to-[#000000]'}
-          image={banner}
+          image={bannerToDisplay}
         />
       </section>
 
