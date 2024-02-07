@@ -13,9 +13,9 @@ const Home = () => {
         <FAQ className={'container mx-auto'} />
       </section>
 
-      <section className={'px-3 w-full border-b py-10'} id='locations'>
+      {/* <section className={'px-3 w-full border-b py-10'} id='locations'>
         <Locations className={'container mx-auto'} />
-      </section>
+      </section> */}
     </main>
   );
 };

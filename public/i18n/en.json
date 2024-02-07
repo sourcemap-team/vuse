@@ -124,7 +124,7 @@
       "description": "Convenient format, stylish design",
       "text1": "Up to 700 puffs*",
       "text2": "*Based on laboratory tests of a new product and may vary depending on individual consumption characteristics",
-      "topText": "New progressive<br/>device",
+      "topText": "Progressive<br/>device",
       "bottomText": ""
     },
     "device-5": {
@@ -139,7 +139,7 @@
   },
   "tastes": {
     "title": "ORIGAMI OF FLAVORS",
-    "filter": "*NUMBER OF<br/>PUFFS",
+    "filter": "NUMBER OF<br/>PUFFS*",
     "sweet": "Sweetness",
     "cold": "Chill",
     "allDevices": "All Devices",
