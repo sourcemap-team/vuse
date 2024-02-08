@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 import Taste from 'src/components/modules/taste';
 
@@ -18,6 +19,8 @@ const allPuffs = [700];
 const Tastes = ({ className, filterEnabled }) => {
   const [filter, setFilter] = useState(null);
   const { t } = useTranslation();
+
+  const { pathname } = useLocation();
 
   const allTastes = [
     {
@@ -106,13 +109,15 @@ const Tastes = ({ className, filterEnabled }) => {
               <Taste image={taste.image} taste={taste.id} key={taste.id} />
             ))}
       </div>
-      <p
-        className={
-          'text-black font-sans text-base normal-case font-normal leading-[120%] -tracking-[1px] text-center lg:text-start max-w-[780px]'
-        }
-      >
-        <Trans i18nKey='tastes.description' components={{ br: <br /> }} />
-      </p>
+      {pathname !== '/' && (
+        <p
+          className={
+            'text-black font-sans text-base normal-case font-normal leading-[120%] -tracking-[1px] text-center lg:text-start max-w-[780px]'
+          }
+        >
+          <Trans i18nKey='tastes.description' components={{ br: <br /> }} />
+        </p>
+      )}
     </div>
   );
 };
