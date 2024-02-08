@@ -14,9 +14,9 @@ const Tastes = ({ className }) => {
   return (
     <div className={className}>
       <div className={'flex flex-col lg:flex-row justify-between items-center'}>
-        <h2 className={'lg:text-6xl uppercase py-2'}>{t('social.title')}</h2>
+        <h2 className={'lg:text-5xl uppercase py-2'}>{t('social.title')}</h2>
         <div className={'flex gap-5'}>
-          <p className={'text-xl uppercase'}>{t('social.text')}</p>
+          {/* <p className={'text-xl uppercase'}>{t('social.text')}</p> */}
           {/* <a href="https://t.me/vuse_uz_bot" target={'_blank'}>
             <img src={robot} alt="social"/>
           </a>
