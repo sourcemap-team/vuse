@@ -34,7 +34,7 @@ const Accordion = ({ className, title, content }) => {
           />
         </svg>
       </button>
-      <div className={`${m.content} ${isActive ? 'max-h-36 ' : 'max-h-0 '}`}>
+      <div className={`${m.content} ${isActive ? 'max-h-66 ' : 'max-h-0 '}`}>
         <p className={'p-4'} dangerouslySetInnerHTML={{ __html: content }} />
       </div>
     </div>

@@ -179,7 +179,7 @@ const Cookies = () => {
             />
           </p>
 
-          <h3 className={'font-bold text-3xl mt-6'}>{t(`cookies.title6`)}</h3>
+          {/* <h3 className={'font-bold text-3xl mt-6'}>{t(`cookies.title6`)}</h3>
 
           <p className={'mt-5'}>
             <Trans
@@ -193,7 +193,7 @@ const Cookies = () => {
                 ),
               }}
             />
-          </p>
+          </p> */}
         </section>
       </div>
 
@@ -202,7 +202,8 @@ const Cookies = () => {
       </section> */}
 
       <div className={'flex flex-col items-center'}>
-        <section className={'lg:w-2/3 lg:px-10 py-10 lg:py-60'}>
+        {/* <section className={'lg:w-2/3 lg:px-10 py-10 lg:py-60'}> */}
+        <section className={'lg:w-2/3 lg:px-10 py-10'}>
           <FAQ className={'container mx-auto'} />
         </section>
       </div>
