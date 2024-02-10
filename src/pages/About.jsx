@@ -1,6 +1,6 @@
 import Banner from 'src/containers/Banner.jsx';
 
-import numberOneRu from 'src/assets/images/numberOne.png';
+import numberOneRu from 'src/assets/images/numberOneRu.png';
 import numberOneAm from 'src/assets/images/numberOneAm.png';
 import numberOneEn from 'src/assets/images/numberOneEn.png';
 
