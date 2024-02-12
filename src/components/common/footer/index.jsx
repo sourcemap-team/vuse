@@ -62,13 +62,13 @@ const Footer = () => {
             {t(`footer.block1Title`)}
           </p>
         </div>
-        <div
+        {/* <div
           className={
             'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'
           }
         >
           <NavLink to={'/contacts#faq'}>{t(`footer.block1Link1`)}</NavLink>
-        </div>
+        </div> */}
         <div
           className={
             'text-gray-400 hover:text-white transition-colors duration-200 ease-in-out text-sm mt-3'
