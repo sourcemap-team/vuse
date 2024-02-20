@@ -55,12 +55,18 @@ const Home = () => {
         </video>
       </section>
 
-      <section className={'pt-3 lg:pt-10 px-3 lg:px-0'}>
+      <section className={'pt-3 lg:pt-10 px-5 lg:px-60'}>
         <div
           className={
-            'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'
+            // 'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'
+            'mx-auto grid grid-cols-1 lg:grid-cols-1 gap-3 lg:gap-10 w-full'
           }
         >
+          {/* <div
+            className={
+              'mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10 w-full'
+            }
+          ></div> */}
           <Banner
             className={
               'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-1 bg-no-repeat bg-cover px-5 lg:px-10 py-4'
