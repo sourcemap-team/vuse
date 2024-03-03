@@ -51,7 +51,7 @@ const App = () => {
         <Route path='/taste' element={<Taste />} />
         {/*<Route path="/service" element={<ServicePoints/>}/>*/}
         <Route path='/contacts' element={<Contacts />} />
-        {/*<Route path="/ru/rpi" element={<Utility/>}/>*/}
+        <Route path='/recycling-program' element={<Utility />} />
         <Route path='/health' element={<Health />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/cookies' element={<Cookies />} />

@@ -92,7 +92,13 @@ const Menu = () => {
             <NavLink className={isActive} onClick={toggleMenu} to='/taste'>
               {t('nav.taste')}
             </NavLink>
-            {/*<NavLink className={isActive} onClick={toggleMenu} to="/ru/rpi">{t('nav.utility')}</NavLink>*/}
+            <NavLink
+              className={isActive}
+              onClick={toggleMenu}
+              to='/recycling-program'
+            >
+              {t('nav.utility')}
+            </NavLink>
             {/*<NavLink className={isActive} onClick={toggleMenu} to="/service">{t('nav.service')}</NavLink>*/}
             <NavLink className={isActive} onClick={toggleMenu} to='/contacts'>
               {t('nav.contacts')}
