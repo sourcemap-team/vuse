@@ -61,12 +61,12 @@ const Utility = () => {
           {t(`utility.text6`)}
         </p>
 
-        <p
+        {/* <p
           className={'mt-6 text-gray-500'}
           style={{ textTransform: 'uppercase' }}
         >
           {t(`utility.text7`)}
-        </p>
+        </p> */}
       </section>
 
       {/* <section className={'w-full border-b border-t py-3 lg:py-10 px-3 lg:px-0'}>
