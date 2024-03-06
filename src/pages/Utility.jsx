@@ -54,12 +54,12 @@ const Utility = () => {
           <img src={poster} className={'w-full'} alt='poster' />
         </div> */}
 
-        <p
+        {/* <p
           className={'mt-6 text-gray-500'}
           style={{ textTransform: 'uppercase' }}
         >
           {t(`utility.text6`)}
-        </p>
+        </p> */}
 
         {/* <p
           className={'mt-6 text-gray-500'}
