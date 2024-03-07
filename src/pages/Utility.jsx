@@ -69,19 +69,21 @@ const Utility = () => {
         </p> */}
       </section>
 
-      {/* <section className={'w-full border-b border-t py-3 lg:py-10 px-3 lg:px-0'}>
-        <Locations className={'container mx-auto'}/>
+      <section
+        className={'w-full border-b border-t py-3 lg:py-10 px-3 lg:px-0'}
+      >
+        <Locations className={'container mx-auto'} />
 
-        <div className={'container mx-auto flex items-center justify-end uppercase text-xl font-bold mt-10'}>
-          <p className={''}>
-            {t(`utility.callCentre`)}
-          </p>
-          <img src={phone} className={'ms-5 me-1'} alt="phone"/>
-          <p className={''}>
-            {t(`utility.phone`)}
-          </p>
+        <div
+          className={
+            'container mx-auto flex items-center justify-end uppercase text-xl font-bold mt-10'
+          }
+        >
+          <p className={''}>{t(`utility.callCentre`)}</p>
+          <img src={phone} className={'ms-5 me-1'} alt='phone' />
+          <p className={''}>{t(`utility.phone`)}</p>
         </div>
-      </section> */}
+      </section>
 
       <section className={'px-3 lg:px-10 py-10 lg:py-20'}>
         <FAQ className={'container mx-auto'} />
