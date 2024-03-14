@@ -37,9 +37,9 @@ const Utility = () => {
         <p className={'mt-5'}>{t(`utility.text5`)}</p>
 
         <div className={'flex justify-between g-5 mt-4'}>
-          <a href='https://www.instagram.com/reel/Cxdext-ISJo/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='>
-            <img src={bannerToDisplay} alt='reel' />
-          </a>
+          {/* <a href='https://www.instagram.com/reel/Cxdext-ISJo/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='> */}
+          <img src={bannerToDisplay} alt='reel' />
+          {/* </a> */}
           {/* <a href='https://www.instagram.com/reel/Cy04aELIIec/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='>
             <img src={reel2} alt='reel' />
           </a>
