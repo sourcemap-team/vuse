@@ -61,8 +61,11 @@ const Tastes = ({ className, filterEnabled }) => {
 
       {filterEnabled && (
         <div
+          //  className={
+          //    'flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg py-4 mt-10'
+          //  }
           className={
-            'flex flex-col lg:flex-row items-center bg-gray-100 rounded-lg py-4 mt-10'
+            'flex lg:flex-row items-center bg-gray-100 rounded-lg py-4 mt-10'
           }
         >
           <div className={'px-6'}>
@@ -71,8 +74,11 @@ const Tastes = ({ className, filterEnabled }) => {
             </p>
           </div>
           <div
+            // className={
+            //   'grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 px-6 mt-3 lg:mt-0'
+            // }
             className={
-              'grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 px-6 mt-3 lg:mt-0'
+              'grid grid-cols-2 lg:grid-cols-6 gap-5 lg:gap-5 px-6 lg:mt-0'
             }
           >
             {allPuffs.map((puff) => (

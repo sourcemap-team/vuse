@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Devices from 'src/containers/Devices.jsx';
 import Banner from 'src/containers/Banner.jsx';
+import AdvancedBanner from 'src/containers/AdvancedBanner.jsx';
 import Tastes from 'src/containers/Tastes.jsx';
 import Social from 'src/containers/Socials.jsx';
 import Locations from '../containers/Locations.jsx';
@@ -55,18 +56,14 @@ const Home = () => {
         </video>
       </section>
 
-      <section className={'pt-3 lg:pt-10 px-5 lg:px-60'}>
+      <section className={'pt-3 lg:pt-10 px-5 lg:px-10'}>
+        {/* <section className={'pt-3 lg:pt-10 px-5 lg:px-60'}> */}
         <div
           className={
-            // 'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'
-            'mx-auto grid grid-cols-1 lg:grid-cols-1 gap-3 lg:gap-10 w-full'
+            'container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10'
+            // 'mx-auto grid grid-cols-1 lg:grid-cols-1 gap-3 lg:gap-10 w-full'
           }
         >
-          {/* <div
-            className={
-              'mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-10 w-full'
-            }
-          ></div> */}
           <Banner
             className={
               'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-1 bg-no-repeat bg-cover px-5 lg:px-10 py-4'
@@ -85,19 +82,21 @@ const Home = () => {
               </button>
             </NavLink>
           </Banner>
-          {/*<Banner*/}
-          {/*  className={'flex flex-col lg:flex-row items-center rounded-xl bg-mid-banner-2 bg-no-repeat bg-cover p-5 lg:py-0 lg:ps-0 lg:pe-10'}*/}
-          {/*  image={imgMidBanner2}*/}
-          {/*  title={t(`home.banner2Title`)}*/}
-          {/*  text={t(`home.banner2Text`)}*/}
-          {/*>*/}
-          {/*  <NavLink to={'/utility'}>*/}
-          {/*    <button*/}
-          {/*      className={'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4 transition-colors duration-300 ease-in-out hover:bg-yellow-600'}>*/}
-          {/*      {t(`home.more`)}*/}
-          {/*    </button>*/}
-          {/*  </NavLink>*/}
-          {/*</Banner>*/}
+          <AdvancedBanner
+            image={imgMidBanner2}
+            title={t(`home.banner2Title`)}
+            text={t(`home.banner2Text`)}
+          >
+            <NavLink to={'/about'}>
+              <button
+                className={
+                  'bg-yellow-500 text-xs lg:text-base rounded-full px-5 py-2 mt-4 transition-colors duration-300 ease-in-out hover:bg-yellow-600 min-w-[133px]'
+                }
+              >
+                {t(`home.more`)}
+              </button>
+            </NavLink>
+          </AdvancedBanner>
         </div>
       </section>
 
