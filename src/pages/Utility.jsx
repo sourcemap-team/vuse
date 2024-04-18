@@ -74,7 +74,7 @@ const Utility = () => {
       >
         <Locations className={'container mx-auto'} />
 
-        <div
+        {/* <div
           className={
             'container mx-auto flex items-center justify-end uppercase text-xl font-bold mt-10'
           }
@@ -82,7 +82,7 @@ const Utility = () => {
           <p className={''}>{t(`utility.callCentre`)}</p>
           <img src={phone} className={'ms-5 me-1'} alt='phone' />
           <p className={''}>{t(`utility.phone`)}</p>
-        </div>
+        </div> */}
       </section>
 
       <section className={'px-3 lg:px-10 py-10 lg:py-20'}>
